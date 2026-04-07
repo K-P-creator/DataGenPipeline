@@ -6,7 +6,7 @@
 #   Input is the LLVM IR filename.
 #   Output is the filename of stage_3_output.json.
 
-def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
+def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
     import subprocess
     from pathlib import Path
     import json
@@ -154,13 +154,13 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
 
     print(
         "Stage 3 Complete.\n"
-        f"Loop feature collection output IR: {output_ir_filename}"
+        f"Loop feature collection output IR: {output_ir_filename}\n"
+        "Stage 3 dataset saved to JSON file: "
+            f"{output_json_filename}"
     )
 
     if __name__ == "__main__":
         print(
-            "Stage 3 dataset saved to JSON file: "
-            f"{output_json_filename}\n"
             f"Stage 3 JSON output: {json.dumps(parsed_output, indent=2)}"
         )
 
