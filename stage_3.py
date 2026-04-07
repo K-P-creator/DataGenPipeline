@@ -2,11 +2,97 @@
 #   Runs the opt pass in data collection mode (Hot Loop Index == 0), and
 #   determines the number of loops. This pass will also serve to collect
 #   all of the features for each loop (except runtime). Output here is sent via stdout.
+#
+#   Input is the LLVM IR filename.
+#   Output is the filename of stage_3_output.json.
 
 def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
     import subprocess
     from pathlib import Path
     import json
+
+    def parse_value(raw: str):
+        raw = raw.strip()
+
+        if raw == "True":
+            return True
+        if raw == "False":
+            return False
+
+        # int
+        try:
+            return int(raw)
+        except ValueError:
+            pass
+
+        # float
+        try:
+            return float(raw)
+        except ValueError:
+            pass
+
+        return raw
+
+    def parse_last_dataset(stdout_text: str, unroll_factors: list[int]) -> dict:
+        # Split on each dataset start and keep the last non-empty dataset
+        parts = stdout_text.split("Loop Count:")
+        dataset_chunks = [p.strip() for p in parts[1:] if p.strip()]
+        if not dataset_chunks:
+            raise RuntimeError("Stage 3 parse failed: no 'Loop Count:' dataset found in stdout.")
+
+        last_chunk = dataset_chunks[-1]
+
+        lines = [line.strip() for line in last_chunk.splitlines() if line.strip()]
+        if not lines:
+            raise RuntimeError("Stage 3 parse failed: last dataset is empty.")
+
+        # First line of the chunk is the loop count number
+        loop_count = int(lines[0])
+
+        # Everything after "Collected Loop Data:" contains loop records
+        try:
+            collected_idx = lines.index("Collected Loop Data:")
+        except ValueError as exc:
+            raise RuntimeError("Stage 3 parse failed: missing 'Collected Loop Data:' marker.") from exc
+
+        record_lines = lines[collected_idx + 1:]
+
+        loops = []
+        current_loop = None
+
+        for line in record_lines:
+            if not line:
+                continue
+
+            if line.startswith("Loop Index:"):
+                if current_loop is not None:
+                    loops.append(current_loop)
+
+                loop_index = int(line.split(":", 1)[1].strip())
+                current_loop = {
+                    "loop_index": loop_index,
+                    "features": {},
+                    "median_times_ns": {str(factor): None for factor in unroll_factors},
+                }
+                continue
+
+            if current_loop is None:
+                continue
+
+            if ":" not in line:
+                continue
+
+            key, value = line.split(":", 1)
+            normalized_key = key.strip().lower().replace(" ", "_")
+            current_loop["features"][normalized_key] = parse_value(value)
+
+        if current_loop is not None:
+            loops.append(current_loop)
+
+        return {
+            "loop_count": loop_count,
+            "loops": loops,
+        }
 
     input_path = Path(llvm_ir_filename)
 
@@ -20,13 +106,16 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
     opt_path = global_cfg["opt_path"]
     opt_passes = global_cfg["opt_passes"]
     opt_common_flags = global_cfg["opt_common_flags"]
+    unroll_factors = global_cfg["unroll_factors"]
 
+    # Data collection mode
     unroll_factor = 1
     hot_loop_index = 0
 
-    output_filename = input_path.with_name(input_path.stem + "_data_mode_opt.ll")
+    output_ir_filename = input_path.with_name(input_path.stem + "_data_mode_opt.ll")
+    output_json_filename = input_path.parent / "stage_3_output.json"
 
-    # Build opt command as a list
+    # Build opt command
     cmd = [
         opt_path,
         f"-passes={opt_passes}",
@@ -38,7 +127,7 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
         f"--my-unroll-factor={unroll_factor}",
         f"--my-hot-loop-index={hot_loop_index}",
         "-o",
-        str(output_filename),
+        str(output_ir_filename),
     ])
 
     result = subprocess.run(
@@ -57,18 +146,28 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str) -> str:
             f"STDERR:\n{result.stderr}"
         )
 
-    print(f"Stage 3 Complete.\nLoop feature collection output IR: {output_filename}")
+    parsed_output = parse_last_dataset(result.stdout, unroll_factors)
 
-    # If you later want to parse stdout for loop feature JSON lines,
-    # result.stdout is where to do it.
+    # Save stage 3 dataset
+    with open(output_json_filename, "w", encoding="utf-8") as f:
+        json.dump(parsed_output, f, indent=2)
+
+    print(
+        "Stage 3 Complete.\n"
+        f"Loop feature collection output IR: {output_ir_filename}"
+    )
 
     if __name__ == "__main__":
-        print("Stage 3 raw stdout from opt pass:")
-        print(result.stdout)
+        print(
+            "Stage 3 dataset saved to JSON file: "
+            f"{output_json_filename}\n"
+            f"Stage 3 JSON output: {json.dumps(parsed_output, indent=2)}"
+        )
 
-    return str(output_filename)
+    return str(output_json_filename)
 
 
 if __name__ == "__main__":
     import sys
-    run_stage3_collect_loop_features(sys.argv[1])
+    llvm_ir_filename = sys.argv[1]
+    run_stage3_collect_loop_features(llvm_ir_filename)
