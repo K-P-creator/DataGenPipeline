@@ -1,0 +1,21 @@
+{
+  "warmup_runs": 1,
+  "timed_runs": 10,
+  "unroll_factors": [1, 2, 4, 8],
+  "target_triple": "x86_64-linux-gnu",
+  "clang_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/clang",
+  "opt_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/opt",
+  "opt_passes": "sroa,mem2reg,loop-simplify,loop-rotate,indvars,lcssa,loop-unroll",
+  "clang_ir_flags": [
+    "-O0",
+    "-Xclang",
+    "-disable-O0-optnone",
+    "-S",
+    "-emit-llvm",
+    "-g"
+  ],
+  "opt_common_flags": [
+    "-S",
+    "-force-remove-attribute=optnone"
+  ]
+}

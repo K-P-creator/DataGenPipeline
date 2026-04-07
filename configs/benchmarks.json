@@ -1,0 +1,18 @@
+{
+  "benchmarks": [
+     {
+  	"name": "atax",
+  	"source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+  	"work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+  	"source_file": "linear-algebra/kernels/atax/atax.c",
+  	"include_dirs": [
+    		"utilities",
+    		"linear-algebra/kernels/atax"
+  	],
+  	"output_ir": "atax.ll",
+  	"output_opt_ir": "out.ll",
+  	"output_final_ir": "final.ll",
+  	"binary_name": "atax.out",
+  	"run_args": []
+} ]
+}
