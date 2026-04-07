@@ -39,7 +39,7 @@ import stage_1
 import stage_2
 import stage_3
 import stage_4
-#import stage_5
+import stage_5
 
 from pathlib import Path
 
@@ -63,10 +63,10 @@ def run_per_benchmark(benchmark_json_index: int) -> Path:
     print("") # \n
 
     ## Stage 5: Run loops with various unroll factors and record timing statistics
-    #final_results_path = stage_5.run_stage5_run_unroll_and_time(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
-    #print("") # \n
+    final_results_path = stage_5.run_stage5_run_unroll_and_time(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
+    print("") # \n
 
-    #return final_results_path
+    return final_results_path
 
 
 if __name__ == "__main__":

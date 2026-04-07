@@ -6,6 +6,7 @@
   "clang_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/clang",
   "opt_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/opt",
   "llc_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/llc",
+  "perm_path": "data",
   "opt_passes": "sroa,mem2reg,loop-simplify,loop-rotate,indvars,lcssa,loop-unroll",
   "clang_ir_flags": [
     "-O0",
