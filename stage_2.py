@@ -125,7 +125,7 @@ def run_stage2_interpolate_timer(llvm_ir_filename: str) -> str:
     new_main = main_header + instrumented_body + main_footer
     new_ir_text = ir_text[: main_match.start()] + new_main + ir_text[main_match.end() :]
 
-    # 🔥 WRITE BACK TO SAME FILE (in-place modification)
+    # WRITE BACK TO SAME FILE (in-place modification)
     input_path.write_text(new_ir_text, encoding="utf-8")
 
     print(f"Stage 2 Complete.\nTimer injected into: {input_path}")

@@ -9,6 +9,7 @@
     		"utilities",
     		"linear-algebra/kernels/atax"
   	],
+	"files_to_link" : ["utilities/polybench.c"],
   	"output_ir": "atax.ll",
   	"output_opt_ir": "out.ll",
   	"output_final_ir": "final.ll",

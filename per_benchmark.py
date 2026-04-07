@@ -38,7 +38,7 @@
 import stage_1
 import stage_2
 import stage_3
-#import stage_4
+import stage_4
 #import stage_5
 
 from pathlib import Path
@@ -57,13 +57,13 @@ def run_per_benchmark(benchmark_json_index: int) -> Path:
     # Stage 3: Run opt pass in data collection mode to determine loop features
     data_mode_opt_pass_filename = stage_3.run_stage3_collect_loop_features(llvm_IR_filename)
     print("") # \n
-#
+
     ## Stage 4: Run timed pass with unroll factor 1 to get baseline runtime
-    #baseline_runtime = stage_4.run_stage4_run_timed_pass(data_mode_opt_pass_filename)
-    #print("") # \n
-#
+    baseline_runtime = stage_4.run_stage4_run_timed_pass(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
+    print("") # \n
+
     ## Stage 5: Run loops with various unroll factors and record timing statistics
-    #final_results_path = stage_5.run_stage5_run_unroll_and_time(llvm_IR_filename)
+    #final_results_path = stage_5.run_stage5_run_unroll_and_time(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
     #print("") # \n
 
     #return final_results_path
