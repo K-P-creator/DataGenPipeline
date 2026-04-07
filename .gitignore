@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / temp outputs
+*.o
+*.out
+*.ll
+*.bc
+*.exe
+
+data_libs/temp/
+
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+.vscode/
+.idea/
