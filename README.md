@@ -18,6 +18,12 @@ Or, run each test individually with
 
 `python3 per_benchmark.py <benchmark index`
 
+You can also monitor system temps with
+
+`watch -n 1 sensors`
+
+In order to catch any sort of thermal throttling. In this event, simply turn down the clockrate, and adjust fans to max. 
+
 ---
 
 ##  Main script
