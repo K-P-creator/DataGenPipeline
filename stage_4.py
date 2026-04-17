@@ -10,6 +10,10 @@ def run_stage4_run_timed_pass(
     import json
     import subprocess
 
+    indent = ""
+    if __name__ != "__main__":
+        indent = "\t"
+
     stage3_json_path = Path(data_mode_opt_pass_filename)
     llvm_ir_path = Path(llvm_IR_filename)
 
@@ -43,6 +47,18 @@ def run_stage4_run_timed_pass(
 
     files_to_link = benchmark_info.get("files_to_link", [])
     run_args = benchmark_info.get("run_args", [])
+    link_flags = benchmark_info.get("link_flags", [])
+
+    # Allow either:
+    #   "link_flags": "-lm"
+    # or
+    #   "link_flags": ["-lm", "-pthread"]
+    if isinstance(link_flags, str):
+        link_flags = [link_flags]
+    elif not isinstance(link_flags, list):
+        raise TypeError(
+            f"Stage 4 failed: link_flags must be a string or list, got {type(link_flags)}"
+        )
 
     # -------------------------------------------------------------------------
     # Generate filenames
@@ -86,6 +102,7 @@ def run_stage4_run_timed_pass(
     for file_to_link in files_to_link:
         clang_cmd.append(str(source_dir / file_to_link))
 
+    clang_cmd.extend(link_flags)
     clang_cmd.extend(["-o", str(exe_path)])
 
     clang_result = subprocess.run(
@@ -147,6 +164,8 @@ def run_stage4_run_timed_pass(
     all_cycles = []
 
     for i in range(total_runs):
+        print (indent + f"Running Run {i}")
+
         run_cmd = [
             "taskset",
             "-c",
@@ -170,6 +189,7 @@ def run_stage4_run_timed_pass(
         if result.returncode != 0:
             raise RuntimeError(
                 f"Stage 4 execution failed on run {i}\n"
+                f"Command: {' '.join(run_cmd)}\n"
                 f"STDOUT:\n{result.stdout}\n"
                 f"STDERR:\n{result.stderr}"
             )
@@ -208,6 +228,8 @@ def run_stage4_run_timed_pass(
         json.dump(stage3_data, f, indent=2)
 
     print(
+        "\n" +
+        indent +
         f"Stage 4 complete. Baseline runtime: {baseline_runtime_seconds} s, "
         f"baseline cycles: {baseline_cycles}"
     )

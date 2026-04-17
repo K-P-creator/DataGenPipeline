@@ -11,6 +11,10 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
     from pathlib import Path
     import json
 
+    indent = ""
+    if __name__ != "__main__":
+        indent = "\t"
+
     def parse_value(raw: str):
         raw = raw.strip()
 
@@ -67,12 +71,12 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
             if line.startswith("Loop Index:"):
                 if current_loop is not None:
                     loops.append(current_loop)
+                    loop_count
 
                 loop_index = int(line.split(":", 1)[1].strip())
                 current_loop = {
                     "loop_index": loop_index,
                     "features": {},
-                    "median_times_ns": {str(factor): None for factor in unroll_factors},
                 }
                 continue
 
@@ -92,7 +96,7 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
         return {
             "loop_count": loop_count,
             "loops": loops,
-        }
+        }, loop_count
 
     input_path = Path(llvm_ir_filename)
 
@@ -146,15 +150,18 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
             f"STDERR:\n{result.stderr}"
         )
 
-    parsed_output = parse_last_dataset(result.stdout, unroll_factors)
+    parsed_output, loop_count = parse_last_dataset(result.stdout, unroll_factors)
 
     # Save stage 3 dataset
     with open(output_json_filename, "w", encoding="utf-8") as f:
         json.dump(parsed_output, f, indent=2)
 
     print(
-        "Stage 3 Complete.\n"
-        f"Loop feature collection output IR: {output_ir_filename}\n"
+        indent +
+        "Stage 3 Complete.\n" +
+        indent +
+        f"Loop feature collection output IR: {output_ir_filename}\n" +
+        indent +
         "Stage 3 dataset saved to JSON file: "
             f"{output_json_filename}"
     )
@@ -164,7 +171,7 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
             f"Stage 3 JSON output: {json.dumps(parsed_output, indent=2)}"
         )
 
-    return str(output_json_filename)
+    return str(output_json_filename), str(output_ir_filename), loop_count
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 from pathlib import Path
-from statistics import median
+from statistics import median, stdev
 
 
 def run_stage5_run_unroll_and_time(
@@ -9,6 +9,10 @@ def run_stage5_run_unroll_and_time(
 ) -> str:
     import json
     import subprocess
+
+    indent = ""
+    if __name__ != "__main__":
+        indent = "\t"
 
     stage3_json_path = Path(data_mode_opt_pass_filename)
     llvm_ir_path = Path(llvm_IR_filename)
@@ -53,8 +57,20 @@ def run_stage5_run_unroll_and_time(
 
     files_to_link = benchmark_info.get("files_to_link", [])
     run_args = benchmark_info.get("run_args", [])
+    link_flags = benchmark_info.get("link_flags", [])
     source_dir = Path(benchmark_info["source_dir"])
     benchmark_name = benchmark_info["name"]
+
+    # Allow either:
+    #   "link_flags": "-lm"
+    # or
+    #   "link_flags": ["-lm", "-pthread"]
+    if isinstance(link_flags, str):
+        link_flags = [link_flags]
+    elif not isinstance(link_flags, list):
+        raise TypeError(
+            f"Stage 5 failed: link_flags must be a string or list, got {type(link_flags)}"
+        )
 
     # -------------------------------------------------------------------------
     # Load Stage 3 JSON
@@ -117,10 +133,47 @@ def run_stage5_run_unroll_and_time(
 
         return elapsed_seconds, cycles
 
+    def summarize_float(values: list[float]) -> dict:
+        if not values:
+            raise RuntimeError("Stage 5 failed: cannot summarize empty float list.")
+
+        summary = {
+            "median": float(median(values)),
+            "min": float(min(values)),
+            "max": float(max(values)),
+            "num_timed_runs": len(values),
+        }
+
+        if len(values) >= 2:
+            summary["stdev"] = float(stdev(values))
+        else:
+            summary["stdev"] = 0.0
+
+        return summary
+
+    def summarize_int(values: list[int]) -> dict:
+        if not values:
+            raise RuntimeError("Stage 5 failed: cannot summarize empty int list.")
+
+        summary = {
+            "median": int(median(values)),
+            "min": int(min(values)),
+            "max": int(max(values)),
+            "num_timed_runs": len(values),
+        }
+
+        if len(values) >= 2:
+            summary["stdev"] = float(stdev(values))
+        else:
+            summary["stdev"] = 0.0
+
+        return summary
+
     # -------------------------------------------------------------------------
     # Loop through each unroll factor (except 1) and each loop
     # -------------------------------------------------------------------------
     for factor in unroll_factors:
+        print(indent + f"Running unroll factor {factor}")
         for loop_record in loops:
             loop_index = int(loop_record["loop_index"])
 
@@ -169,13 +222,14 @@ def run_stage5_run_unroll_and_time(
             )
 
             # -------------------------------------------------------------
-            # Link executable with clang and files_to_link
+            # Link executable with clang, files_to_link, and optional link_flags
             # -------------------------------------------------------------
             clang_cmd = ["clang", "-no-pie", str(object_path)]
 
             for file_to_link in files_to_link:
                 clang_cmd.append(str(source_dir / file_to_link))
 
+            clang_cmd.extend(link_flags)
             clang_cmd.extend(["-o", str(exe_path)])
 
             run_subprocess_cmd(
@@ -205,6 +259,8 @@ def run_stage5_run_unroll_and_time(
                     *run_args,
                 ]
 
+                print(indent + f"\tRunning Run {run_idx}")
+
                 run_result = subprocess.run(
                     run_cmd,
                     cwd=str(work_dir),
@@ -229,11 +285,22 @@ def run_stage5_run_unroll_and_time(
             timed_only_seconds = all_times_seconds[warmup_runs:]
             timed_only_cycles = all_cycles[warmup_runs:]
 
-            median_runtime_seconds = float(median(timed_only_seconds))
-            median_cycles = int(median(timed_only_cycles))
+            time_summary = summarize_float(timed_only_seconds)
+            cycle_summary = summarize_int(timed_only_cycles)
+
+            median_runtime_seconds = time_summary["median"]
+            median_cycles = cycle_summary["median"]
+
+            print(
+                indent +
+                f"Unroll factor {factor}, loop {loop_index} complete.\n" +
+                indent +
+                f"Median runtime: {median_runtime_seconds} s, "
+                f"Median cycles: {median_cycles}\n"
+            )
 
             # -------------------------------------------------------------
-            # Save timing stats into stage 3 JSON structure
+            # Save compact timing stats into stage 3 JSON structure
             # -------------------------------------------------------------
             loop_record.setdefault("median_times_seconds", {})
             loop_record.setdefault("median_cycles", {})
@@ -243,12 +310,20 @@ def run_stage5_run_unroll_and_time(
 
             loop_record.setdefault("timing_stats", {})
             loop_record["timing_stats"][str(factor)] = {
-                "all_times_seconds": all_times_seconds,
-                "timed_only_seconds": timed_only_seconds,
-                "median_time_seconds": median_runtime_seconds,
-                "all_cycles": all_cycles,
-                "timed_only_cycles": timed_only_cycles,
-                "median_cycles": median_cycles,
+                "time_seconds": {
+                    "median": time_summary["median"],
+                    "min": time_summary["min"],
+                    "max": time_summary["max"],
+                    "stdev": time_summary["stdev"],
+                    "num_timed_runs": time_summary["num_timed_runs"],
+                },
+                "cycles": {
+                    "median": cycle_summary["median"],
+                    "min": cycle_summary["min"],
+                    "max": cycle_summary["max"],
+                    "stdev": cycle_summary["stdev"],
+                    "num_timed_runs": cycle_summary["num_timed_runs"],
+                },
             }
 
     # -------------------------------------------------------------------------
@@ -265,12 +340,29 @@ def run_stage5_run_unroll_and_time(
         json.dump(stage3_data, f, indent=2)
 
     print(
-        "Stage 5 Complete.\n"
+        indent + 
+        "\nStage 5 Complete.\n" +
+        indent +
         f"Final results JSON: {final_output_path}"
     )
 
     if __name__ == "__main__":
         print(f"Stage 5 JSON output: {json.dumps(stage3_data, indent=2)}")
+
+    # -------------------------------------------------------------------------
+    # Cleanup: delete contents of work_dir (temp directory)
+    # -------------------------------------------------------------------------
+    print(indent + f"Cleaning up temp directory: {work_dir}")
+
+    for item in work_dir.iterdir():
+        try:
+            if item.is_file() or item.is_symlink():
+                item.unlink()
+            elif item.is_dir():
+                import shutil
+                shutil.rmtree(item)
+        except Exception as e:
+            print(indent + f"Warning: Failed to delete {item}: {e}")
 
     return str(final_output_path)
 

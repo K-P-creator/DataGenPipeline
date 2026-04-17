@@ -53,21 +53,24 @@ def run_per_benchmark(benchmark_json_index: int) -> Path:
     #   DEPRECATED  
     # Stage 2: Interpolate timer into LLVM bytecode
     #   stage_2.run_stage2_interpolate_timer(llvm_IR_filename)
-    #   print("") # \n
+    print("Stage 2 Skipped... DEPRECATED") # \n
 
     # Stage 3: Run opt pass in data collection mode to determine loop features
-    data_mode_opt_pass_filename = stage_3.run_stage3_collect_loop_features(llvm_IR_filename)
+    data_mode_opt_pass_filename, output_ir_filename, loop_count = stage_3.run_stage3_collect_loop_features(llvm_IR_filename)
     print("") # \n
 
     ## Stage 4: Run timed pass with unroll factor 1 to get baseline runtime
-    baseline_runtime = stage_4.run_stage4_run_timed_pass(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
+    baseline_runtime = stage_4.run_stage4_run_timed_pass(data_mode_opt_pass_filename, output_ir_filename, benchmark_json_index)
     print("") # \n
 
     ## Stage 5: Run loops with various unroll factors and record timing statistics
-    final_results_path = stage_5.run_stage5_run_unroll_and_time(data_mode_opt_pass_filename, llvm_IR_filename, benchmark_json_index)
+    final_results_path = stage_5.run_stage5_run_unroll_and_time(data_mode_opt_pass_filename, output_ir_filename, benchmark_json_index)
     print("") # \n
 
-    return final_results_path
+    print (f"Benchmark index:\t{benchmark_json_index}\nCollected loop count:\t{loop_count}")
+    print (f"Results stored at: {final_results_path}")
+
+    return loop_count
 
 
 if __name__ == "__main__":
