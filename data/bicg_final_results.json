@@ -6,8 +6,8 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:29:3",
-        "loop_range": "29 to 30",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:30:3",
+        "loop_range": "30 to 31",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -45,63 +45,63 @@
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.133638535,
-        "4": 0.134096403,
-        "8": 0.1363799495
+        "1": 0.1286646245,
+        "2": 0.12936249249999998,
+        "4": 0.12922416850000001,
+        "8": 0.13195822200000001
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 531074820,
-        "4": 533198958,
-        "8": 540644562
+        "1": 510730085,
+        "2": 512297657,
+        "4": 512454974,
+        "8": 523727022
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.133638535,
-            "min": 0.131686256,
-            "max": 0.134566186,
-            "stdev": 0.0009354078789324462,
+            "median": 0.12936249249999998,
+            "min": 0.128599369,
+            "max": 0.130315561,
+            "stdev": 0.0006321084964140008,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 531074820,
-            "min": 526906773,
-            "max": 534276989,
-            "stdev": 2788236.5187351364,
+            "median": 512297657,
+            "min": 509786575,
+            "max": 515938638,
+            "stdev": 2008136.28825599,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.134096403,
-            "min": 0.132305952,
-            "max": 0.13547819,
-            "stdev": 0.0009807213393011366,
+            "median": 0.12922416850000001,
+            "min": 0.128579076,
+            "max": 0.12990078,
+            "stdev": 0.0004311740609988832,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533198958,
-            "min": 528972517,
-            "max": 536507631,
-            "stdev": 2714639.52089572,
+            "median": 512454974,
+            "min": 509800312,
+            "max": 516108448,
+            "stdev": 1991570.9789673968,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1363799495,
-            "min": 0.135828993,
-            "max": 0.13697584,
-            "stdev": 0.00043797667133211845,
+            "median": 0.13195822200000001,
+            "min": 0.130229101,
+            "max": 0.133857012,
+            "stdev": 0.0011942714326191655,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 540644562,
-            "min": 538634618,
-            "max": 543568930,
-            "stdev": 1975820.1781130482,
+            "median": 523727022,
+            "min": 517881259,
+            "max": 531488112,
+            "stdev": 4362131.56079688,
             "num_timed_runs": 10
           }
         }
@@ -112,8 +112,8 @@
       "features": {
         "loop_depth": 2,
         "has_parent_loop": true,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:32:5",
-        "loop_range": "32 to 33",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:34:5",
+        "loop_range": "34 to 35",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -151,63 +151,63 @@
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.1340312405,
-        "4": 0.1345240745,
-        "8": 0.134702345
+        "1": 0.1286646245,
+        "2": 0.1291685545,
+        "4": 0.128949936,
+        "8": 0.13261019899999998
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 530555225,
-        "4": 532927519,
-        "8": 533539271
+        "1": 510730085,
+        "2": 512883456,
+        "4": 512733470,
+        "8": 526546294
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1340312405,
-            "min": 0.133189841,
-            "max": 0.135167603,
-            "stdev": 0.0007639588131436321,
+            "median": 0.1291685545,
+            "min": 0.128913076,
+            "max": 0.129982969,
+            "stdev": 0.00038374017953646516,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 530555225,
-            "min": 527020851,
-            "max": 534940137,
-            "stdev": 3077699.820999847,
+            "median": 512883456,
+            "min": 511587397,
+            "max": 514953899,
+            "stdev": 1203319.490092123,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1345240745,
-            "min": 0.13350623,
-            "max": 0.134985669,
-            "stdev": 0.0005512441050993357,
+            "median": 0.128949936,
+            "min": 0.127622265,
+            "max": 0.129804361,
+            "stdev": 0.0006821160642697816,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 532927519,
-            "min": 530298887,
-            "max": 535178243,
-            "stdev": 1857524.0559480276,
+            "median": 512733470,
+            "min": 509464485,
+            "max": 514208122,
+            "stdev": 1831039.4793808274,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.134702345,
-            "min": 0.133938465,
-            "max": 0.135290075,
-            "stdev": 0.0005015482428817689,
+            "median": 0.13261019899999998,
+            "min": 0.129073768,
+            "max": 0.134410649,
+            "stdev": 0.0017850076963809656,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533539271,
-            "min": 530450769,
-            "max": 535743864,
-            "stdev": 2065932.5690503926,
+            "median": 526546294,
+            "min": 512201715,
+            "max": 533472187,
+            "stdev": 7016824.430114888,
             "num_timed_runs": 10
           }
         }
@@ -218,8 +218,8 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:31:3",
-        "loop_range": "31 to 33",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:32:3",
+        "loop_range": "32 to 36",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -232,88 +232,88 @@
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 25,
+        "total_instructions": 30,
         "num_loads": 0,
-        "num_stores": 1,
+        "num_stores": 2,
         "num_branches": 7,
         "num_calls": 0,
         "num_phis": 2,
         "num_int_ops": 2,
-        "num_float_ops": 2,
+        "num_float_ops": 3,
         "num_icmps": 3,
         "num_fcmps": 0,
-        "initial_loop_size": 20,
+        "initial_loop_size": 24,
         "load_density": 0,
-        "store_density": 0.04,
-        "branch_density": 0.28,
+        "store_density": 0.0666667,
+        "branch_density": 0.233333,
         "call_density": 0,
-        "phi_density": 0.08,
-        "int_op_density": 0.08,
-        "float_op_density": 0.08,
-        "icmp_density": 0.12,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.1,
+        "icmp_density": 0.1,
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.13396534300000001,
-        "4": 0.134377541,
-        "8": 0.134498469
+        "1": 0.1286646245,
+        "2": 0.12892490899999998,
+        "4": 0.1297272725,
+        "8": 0.1327858335
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 532778573,
-        "4": 532731062,
-        "8": 533087291
+        "1": 510730085,
+        "2": 511615946,
+        "4": 514457394,
+        "8": 526957436
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.13396534300000001,
-            "min": 0.132495311,
-            "max": 0.135442789,
-            "stdev": 0.0008572771182938359,
+            "median": 0.12892490899999998,
+            "min": 0.128356495,
+            "max": 0.129560299,
+            "stdev": 0.00040525010821489116,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 532778573,
-            "min": 529889826,
-            "max": 536605577,
-            "stdev": 2667537.994486893,
+            "median": 511615946,
+            "min": 509160711,
+            "max": 514194872,
+            "stdev": 1512839.50218176,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.134377541,
-            "min": 0.133123934,
-            "max": 0.135522825,
-            "stdev": 0.0009138434642650155,
+            "median": 0.1297272725,
+            "min": 0.128963988,
+            "max": 0.13030075,
+            "stdev": 0.0004889394979206849,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 532731062,
-            "min": 527717950,
-            "max": 537777174,
-            "stdev": 3734880.2991569145,
+            "median": 514457394,
+            "min": 511670421,
+            "max": 516346726,
+            "stdev": 1880259.3278542457,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.134498469,
-            "min": 0.133917486,
-            "max": 0.135860013,
-            "stdev": 0.0006751650660308529,
+            "median": 0.1327858335,
+            "min": 0.129859761,
+            "max": 0.133867013,
+            "stdev": 0.0011509168732398694,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533087291,
-            "min": 530982525,
-            "max": 537919591,
-            "stdev": 2689167.754322567,
+            "median": 526957436,
+            "min": 515868710,
+            "max": 531299798,
+            "stdev": 4422239.089617965,
             "num_timed_runs": 10
           }
         }
@@ -324,8 +324,8 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:66:3",
-        "loop_range": "66 to 67",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:75:3",
+        "loop_range": "75 to 76",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -363,63 +363,63 @@
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.134159528,
-        "4": 0.1345001515,
-        "8": 0.13464701299999998
+        "1": 0.1286646245,
+        "2": 0.1289725295,
+        "4": 0.12947043149999998,
+        "8": 0.1294628725
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 531559861,
-        "4": 533525453,
-        "8": 533397443
+        "1": 510730085,
+        "2": 511462126,
+        "4": 513981911,
+        "8": 514190085
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.134159528,
-            "min": 0.133379086,
-            "max": 0.135163868,
-            "stdev": 0.000646828225849157,
+            "median": 0.1289725295,
+            "min": 0.128162923,
+            "max": 0.129613819,
+            "stdev": 0.0005435893442985138,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 531559861,
-            "min": 529093230,
-            "max": 535556998,
-            "stdev": 2623941.9593152185,
+            "median": 511462126,
+            "min": 508579465,
+            "max": 514433099,
+            "stdev": 2187015.7761245854,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1345001515,
-            "min": 0.133638959,
-            "max": 0.135281544,
-            "stdev": 0.0006330855748102072,
+            "median": 0.12947043149999998,
+            "min": 0.128824277,
+            "max": 0.134227202,
+            "stdev": 0.0015716849475263567,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533525453,
-            "min": 530244296,
-            "max": 536745115,
-            "stdev": 2636330.1487095635,
+            "median": 513981911,
+            "min": 511132634,
+            "max": 531211276,
+            "stdev": 5908445.739176011,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.13464701299999998,
-            "min": 0.133961009,
-            "max": 0.135223482,
-            "stdev": 0.0005226689031937796,
+            "median": 0.1294628725,
+            "min": 0.128734164,
+            "max": 0.13058003,
+            "stdev": 0.0005056956628504823,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533397443,
-            "min": 530864078,
-            "max": 536732911,
-            "stdev": 2227530.881874807,
+            "median": 514190085,
+            "min": 511146503,
+            "max": 516927803,
+            "stdev": 1736251.3455278173,
             "num_timed_runs": 10
           }
         }
@@ -430,8 +430,8 @@
       "features": {
         "loop_depth": 2,
         "has_parent_loop": true,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:71:7",
-        "loop_range": "71 to 72",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:80:7",
+        "loop_range": "80 to 84",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -444,88 +444,88 @@
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 15,
-        "num_loads": 3,
-        "num_stores": 1,
+        "total_instructions": 25,
+        "num_loads": 6,
+        "num_stores": 2,
         "num_branches": 2,
-        "num_calls": 1,
+        "num_calls": 2,
         "num_phis": 1,
         "num_int_ops": 1,
         "num_float_ops": 0,
         "num_icmps": 1,
         "num_fcmps": 0,
-        "initial_loop_size": 12,
-        "load_density": 0.2,
-        "store_density": 0.0666667,
-        "branch_density": 0.133333,
-        "call_density": 0.0666667,
-        "phi_density": 0.0666667,
-        "int_op_density": 0.0666667,
+        "initial_loop_size": 20,
+        "load_density": 0.24,
+        "store_density": 0.08,
+        "branch_density": 0.08,
+        "call_density": 0.08,
+        "phi_density": 0.04,
+        "int_op_density": 0.04,
         "float_op_density": 0,
-        "icmp_density": 0.0666667,
+        "icmp_density": 0.04,
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.117978423,
-        "4": 0.10717896199999999,
-        "8": 0.1024394095
+        "1": 0.1286646245,
+        "2": 0.129481568,
+        "4": 0.13225023149999998,
+        "8": 0.129731592
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 467149637,
-        "4": 424866192,
-        "8": 407089261
+        "1": 510730085,
+        "2": 512445374,
+        "4": 525393390,
+        "8": 515168560
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.117978423,
-            "min": 0.117176708,
-            "max": 0.118848457,
-            "stdev": 0.0006180081050539716,
+            "median": 0.129481568,
+            "min": 0.12879655,
+            "max": 0.129949208,
+            "stdev": 0.00037783125802894437,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 467149637,
-            "min": 464081162,
-            "max": 471136705,
-            "stdev": 2537690.549549255,
+            "median": 512445374,
+            "min": 510741758,
+            "max": 514531037,
+            "stdev": 1489926.2651609606,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.10717896199999999,
-            "min": 0.106258765,
-            "max": 0.107690104,
-            "stdev": 0.0005328364908961687,
+            "median": 0.13225023149999998,
+            "min": 0.129830741,
+            "max": 0.133622861,
+            "stdev": 0.001012868915644958,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 424866192,
-            "min": 421102193,
-            "max": 426935270,
-            "stdev": 2293503.34517388,
+            "median": 525393390,
+            "min": 515847419,
+            "max": 530048764,
+            "stdev": 3854103.5416277545,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1024394095,
-            "min": 0.101913545,
-            "max": 0.103293649,
-            "stdev": 0.0005033560804321771,
+            "median": 0.129731592,
+            "min": 0.126848123,
+            "max": 0.130424529,
+            "stdev": 0.0010392670559178589,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 407089261,
-            "min": 403167582,
-            "max": 408689508,
-            "stdev": 2066996.698164798,
+            "median": 515168560,
+            "min": 512949890,
+            "max": 517089336,
+            "stdev": 1518230.3931282044,
             "num_timed_runs": 10
           }
         }
@@ -534,104 +534,104 @@
     {
       "loop_index": 6,
       "features": {
-        "loop_depth": 2,
-        "has_parent_loop": true,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:73:7",
-        "loop_range": "73 to 74",
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:77:3",
+        "loop_range": "77 to 85",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
         "is_rotated": true,
         "is_loop_simplify_form": true,
         "is_annotated_parallel": false,
-        "num_blocks": 2,
-        "num_subloops": 0,
+        "num_blocks": 7,
+        "num_subloops": 1,
         "num_exit_blocks": 1,
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 15,
-        "num_loads": 3,
-        "num_stores": 1,
-        "num_branches": 2,
-        "num_calls": 1,
-        "num_phis": 1,
-        "num_int_ops": 1,
+        "total_instructions": 37,
+        "num_loads": 6,
+        "num_stores": 3,
+        "num_branches": 7,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 2,
         "num_float_ops": 0,
-        "num_icmps": 1,
+        "num_icmps": 3,
         "num_fcmps": 0,
-        "initial_loop_size": 12,
-        "load_density": 0.2,
-        "store_density": 0.0666667,
-        "branch_density": 0.133333,
-        "call_density": 0.0666667,
-        "phi_density": 0.0666667,
-        "int_op_density": 0.0666667,
+        "initial_loop_size": 30,
+        "load_density": 0.162162,
+        "store_density": 0.0810811,
+        "branch_density": 0.189189,
+        "call_density": 0.0540541,
+        "phi_density": 0.0540541,
+        "int_op_density": 0.0540541,
         "float_op_density": 0,
-        "icmp_density": 0.0666667,
+        "icmp_density": 0.0810811,
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.13468084,
-        "4": 0.134435627,
-        "8": 0.134527856
+        "1": 0.1286646245,
+        "2": 0.1289306725,
+        "4": 0.129523106,
+        "8": 0.12951476150000002
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 533975517,
-        "4": 533326671,
-        "8": 533385221
+        "1": 510730085,
+        "2": 510795768,
+        "4": 514071623,
+        "8": 513656862
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.13468084,
-            "min": 0.133682285,
-            "max": 0.135395102,
-            "stdev": 0.0006384138078068824,
+            "median": 0.1289306725,
+            "min": 0.128243916,
+            "max": 0.130063383,
+            "stdev": 0.0005962582003263342,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533975517,
-            "min": 529912487,
-            "max": 536353819,
-            "stdev": 2566116.118546721,
+            "median": 510795768,
+            "min": 509126307,
+            "max": 516455142,
+            "stdev": 2479964.723888261,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.134435627,
-            "min": 0.133425151,
-            "max": 0.135416989,
-            "stdev": 0.0008038962059487343,
+            "median": 0.129523106,
+            "min": 0.129125262,
+            "max": 0.130197429,
+            "stdev": 0.00037486540482165054,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533326671,
-            "min": 529632599,
-            "max": 536603934,
-            "stdev": 2859018.18169011,
+            "median": 514071623,
+            "min": 512610984,
+            "max": 516236463,
+            "stdev": 1426192.879000597,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.134527856,
-            "min": 0.133904043,
-            "max": 0.135289257,
-            "stdev": 0.00045020015435256143,
+            "median": 0.12951476150000002,
+            "min": 0.129202742,
+            "max": 0.130259481,
+            "stdev": 0.0003417159450834537,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 533385221,
-            "min": 531392137,
-            "max": 535833196,
-            "stdev": 1582987.014536127,
+            "median": 513656862,
+            "min": 512635702,
+            "max": 515447631,
+            "stdev": 1109699.7175920259,
             "num_timed_runs": 10
           }
         }
@@ -642,114 +642,8 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:68:3",
-        "loop_range": "68 to 75",
-        "canonical_iv": true,
-        "se_iv_exists": true,
-        "is_guarded": true,
-        "is_rotated": true,
-        "is_loop_simplify_form": true,
-        "is_annotated_parallel": false,
-        "num_blocks": 12,
-        "num_subloops": 2,
-        "num_exit_blocks": 1,
-        "num_exiting_blocks": 1,
-        "has_dedicated_exits": true,
-        "num_header_phis": 1,
-        "total_instructions": 47,
-        "num_loads": 6,
-        "num_stores": 3,
-        "num_branches": 12,
-        "num_calls": 2,
-        "num_phis": 3,
-        "num_int_ops": 3,
-        "num_float_ops": 0,
-        "num_icmps": 5,
-        "num_fcmps": 0,
-        "initial_loop_size": 38,
-        "load_density": 0.12766,
-        "store_density": 0.0638298,
-        "branch_density": 0.255319,
-        "call_density": 0.0425532,
-        "phi_density": 0.0638298,
-        "int_op_density": 0.0638298,
-        "float_op_density": 0,
-        "icmp_density": 0.106383,
-        "fcmp_density": 0,
-        "tripcount": 0,
-        "tripmultiple": 1,
-        "breakouttrip": 0
-      },
-      "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.13596475400000002,
-        "4": 0.1343787815,
-        "8": 0.13526675
-      },
-      "median_cycles": {
-        "1": 536914648,
-        "2": 540825865,
-        "4": 534697435,
-        "8": 535680574
-      },
-      "timing_stats": {
-        "2": {
-          "time_seconds": {
-            "median": 0.13596475400000002,
-            "min": 0.133931323,
-            "max": 0.137231992,
-            "stdev": 0.0010364744280263233,
-            "num_timed_runs": 10
-          },
-          "cycles": {
-            "median": 540825865,
-            "min": 537211637,
-            "max": 543981766,
-            "stdev": 2935475.9562417,
-            "num_timed_runs": 10
-          }
-        },
-        "4": {
-          "time_seconds": {
-            "median": 0.1343787815,
-            "min": 0.132344198,
-            "max": 0.135791171,
-            "stdev": 0.0010654631345626395,
-            "num_timed_runs": 10
-          },
-          "cycles": {
-            "median": 534697435,
-            "min": 531242105,
-            "max": 538707515,
-            "stdev": 3150779.860177937,
-            "num_timed_runs": 10
-          }
-        },
-        "8": {
-          "time_seconds": {
-            "median": 0.13526675,
-            "min": 0.134463902,
-            "max": 0.135747455,
-            "stdev": 0.000427070913110702,
-            "num_timed_runs": 10
-          },
-          "cycles": {
-            "median": 535680574,
-            "min": 532937111,
-            "max": 538922530,
-            "stdev": 1976651.741852899,
-            "num_timed_runs": 10
-          }
-        }
-      }
-    },
-    {
-      "loop_index": 8,
-      "features": {
-        "loop_depth": 1,
-        "has_parent_loop": false,
-        "loop_location": "linear-algebra/kernels/atax/atax.c:46:3",
-        "loop_range": "46 to 49",
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:50:3",
+        "loop_range": "50 to 53",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
@@ -787,63 +681,169 @@
         "breakouttrip": 0
       },
       "median_times_seconds": {
-        "1": 0.13548125849999998,
-        "2": 0.136370755,
-        "4": 0.1361796545,
-        "8": 0.1361234945
+        "1": 0.1286646245,
+        "2": 0.128916171,
+        "4": 0.1340467965,
+        "8": 0.12962392150000002
       },
       "median_cycles": {
-        "1": 536914648,
-        "2": 539930652,
-        "4": 540156337,
-        "8": 539791724
+        "1": 510730085,
+        "2": 512067061,
+        "4": 531750915,
+        "8": 514323199
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.136370755,
-            "min": 0.135459704,
-            "max": 0.137329305,
-            "stdev": 0.0007424358551081973,
+            "median": 0.128916171,
+            "min": 0.126775919,
+            "max": 0.129713879,
+            "stdev": 0.0009888138232513287,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 539930652,
-            "min": 537945596,
-            "max": 544263960,
-            "stdev": 2745749.242047828,
+            "median": 512067061,
+            "min": 509550218,
+            "max": 514620965,
+            "stdev": 1523872.9692598286,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1361796545,
-            "min": 0.135331321,
-            "max": 0.136982541,
-            "stdev": 0.0006344219150761838,
+            "median": 0.1340467965,
+            "min": 0.129164876,
+            "max": 0.134885496,
+            "stdev": 0.0016243266612264464,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 540156337,
-            "min": 537373469,
-            "max": 543267125,
-            "stdev": 2355860.699351492,
+            "median": 531750915,
+            "min": 513016401,
+            "max": 534828753,
+            "stdev": 6281145.160793129,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1361234945,
-            "min": 0.135361323,
-            "max": 0.136957863,
-            "stdev": 0.0004709517370956269,
+            "median": 0.12962392150000002,
+            "min": 0.129000634,
+            "max": 0.130367354,
+            "stdev": 0.00041384382509542027,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 539791724,
-            "min": 537418461,
-            "max": 542783462,
-            "stdev": 1746431.543251629,
+            "median": 514323199,
+            "min": 511655789,
+            "max": 517562547,
+            "stdev": 1809728.2819270105,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/bicg/bicg.c:54:3",
+        "loop_range": "54 to 57",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 16,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0.1875,
+        "store_density": 0,
+        "branch_density": 0.25,
+        "call_density": 0.125,
+        "phi_density": 0.0625,
+        "int_op_density": 0.125,
+        "float_op_density": 0,
+        "icmp_density": 0.125,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1286646245,
+        "2": 0.12916748150000001,
+        "4": 0.132760964,
+        "8": 0.12964412
+      },
+      "median_cycles": {
+        "1": 510730085,
+        "2": 512506148,
+        "4": 526635333,
+        "8": 514614852
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.12916748150000001,
+            "min": 0.128834874,
+            "max": 0.129732916,
+            "stdev": 0.00033484168321596335,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 512506148,
+            "min": 510216848,
+            "max": 515272917,
+            "stdev": 1679542.4350084327,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.132760964,
+            "min": 0.130284924,
+            "max": 0.134239929,
+            "stdev": 0.0013501910804705022,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 526635333,
+            "min": 517193593,
+            "max": 532908853,
+            "stdev": 5495579.7486931905,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.12964412,
+            "min": 0.128889106,
+            "max": 0.130248241,
+            "stdev": 0.00039008534386526957,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 514614852,
+            "min": 512451158,
+            "max": 516380936,
+            "stdev": 1170002.9589994682,
             "num_timed_runs": 10
           }
         }
@@ -851,35 +851,35 @@
     }
   ],
   "stage_4": {
-    "baseline_runtime_seconds": 0.13548125849999998,
-    "baseline_cycles": 536914648,
+    "baseline_runtime_seconds": 0.1286646245,
+    "baseline_cycles": 510730085,
     "all_times_seconds": [
-      0.132782366,
-      0.136279402,
-      0.134604176,
-      0.135879023,
-      0.134784344,
-      0.136100437,
-      0.134866968,
-      0.136137196,
-      0.135083494,
-      0.13632561,
-      0.134908877,
-      0.136094276
+      0.125511046,
+      0.129525091,
+      0.128102167,
+      0.129105575,
+      0.128104761,
+      0.129699858,
+      0.127585149,
+      0.129761273,
+      0.128223674,
+      0.129872622,
+      0.128116293,
+      0.129563854
     ],
     "all_cycles": [
-      535798841,
-      540624080,
-      534523536,
-      538001385,
-      533422544,
-      539339877,
-      534676975,
-      539468605,
-      535827912,
-      539269587,
-      534873302,
-      539264144
+      508050926,
+      513803589,
+      507595366,
+      512000792,
+      506967647,
+      514004116,
+      506086689,
+      514610847,
+      509459378,
+      515676887,
+      507955350,
+      513799947
     ]
   },
   "stage_5": {
@@ -888,6 +888,6 @@
       4,
       8
     ],
-    "final_output_path": "data/atax_final_results.json"
+    "final_output_path": "data/bicg_final_results.json"
   }
 }

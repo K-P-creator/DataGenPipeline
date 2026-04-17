@@ -1,0 +1,1211 @@
+{
+  "loop_count": 11,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:35:5",
+        "loop_range": "35 to 36",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 15,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0,
+        "store_density": 0.0666667,
+        "branch_density": 0.133333,
+        "call_density": 0,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.133333,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.2097320135,
+        "4": 9.1798208885,
+        "8": 9.188756715499999
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36614182767,
+        "4": 36505223999,
+        "8": 36547049769
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.2097320135,
+            "min": 9.181636927,
+            "max": 9.298978766,
+            "stdev": 0.04196207951601619,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36614182767,
+            "min": 36502933651,
+            "max": 36973935319,
+            "stdev": 168812000.1983271,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.1798208885,
+            "min": 8.954476484,
+            "max": 9.453608878,
+            "stdev": 0.2029571617090852,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36505223999,
+            "min": 35612914465,
+            "max": 37587062635,
+            "stdev": 804254879.339195,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.188756715499999,
+            "min": 9.017430471,
+            "max": 9.322120132,
+            "stdev": 0.0957034490727606,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36547049769,
+            "min": 35866252526,
+            "max": 37069152389,
+            "stdev": 378585132.2546373,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:34:3",
+        "loop_range": "34 to 36",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.04,
+        "branch_density": 0.28,
+        "call_density": 0,
+        "phi_density": 0.08,
+        "int_op_density": 0.08,
+        "float_op_density": 0.08,
+        "icmp_density": 0.12,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.254572281,
+        "4": 9.346387626,
+        "8": 9.8172798135
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36796073378,
+        "4": 37162806975,
+        "8": 39033467362
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.254572281,
+            "min": 9.038861586,
+            "max": 9.321154861,
+            "stdev": 0.09120089515931104,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36796073378,
+            "min": 35936426966,
+            "max": 37058207004,
+            "stdev": 364139319.7054435,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.346387626,
+            "min": 9.075648372,
+            "max": 9.462538493,
+            "stdev": 0.1348007593613796,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 37162806975,
+            "min": 36081464460,
+            "max": 37613727332,
+            "stdev": 537471018.1420997,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.8172798135,
+            "min": 9.516640008,
+            "max": 10.050304218,
+            "stdev": 0.18105515026917812,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 39033467362,
+            "min": 37841564789,
+            "max": 39969025121,
+            "stdev": 719630674.8400258,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:38:5",
+        "loop_range": "38 to 39",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 15,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0,
+        "store_density": 0.0666667,
+        "branch_density": 0.133333,
+        "call_density": 0,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.133333,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.148971446,
+        "4": 9.3130256435,
+        "8": 9.2068616735
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36372459260,
+        "4": 37042064565,
+        "8": 36623596762
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.148971446,
+            "min": 9.078150684,
+            "max": 9.363386833,
+            "stdev": 0.09446373711278708,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36372459260,
+            "min": 36101855708,
+            "max": 37229125773,
+            "stdev": 376565592.82830596,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.3130256435,
+            "min": 9.086405158,
+            "max": 9.400717263,
+            "stdev": 0.11122543177689237,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 37042064565,
+            "min": 36123315776,
+            "max": 37381406868,
+            "stdev": 442891283.4148927,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.2068616735,
+            "min": 9.140201978,
+            "max": 9.27373565,
+            "stdev": 0.052355868015978156,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36623596762,
+            "min": 36362276198,
+            "max": 36886443604,
+            "stdev": 207513191.19143328,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:37:3",
+        "loop_range": "37 to 39",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.04,
+        "branch_density": 0.28,
+        "call_density": 0,
+        "phi_density": 0.08,
+        "int_op_density": 0.08,
+        "float_op_density": 0.08,
+        "icmp_density": 0.12,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.1300103955,
+        "4": 9.2675016975,
+        "8": 9.156531817
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36301114362,
+        "4": 36852043160,
+        "8": 36414296121
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.1300103955,
+            "min": 9.045676835,
+            "max": 9.299253993,
+            "stdev": 0.07838973176172974,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36301114362,
+            "min": 35974811872,
+            "max": 36983670486,
+            "stdev": 310394855.7332321,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.2675016975,
+            "min": 9.20230855,
+            "max": 9.404133396,
+            "stdev": 0.06158326865534226,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36852043160,
+            "min": 36598577271,
+            "max": 37393729341,
+            "stdev": 245142965.94819543,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.156531817,
+            "min": 9.015494626,
+            "max": 9.383868201,
+            "stdev": 0.1339050686947458,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36414296121,
+            "min": 35847875394,
+            "max": 37318691512,
+            "stdev": 531001277.90885967,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:41:5",
+        "loop_range": "41 to 42",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 15,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0,
+        "store_density": 0.0666667,
+        "branch_density": 0.133333,
+        "call_density": 0,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.133333,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.137492853000001,
+        "4": 9.2987592485,
+        "8": 9.058802733
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36333328115,
+        "4": 36982981967,
+        "8": 36028821612
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.137492853000001,
+            "min": 8.957671367,
+            "max": 9.303730903,
+            "stdev": 0.13331193118758008,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36333328115,
+            "min": 35612253447,
+            "max": 37007274954,
+            "stdev": 531000048.14613765,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.2987592485,
+            "min": 9.182219974,
+            "max": 9.535204531,
+            "stdev": 0.11233164928956768,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36982981967,
+            "min": 36521250195,
+            "max": 37927204923,
+            "stdev": 448105704.48713154,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.058802733,
+            "min": 9.00211118,
+            "max": 9.094916747,
+            "stdev": 0.034480728187616154,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36028821612,
+            "min": 35808020955,
+            "max": 36168200530,
+            "stdev": 133580651.97437891,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:40:3",
+        "loop_range": "40 to 42",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.04,
+        "branch_density": 0.28,
+        "call_density": 0,
+        "phi_density": 0.08,
+        "int_op_density": 0.08,
+        "float_op_density": 0.08,
+        "icmp_density": 0.12,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.1201316395,
+        "4": 9.1861519715,
+        "8": 8.964626057
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36256323433,
+        "4": 36514406447,
+        "8": 35637099772
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.1201316395,
+            "min": 9.086094202,
+            "max": 9.187262352,
+            "stdev": 0.030983040906125168,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36256323433,
+            "min": 36122233182,
+            "max": 36525849259,
+            "stdev": 122540304.6830287,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.1861519715,
+            "min": 9.12278836,
+            "max": 9.352668895,
+            "stdev": 0.08258666261504041,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36514406447,
+            "min": 36268805853,
+            "max": 37176834303,
+            "stdev": 328215625.92083675,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 8.964626057,
+            "min": 8.831544455,
+            "max": 9.098773065,
+            "stdev": 0.06478117153514637,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 35637099772,
+            "min": 35105098242,
+            "max": 36165158068,
+            "stdev": 257577506.4490377,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:81:2",
+        "loop_range": "81 to 82",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 17,
+        "num_loads": 3,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 1,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 15,
+        "load_density": 0.176471,
+        "store_density": 0.0588235,
+        "branch_density": 0.117647,
+        "call_density": 0.0588235,
+        "phi_density": 0.0588235,
+        "int_op_density": 0.0588235,
+        "float_op_density": 0.0588235,
+        "icmp_density": 0.0588235,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 10.513229461,
+        "4": 9.916262622,
+        "8": 9.019685952500001
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 41849348820,
+        "4": 39464794593,
+        "8": 35882584872
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 10.513229461,
+            "min": 10.389116473,
+            "max": 10.838290298,
+            "stdev": 0.16479520358482316,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 41849348820,
+            "min": 41338644990,
+            "max": 43132606672,
+            "stdev": 658517561.010354,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.916262622,
+            "min": 9.585932441,
+            "max": 10.181333052,
+            "stdev": 0.241939411479691,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 39464794593,
+            "min": 38135268869,
+            "max": 40512809611,
+            "stdev": 967000637.8916051,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.019685952500001,
+            "min": 8.950570135,
+            "max": 9.093879989,
+            "stdev": 0.04659004741560266,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 35882584872,
+            "min": 35594276191,
+            "max": 36178789629,
+            "stdev": 190457452.40936133,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:78:5",
+        "loop_range": "78 to 83",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 32,
+        "num_loads": 4,
+        "num_stores": 2,
+        "num_branches": 7,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 28,
+        "load_density": 0.125,
+        "store_density": 0.0625,
+        "branch_density": 0.21875,
+        "call_density": 0.03125,
+        "phi_density": 0.0625,
+        "int_op_density": 0.0625,
+        "float_op_density": 0.0625,
+        "icmp_density": 0.09375,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.103054368,
+        "4": 9.292954557,
+        "8": 9.252460783499998
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36191060027,
+        "4": 36955141301,
+        "8": 36786632770
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.103054368,
+            "min": 9.042199109,
+            "max": 9.215146328,
+            "stdev": 0.07114806889633785,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36191060027,
+            "min": 35956473988,
+            "max": 36641749573,
+            "stdev": 286197409.4653138,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.292954557,
+            "min": 9.135152476,
+            "max": 9.38725972,
+            "stdev": 0.07728767729846403,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36955141301,
+            "min": 36316855831,
+            "max": 37330124452,
+            "stdev": 310389381.8279609,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.252460783499998,
+            "min": 9.11381102,
+            "max": 9.460091292,
+            "stdev": 0.1426695956590081,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36786632770,
+            "min": 36242804076,
+            "max": 37597404293,
+            "stdev": 561670550.6823362,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 9,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:77:3",
+        "loop_range": "77 to 83",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 12,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 42,
+        "num_loads": 4,
+        "num_stores": 2,
+        "num_branches": 12,
+        "num_calls": 1,
+        "num_phis": 3,
+        "num_int_ops": 3,
+        "num_float_ops": 2,
+        "num_icmps": 5,
+        "num_fcmps": 0,
+        "initial_loop_size": 36,
+        "load_density": 0.0952381,
+        "store_density": 0.047619,
+        "branch_density": 0.285714,
+        "call_density": 0.0238095,
+        "phi_density": 0.0714286,
+        "int_op_density": 0.0714286,
+        "float_op_density": 0.047619,
+        "icmp_density": 0.119048,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.230110965,
+        "4": 9.215727319500001,
+        "8": 9.174380272499999
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36679117381,
+        "4": 36623078337,
+        "8": 36475111066
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.230110965,
+            "min": 9.110887727,
+            "max": 9.435014951,
+            "stdev": 0.10689270101299624,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36679117381,
+            "min": 36209814550,
+            "max": 37507534953,
+            "stdev": 424860595.7560244,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.215727319500001,
+            "min": 9.130717975,
+            "max": 9.289642896,
+            "stdev": 0.06079652020047951,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36623078337,
+            "min": 36288637010,
+            "max": 36924441504,
+            "stdev": 240125698.58978608,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.174380272499999,
+            "min": 9.062028891,
+            "max": 9.410861801,
+            "stdev": 0.14841421363876725,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36475111066,
+            "min": 36032366016,
+            "max": 37419513021,
+            "stdev": 592935802.2768041,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 10,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:55:5",
+        "loop_range": "55 to 58",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 19,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 23,
+        "load_density": 0.157895,
+        "store_density": 0,
+        "branch_density": 0.210526,
+        "call_density": 0.105263,
+        "phi_density": 0.0526316,
+        "int_op_density": 0.210526,
+        "float_op_density": 0,
+        "icmp_density": 0.105263,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.109130879999999,
+        "4": 9.285006172500001,
+        "8": 9.203670234
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36220875089,
+        "4": 36920227120,
+        "8": 36606134938
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.109130879999999,
+            "min": 8.917841482,
+            "max": 9.319560295,
+            "stdev": 0.14650275607096888,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36220875089,
+            "min": 35472497935,
+            "max": 37061198485,
+            "stdev": 580378195.8320818,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.285006172500001,
+            "min": 9.032235862,
+            "max": 9.35853838,
+            "stdev": 0.1256677993214439,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36920227120,
+            "min": 35893093639,
+            "max": 37210698824,
+            "stdev": 503554167.95368457,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.203670234,
+            "min": 9.071475942,
+            "max": 9.26030688,
+            "stdev": 0.05590069892122608,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36606134938,
+            "min": 36082239354,
+            "max": 36826081404,
+            "stdev": 221064051.01720288,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 11,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/gemm/gemm.c:54:3",
+        "loop_range": "54 to 58",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 9,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 29,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 9,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 4,
+        "num_fcmps": 0,
+        "initial_loop_size": 31,
+        "load_density": 0.103448,
+        "store_density": 0,
+        "branch_density": 0.310345,
+        "call_density": 0.0689655,
+        "phi_density": 0.0689655,
+        "int_op_density": 0.172414,
+        "float_op_density": 0,
+        "icmp_density": 0.137931,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 9.3398943625,
+        "2": 9.187751196499999,
+        "4": 9.281450923000001,
+        "8": 9.2596203655
+      },
+      "median_cycles": {
+        "1": 37143604480,
+        "2": 36528997355,
+        "4": 36914583031,
+        "8": 36819829149
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.187751196499999,
+            "min": 9.09913398,
+            "max": 9.311043347,
+            "stdev": 0.09284247638604717,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36528997355,
+            "min": 36186681799,
+            "max": 37021089131,
+            "stdev": 369951603.482844,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.281450923000001,
+            "min": 9.098214781,
+            "max": 9.398132472,
+            "stdev": 0.09695643948771368,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36914583031,
+            "min": 36180655585,
+            "max": 37371699859,
+            "stdev": 387318368.2501825,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.2596203655,
+            "min": 9.065009698,
+            "max": 9.337565839,
+            "stdev": 0.07854475387377721,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 36819829149,
+            "min": 36047638042,
+            "max": 37126950245,
+            "stdev": 311558733.7317461,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 9.3398943625,
+    "baseline_cycles": 37143604480,
+    "all_times_seconds": [
+      9.544858566,
+      9.229361222,
+      9.387845703,
+      9.200619787,
+      9.375505922,
+      9.197123744,
+      9.374039813,
+      9.183538232,
+      9.39435265,
+      9.305748912,
+      9.384909523,
+      9.281475342
+    ],
+    "all_cycles": [
+      37945309065,
+      36706432945,
+      37337775852,
+      36581993235,
+      37276716180,
+      36559077260,
+      37291555661,
+      36529334988,
+      37365836667,
+      37010492781,
+      37329135613,
+      36922541667
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/gemm_final_results.json"
+  }
+}

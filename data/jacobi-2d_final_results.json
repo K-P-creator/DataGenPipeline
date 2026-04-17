@@ -1,0 +1,999 @@
+{
+  "loop_count": 9,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:30:5",
+        "loop_range": "30 to 34",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 27,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 2,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 3,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 24,
+        "load_density": 0,
+        "store_density": 0.0740741,
+        "branch_density": 0.0740741,
+        "call_density": 0.0740741,
+        "phi_density": 0.037037,
+        "int_op_density": 0.111111,
+        "float_op_density": 0.0740741,
+        "icmp_density": 0.037037,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.0345593835,
+        "4": 0.034328977499999996,
+        "8": 0.0372779035
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 135229773,
+        "4": 134139345,
+        "8": 146003516
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.0345593835,
+            "min": 0.031993135,
+            "max": 0.039000161,
+            "stdev": 0.0017581097982941822,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 135229773,
+            "min": 132435182,
+            "max": 153056880,
+            "stdev": 5985012.924411777,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.034328977499999996,
+            "min": 0.03384965,
+            "max": 0.038012783,
+            "stdev": 0.0013345779136188173,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 134139345,
+            "min": 132522300,
+            "max": 149329363,
+            "stdev": 5429224.026374365,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.0372779035,
+            "min": 0.0371448,
+            "max": 0.039588152,
+            "stdev": 0.0007423046892186828,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 146003516,
+            "min": 145379751,
+            "max": 155725780,
+            "stdev": 3107461.519039382,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:29:3",
+        "loop_range": "29 to 34",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 37,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 7,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 4,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 32,
+        "load_density": 0,
+        "store_density": 0.0540541,
+        "branch_density": 0.189189,
+        "call_density": 0.0540541,
+        "phi_density": 0.0540541,
+        "int_op_density": 0.108108,
+        "float_op_density": 0.0540541,
+        "icmp_density": 0.0810811,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.035123214,
+        "4": 0.037279175,
+        "8": 0.0383689805
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 138874540,
+        "4": 146471607,
+        "8": 150506195
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.035123214,
+            "min": 0.034022113,
+            "max": 0.036892095,
+            "stdev": 0.0011544823183306054,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 138874540,
+            "min": 133221939,
+            "max": 144438899,
+            "stdev": 4554203.637564731,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.037279175,
+            "min": 0.036774275,
+            "max": 0.039361558,
+            "stdev": 0.0008615352413269443,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 146471607,
+            "min": 143908639,
+            "max": 154710757,
+            "stdev": 3507955.543322864,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.0383689805,
+            "min": 0.037058988,
+            "max": 0.039883195,
+            "stdev": 0.0008024681740799997,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 150506195,
+            "min": 144753935,
+            "max": 156732062,
+            "stdev": 3347216.1519087534,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:70:2",
+        "loop_range": "70 to 71",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 31,
+        "num_loads": 5,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 5,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 25,
+        "load_density": 0.16129,
+        "store_density": 0.0322581,
+        "branch_density": 0.0645161,
+        "call_density": 0,
+        "phi_density": 0.0322581,
+        "int_op_density": 0.129032,
+        "float_op_density": 0.16129,
+        "icmp_density": 0.0322581,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.037565826,
+        "4": 0.0343475525,
+        "8": 0.034360627500000004
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 147092707,
+        "4": 136202009,
+        "8": 134676354
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.037565826,
+            "min": 0.035447501,
+            "max": 0.037944575,
+            "stdev": 0.0007725150738378582,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 147092707,
+            "min": 140343091,
+            "max": 149086950,
+            "stdev": 2702960.716612919,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.0343475525,
+            "min": 0.033765003,
+            "max": 0.037672927,
+            "stdev": 0.0012994505132223474,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 136202009,
+            "min": 132028685,
+            "max": 147921221,
+            "stdev": 5312137.208378067,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.034360627500000004,
+            "min": 0.033889836,
+            "max": 0.036578669,
+            "stdev": 0.0011730099421060193,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 134676354,
+            "min": 132757073,
+            "max": 143425783,
+            "stdev": 4650232.267044529,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:69:7",
+        "loop_range": "69 to 71",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 42,
+        "num_loads": 5,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 6,
+        "num_float_ops": 5,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 34,
+        "load_density": 0.119048,
+        "store_density": 0.0238095,
+        "branch_density": 0.166667,
+        "call_density": 0,
+        "phi_density": 0.047619,
+        "int_op_density": 0.142857,
+        "float_op_density": 0.119048,
+        "icmp_density": 0.0714286,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.0343650705,
+        "4": 0.037387993499999994,
+        "8": 0.035615722
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 134419178,
+        "4": 146349672,
+        "8": 139663450
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.0343650705,
+            "min": 0.034002176,
+            "max": 0.037522144,
+            "stdev": 0.0010942501879284436,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 134419178,
+            "min": 133012352,
+            "max": 147120346,
+            "stdev": 4371082.741542727,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.037387993499999994,
+            "min": 0.036875465,
+            "max": 0.0390314,
+            "stdev": 0.0006329494726560724,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 146349672,
+            "min": 144473002,
+            "max": 153233798,
+            "stdev": 2573872.71246972,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.035615722,
+            "min": 0.033759873,
+            "max": 0.038057628,
+            "stdev": 0.0013580215600398496,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 139663450,
+            "min": 132249463,
+            "max": 149575160,
+            "stdev": 5461214.4952839725,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:73:2",
+        "loop_range": "73 to 74",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 11,
+        "num_loads": 1,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 9,
+        "load_density": 0.0909091,
+        "store_density": 0.0909091,
+        "branch_density": 0.181818,
+        "call_density": 0,
+        "phi_density": 0.0909091,
+        "int_op_density": 0.0909091,
+        "float_op_density": 0,
+        "icmp_density": 0.0909091,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.034487965499999995,
+        "4": 0.034519675,
+        "8": 0.034858124000000004
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 134475891,
+        "4": 135029236,
+        "8": 136741474
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.034487965499999995,
+            "min": 0.033708907,
+            "max": 0.036008731,
+            "stdev": 0.0007107730112100644,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 134475891,
+            "min": 129926287,
+            "max": 141090891,
+            "stdev": 3366096.580011415,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.034519675,
+            "min": 0.034294623,
+            "max": 0.036268789,
+            "stdev": 0.0006321631516480539,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 135029236,
+            "min": 134120581,
+            "max": 142395643,
+            "stdev": 2657321.5338644222,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.034858124000000004,
+            "min": 0.034214885,
+            "max": 0.038789739,
+            "stdev": 0.0015002894913429977,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 136741474,
+            "min": 133874171,
+            "max": 152532664,
+            "stdev": 6030592.618476957,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:72:7",
+        "loop_range": "72 to 74",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 22,
+        "num_loads": 1,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 3,
+        "num_float_ops": 0,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 18,
+        "load_density": 0.0454545,
+        "store_density": 0.0454545,
+        "branch_density": 0.318182,
+        "call_density": 0,
+        "phi_density": 0.0909091,
+        "int_op_density": 0.136364,
+        "float_op_density": 0,
+        "icmp_density": 0.136364,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.035744076,
+        "4": 0.0376490875,
+        "8": 0.035361486
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 140149663,
+        "4": 147634676,
+        "8": 138694057
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.035744076,
+            "min": 0.035090814,
+            "max": 0.039342753,
+            "stdev": 0.0013728422894242127,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 140149663,
+            "min": 137350957,
+            "max": 154506867,
+            "stdev": 5496163.8247934235,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.0376490875,
+            "min": 0.036302563,
+            "max": 0.040760046,
+            "stdev": 0.0013467041366177243,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 147634676,
+            "min": 142434316,
+            "max": 160071546,
+            "stdev": 5368808.399101694,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.035361486,
+            "min": 0.034043454,
+            "max": 0.037366925,
+            "stdev": 0.0013004244653903884,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 138694057,
+            "min": 133318605,
+            "max": 146562296,
+            "stdev": 5236716.2115034815,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:67:3",
+        "loop_range": "67 to 75",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 22,
+        "num_subloops": 2,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 81,
+        "num_loads": 6,
+        "num_stores": 2,
+        "num_branches": 22,
+        "num_calls": 0,
+        "num_phis": 5,
+        "num_int_ops": 12,
+        "num_float_ops": 5,
+        "num_icmps": 9,
+        "num_fcmps": 0,
+        "initial_loop_size": 66,
+        "load_density": 0.0740741,
+        "store_density": 0.0246914,
+        "branch_density": 0.271605,
+        "call_density": 0,
+        "phi_density": 0.0617284,
+        "int_op_density": 0.148148,
+        "float_op_density": 0.0617284,
+        "icmp_density": 0.111111,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.0376096685,
+        "4": 0.034902962499999995,
+        "8": 0.0345800785
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 147042000,
+        "4": 136638107,
+        "8": 135223309
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.0376096685,
+            "min": 0.036833656,
+            "max": 0.038006201,
+            "stdev": 0.0003892227024717777,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 147042000,
+            "min": 144093271,
+            "max": 149273140,
+            "stdev": 1606165.759039725,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.034902962499999995,
+            "min": 0.034544792,
+            "max": 0.035658006,
+            "stdev": 0.00031835486462368794,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 136638107,
+            "min": 134921759,
+            "max": 146351235,
+            "stdev": 3291302.8609744753,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.0345800785,
+            "min": 0.034136849,
+            "max": 0.035918094,
+            "stdev": 0.0005768488503222007,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 135223309,
+            "min": 133352965,
+            "max": 140659858,
+            "stdev": 2394724.271020788,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:48:5",
+        "loop_range": "48 to 51",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 19,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 23,
+        "load_density": 0.157895,
+        "store_density": 0,
+        "branch_density": 0.210526,
+        "call_density": 0.105263,
+        "phi_density": 0.0526316,
+        "int_op_density": 0.210526,
+        "float_op_density": 0,
+        "icmp_density": 0.105263,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.0341710315,
+        "4": 0.036027392,
+        "8": 0.034153335
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 133997558,
+        "4": 141405453,
+        "8": 133877204
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.0341710315,
+            "min": 0.033712885,
+            "max": 0.036741564,
+            "stdev": 0.0010596092199981024,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 133997558,
+            "min": 131971390,
+            "max": 144098008,
+            "stdev": 4292357.888169293,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.036027392,
+            "min": 0.033801671,
+            "max": 0.036509911,
+            "stdev": 0.0011240680807321623,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 141405453,
+            "min": 132233238,
+            "max": 143137742,
+            "stdev": 4549399.468987334,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.034153335,
+            "min": 0.033920474,
+            "max": 0.03802688,
+            "stdev": 0.0012381193756842133,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 133877204,
+            "min": 132445863,
+            "max": 149500193,
+            "stdev": 5103357.7370102955,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 9,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "stencils/jacobi-2d-imper/jacobi-2d-imper.c:47:3",
+        "loop_range": "47 to 51",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 9,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 29,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 9,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 4,
+        "num_fcmps": 0,
+        "initial_loop_size": 31,
+        "load_density": 0.103448,
+        "store_density": 0,
+        "branch_density": 0.310345,
+        "call_density": 0.0689655,
+        "phi_density": 0.0689655,
+        "int_op_density": 0.172414,
+        "float_op_density": 0,
+        "icmp_density": 0.137931,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.034725599999999995,
+        "2": 0.0348384665,
+        "4": 0.035121677000000004,
+        "8": 0.0356126165
+      },
+      "median_cycles": {
+        "1": 135895279,
+        "2": 136371109,
+        "4": 137747393,
+        "8": 139469307
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.0348384665,
+            "min": 0.034277782,
+            "max": 0.03599143,
+            "stdev": 0.0005649653616023624,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 136371109,
+            "min": 133712333,
+            "max": 140597113,
+            "stdev": 2299831.344854925,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.035121677000000004,
+            "min": 0.032841114,
+            "max": 0.036955184,
+            "stdev": 0.0012156102795657106,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 137747393,
+            "min": 134600462,
+            "max": 144952440,
+            "stdev": 3629925.222095263,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.0356126165,
+            "min": 0.03406255,
+            "max": 0.037239987,
+            "stdev": 0.0012465679434743309,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 139469307,
+            "min": 133109040,
+            "max": 146182951,
+            "stdev": 5037385.484629573,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 0.034725599999999995,
+    "baseline_cycles": 135895279,
+    "all_times_seconds": [
+      0.034600195,
+      0.03395599,
+      0.034413275,
+      0.033858957,
+      0.03488082,
+      0.033809845,
+      0.041637989,
+      0.034951613,
+      0.036025914,
+      0.034317466,
+      0.036664539,
+      0.03457038
+    ],
+    "all_cycles": [
+      134415809,
+      132827552,
+      134647766,
+      132712849,
+      136899677,
+      132446105,
+      163748632,
+      137120028,
+      141323980,
+      134093175,
+      143746389,
+      134890881
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/jacobi-2d_final_results.json"
+  }
+}

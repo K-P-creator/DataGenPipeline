@@ -1,0 +1,787 @@
+{
+  "loop_count": 7,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:37:7",
+        "loop_range": "37 to 40",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 4,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.08,
+        "branch_density": 0.08,
+        "call_density": 0,
+        "phi_density": 0.04,
+        "int_op_density": 0.04,
+        "float_op_density": 0.16,
+        "icmp_density": 0.04,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.21084596900000002,
+        "4": 0.2160742005,
+        "8": 0.2132850605
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 836044971,
+        "4": 859810601,
+        "8": 846918052
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.21084596900000002,
+            "min": 0.209502897,
+            "max": 0.213138103,
+            "stdev": 0.001051965500771749,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 836044971,
+            "min": 830510316,
+            "max": 844342663,
+            "stdev": 4053646.139411844,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2160742005,
+            "min": 0.211858739,
+            "max": 0.221541623,
+            "stdev": 0.002634726067203654,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 859810601,
+            "min": 840131241,
+            "max": 880027739,
+            "stdev": 10757453.712743716,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2132850605,
+            "min": 0.211581698,
+            "max": 0.216319125,
+            "stdev": 0.0016734896982511576,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 846918052,
+            "min": 840209571,
+            "max": 859411581,
+            "stdev": 7066177.587083829,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:32:3",
+        "loop_range": "32 to 41",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 51,
+        "num_loads": 0,
+        "num_stores": 5,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 4,
+        "num_float_ops": 6,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 47,
+        "load_density": 0,
+        "store_density": 0.0980392,
+        "branch_density": 0.137255,
+        "call_density": 0,
+        "phi_density": 0.0392157,
+        "int_op_density": 0.0784314,
+        "float_op_density": 0.117647,
+        "icmp_density": 0.0588235,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.229530576,
+        "4": 0.2320060585,
+        "8": 0.23100296650000002
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 911093400,
+        "4": 923407845,
+        "8": 919428465
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.229530576,
+            "min": 0.2282116,
+            "max": 0.232497734,
+            "stdev": 0.0012517405222170093,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 911093400,
+            "min": 905241202,
+            "max": 924227269,
+            "stdev": 5805219.908788829,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2320060585,
+            "min": 0.229530856,
+            "max": 0.23809586,
+            "stdev": 0.0029141801239460506,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 923407845,
+            "min": 912433768,
+            "max": 947145940,
+            "stdev": 11349112.82869449,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.23100296650000002,
+            "min": 0.228233628,
+            "max": 0.234971897,
+            "stdev": 0.001801456015675091,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 919428465,
+            "min": 906840111,
+            "max": 934953288,
+            "stdev": 7465006.142314836,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:82:7",
+        "loop_range": "82 to 83",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 20,
+        "num_loads": 3,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 17,
+        "load_density": 0.15,
+        "store_density": 0.05,
+        "branch_density": 0.1,
+        "call_density": 0.05,
+        "phi_density": 0.05,
+        "int_op_density": 0.2,
+        "float_op_density": 0,
+        "icmp_density": 0.05,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.2301323095,
+        "4": 0.22770755,
+        "8": 0.2248057615
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 915630519,
+        "4": 905159093,
+        "8": 893970015
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2301323095,
+            "min": 0.227481441,
+            "max": 0.231030323,
+            "stdev": 0.0012010336276811501,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 915630519,
+            "min": 904122158,
+            "max": 918745871,
+            "stdev": 5165987.204441197,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.22770755,
+            "min": 0.225789073,
+            "max": 0.230837802,
+            "stdev": 0.001511624805826825,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 905159093,
+            "min": 897489338,
+            "max": 918630698,
+            "stdev": 6533785.2686450835,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2248057615,
+            "min": 0.221753636,
+            "max": 0.227218133,
+            "stdev": 0.001579789981893406,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 893970015,
+            "min": 880292299,
+            "max": 903862142,
+            "stdev": 6621652.838545767,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:85:7",
+        "loop_range": "85 to 86",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 21,
+        "num_loads": 3,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 1,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 18,
+        "load_density": 0.142857,
+        "store_density": 0.047619,
+        "branch_density": 0.0952381,
+        "call_density": 0.047619,
+        "phi_density": 0.047619,
+        "int_op_density": 0.238095,
+        "float_op_density": 0,
+        "icmp_density": 0.047619,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.229031506,
+        "4": 0.232414045,
+        "8": 0.232078471
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 909932992,
+        "4": 923872321,
+        "8": 923007966
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.229031506,
+            "min": 0.22813222,
+            "max": 0.231019119,
+            "stdev": 0.000954927190118031,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 909932992,
+            "min": 903474211,
+            "max": 916437537,
+            "stdev": 4394466.801538171,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.232414045,
+            "min": 0.230092725,
+            "max": 0.233670794,
+            "stdev": 0.0012550859560030297,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 923872321,
+            "min": 914343403,
+            "max": 929641463,
+            "stdev": 5068577.167467353,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.232078471,
+            "min": 0.230074518,
+            "max": 0.238800544,
+            "stdev": 0.0031459544402413437,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 923007966,
+            "min": 915144538,
+            "max": 950431343,
+            "stdev": 12879671.062855845,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:78:3",
+        "loop_range": "78 to 88",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 12,
+        "num_subloops": 2,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 88,
+        "num_loads": 14,
+        "num_stores": 6,
+        "num_branches": 12,
+        "num_calls": 3,
+        "num_phis": 3,
+        "num_int_ops": 14,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 73,
+        "load_density": 0.159091,
+        "store_density": 0.0681818,
+        "branch_density": 0.136364,
+        "call_density": 0.0340909,
+        "phi_density": 0.0340909,
+        "int_op_density": 0.159091,
+        "float_op_density": 0.0227273,
+        "icmp_density": 0.0340909,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.2324856775,
+        "4": 0.2318930395,
+        "8": 0.2295830285
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 920322601,
+        "4": 920113562,
+        "8": 910781396
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2324856775,
+            "min": 0.23104459,
+            "max": 0.23377741,
+            "stdev": 0.0010001200080890361,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 920322601,
+            "min": 914633593,
+            "max": 927426380,
+            "stdev": 4139443.0515052034,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2318930395,
+            "min": 0.230576321,
+            "max": 0.234013119,
+            "stdev": 0.0011800009346756373,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 920113562,
+            "min": 917006329,
+            "max": 929974112,
+            "stdev": 4694226.599303566,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2295830285,
+            "min": 0.2279821,
+            "max": 0.230464872,
+            "stdev": 0.0009201002488067444,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 910781396,
+            "min": 906503787,
+            "max": 914203483,
+            "stdev": 2958622.8536186223,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:89:3",
+        "loop_range": "89 to 90",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 12,
+        "num_loads": 1,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 10,
+        "load_density": 0.0833333,
+        "store_density": 0.0833333,
+        "branch_density": 0.166667,
+        "call_density": 0,
+        "phi_density": 0.0833333,
+        "int_op_density": 0.166667,
+        "float_op_density": 0,
+        "icmp_density": 0.0833333,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.22937110900000002,
+        "4": 0.23022503,
+        "8": 0.230598852
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 908884253,
+        "4": 913643212,
+        "8": 916534854
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.22937110900000002,
+            "min": 0.227606838,
+            "max": 0.230013024,
+            "stdev": 0.0007163711181191947,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 908884253,
+            "min": 903351922,
+            "max": 910937289,
+            "stdev": 2284860.217728535,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.23022503,
+            "min": 0.228805425,
+            "max": 0.231807409,
+            "stdev": 0.0008442122657482696,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 913643212,
+            "min": 908660260,
+            "max": 920227800,
+            "stdev": 3630935.8079821807,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.230598852,
+            "min": 0.228649301,
+            "max": 0.231673276,
+            "stdev": 0.001034982723757261,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 916534854,
+            "min": 909418417,
+            "max": 921322193,
+            "stdev": 4019727.3110280186,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/durbin/durbin.c:54:3",
+        "loop_range": "54 to 57",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 16,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0.1875,
+        "store_density": 0,
+        "branch_density": 0.25,
+        "call_density": 0.125,
+        "phi_density": 0.0625,
+        "int_op_density": 0.125,
+        "float_op_density": 0,
+        "icmp_density": 0.125,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.2283639275,
+        "2": 0.22946269400000002,
+        "4": 0.22909340649999999,
+        "8": 0.23130669050000002
+      },
+      "median_cycles": {
+        "1": 904607063,
+        "2": 911208443,
+        "4": 909962780,
+        "8": 920005889
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.22946269400000002,
+            "min": 0.22851079,
+            "max": 0.231366922,
+            "stdev": 0.0011326655486613383,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 911208443,
+            "min": 905100749,
+            "max": 918795474,
+            "stdev": 4903943.005248836,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.22909340649999999,
+            "min": 0.226899216,
+            "max": 0.231275065,
+            "stdev": 0.0012635593132085327,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 909962780,
+            "min": 901776264,
+            "max": 918485980,
+            "stdev": 4918930.448565098,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.23130669050000002,
+            "min": 0.228262792,
+            "max": 0.238205965,
+            "stdev": 0.002863959300976729,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 920005889,
+            "min": 907895474,
+            "max": 948140127,
+            "stdev": 11305571.089263404,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 0.2283639275,
+    "baseline_cycles": 904607063,
+    "all_times_seconds": [
+      0.222081189,
+      0.232047211,
+      0.227217011,
+      0.227551697,
+      0.227791816,
+      0.228771298,
+      0.228600479,
+      0.228222933,
+      0.229390526,
+      0.228116805,
+      0.229255465,
+      0.228504922
+    ],
+    "all_cycles": [
+      883939962,
+      922242626,
+      899687051,
+      902120235,
+      901492301,
+      907079799,
+      905932855,
+      904359031,
+      909497231,
+      903896544,
+      909152420,
+      904855095
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/durbin_final_results.json"
+  }
+}

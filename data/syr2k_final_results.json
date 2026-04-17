@@ -1,0 +1,1211 @@
+{
+  "loop_count": 11,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:35:5",
+        "loop_range": "35 to 38",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 4,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.08,
+        "branch_density": 0.08,
+        "call_density": 0,
+        "phi_density": 0.04,
+        "int_op_density": 0.04,
+        "float_op_density": 0.16,
+        "icmp_density": 0.04,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0351138955,
+        "4": 4.0354071165,
+        "8": 4.0349960015
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16090130630,
+        "4": 16086002051,
+        "8": 16087520477
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0351138955,
+            "min": 4.034216364,
+            "max": 4.035854872,
+            "stdev": 0.0005429678311086472,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16090130630,
+            "min": 16089422022,
+            "max": 16092236700,
+            "stdev": 1004652.4670801507,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.0354071165,
+            "min": 4.033413039,
+            "max": 4.037460808,
+            "stdev": 0.0011317445265526852,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16086002051,
+            "min": 16083905796,
+            "max": 16096711159,
+            "stdev": 3967375.196209539,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.0349960015,
+            "min": 4.033803494,
+            "max": 4.035941636,
+            "stdev": 0.0006582723773196793,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087520477,
+            "min": 16083477578,
+            "max": 16088711771,
+            "stdev": 1543101.9696443481,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:34:3",
+        "loop_range": "34 to 38",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 35,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 4,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 28,
+        "load_density": 0,
+        "store_density": 0.0571429,
+        "branch_density": 0.2,
+        "call_density": 0,
+        "phi_density": 0.0571429,
+        "int_op_density": 0.0571429,
+        "float_op_density": 0.114286,
+        "icmp_density": 0.0857143,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0342874994999995,
+        "4": 4.0352533185,
+        "8": 4.034994989
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16084181511,
+        "4": 16087445026,
+        "8": 16087984820
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0342874994999995,
+            "min": 4.033236625,
+            "max": 4.035361775,
+            "stdev": 0.0006065991238583,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16084181511,
+            "min": 16081702668,
+            "max": 16085749351,
+            "stdev": 1127335.985833766,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.0352533185,
+            "min": 4.033679051,
+            "max": 4.037510169,
+            "stdev": 0.0010497164268180302,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087445026,
+            "min": 16084006931,
+            "max": 16092908868,
+            "stdev": 2970793.599279971,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.034994989,
+            "min": 4.03416217,
+            "max": 4.036808237,
+            "stdev": 0.0009239038426586041,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087984820,
+            "min": 16086377932,
+            "max": 16095125644,
+            "stdev": 3152696.5994597985,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:40:5",
+        "loop_range": "40 to 41",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 15,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0,
+        "store_density": 0.0666667,
+        "branch_density": 0.133333,
+        "call_density": 0,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.133333,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0393993035,
+        "4": 4.035881204500001,
+        "8": 4.036082162
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16108161389,
+        "4": 16086142541,
+        "8": 16086300220
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0393993035,
+            "min": 4.038545351,
+            "max": 4.042204809,
+            "stdev": 0.0011029125352866,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16108161389,
+            "min": 16106918635,
+            "max": 16117019110,
+            "stdev": 3273878.5919076353,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.035881204500001,
+            "min": 4.035468595,
+            "max": 4.037034603,
+            "stdev": 0.0005867256647081011,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16086142541,
+            "min": 16085040451,
+            "max": 16089413703,
+            "stdev": 1546297.3587171964,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.036082162,
+            "min": 4.035061386,
+            "max": 4.036481213,
+            "stdev": 0.0004403405520970101,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16086300220,
+            "min": 16084985379,
+            "max": 16088349854,
+            "stdev": 956467.8327475989,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:39:3",
+        "loop_range": "39 to 41",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 25,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0,
+        "store_density": 0.04,
+        "branch_density": 0.28,
+        "call_density": 0,
+        "phi_density": 0.08,
+        "int_op_density": 0.08,
+        "float_op_density": 0.08,
+        "icmp_density": 0.12,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0381754784999995,
+        "4": 4.035415781499999,
+        "8": 4.0353990185
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16106517889,
+        "4": 16087960514,
+        "8": 16092528804
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0381754784999995,
+            "min": 4.037745904,
+            "max": 4.039091185,
+            "stdev": 0.0005169219937377871,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16106517889,
+            "min": 16104103012,
+            "max": 16108039253,
+            "stdev": 1188387.8907651696,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.035415781499999,
+            "min": 4.034846941,
+            "max": 4.037337307,
+            "stdev": 0.0007610519458154381,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087960514,
+            "min": 16086695813,
+            "max": 16093402768,
+            "stdev": 1894994.6602372262,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.0353990185,
+            "min": 4.033834548,
+            "max": 4.035808104,
+            "stdev": 0.0007406938492386652,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16092528804,
+            "min": 16085498276,
+            "max": 16095213145,
+            "stdev": 3987391.628763413,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:77:5",
+        "loop_range": "77 to 78",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 10,
+        "num_loads": 1,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 1,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 9,
+        "load_density": 0.1,
+        "store_density": 0.1,
+        "branch_density": 0.2,
+        "call_density": 0,
+        "phi_density": 0.1,
+        "int_op_density": 0.1,
+        "float_op_density": 0.1,
+        "icmp_density": 0.1,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.034602623,
+        "4": 4.035674317,
+        "8": 4.035054243499999
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16086837989,
+        "4": 16086930003,
+        "8": 16084193483
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.034602623,
+            "min": 4.034240312,
+            "max": 4.037988597,
+            "stdev": 0.0010968637696926616,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16086837989,
+            "min": 16086323724,
+            "max": 16097732680,
+            "stdev": 3512386.2032785392,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.035674317,
+            "min": 4.035058574,
+            "max": 4.039505381,
+            "stdev": 0.0013705823182465868,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16086930003,
+            "min": 16082384054,
+            "max": 16101074100,
+            "stdev": 5475609.261144298,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.035054243499999,
+            "min": 4.033666839,
+            "max": 4.035946787,
+            "stdev": 0.0007430385423565829,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16084193483,
+            "min": 16082013213,
+            "max": 16087525602,
+            "stdev": 1814204.201846348,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:76:3",
+        "loop_range": "76 to 78",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 20,
+        "num_loads": 1,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 1,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 17,
+        "load_density": 0.05,
+        "store_density": 0.05,
+        "branch_density": 0.35,
+        "call_density": 0,
+        "phi_density": 0.1,
+        "int_op_density": 0.1,
+        "float_op_density": 0.05,
+        "icmp_density": 0.15,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0357755835,
+        "4": 4.038565177000001,
+        "8": 4.038668509
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16083256835,
+        "4": 16108031477,
+        "8": 16109473185
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0357755835,
+            "min": 4.034919054,
+            "max": 4.036713783,
+            "stdev": 0.0004534724000048666,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16083256835,
+            "min": 16081870954,
+            "max": 16085386766,
+            "stdev": 1423331.5555194987,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.038565177000001,
+            "min": 4.03768773,
+            "max": 4.039369792,
+            "stdev": 0.00046626919555300186,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16108031477,
+            "min": 16106768250,
+            "max": 16110732790,
+            "stdev": 1293187.1319934241,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.038668509,
+            "min": 4.038314049,
+            "max": 4.0395178,
+            "stdev": 0.00038709652983177987,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16109473185,
+            "min": 16108189214,
+            "max": 16110828790,
+            "stdev": 833194.8520664299,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:81:7",
+        "loop_range": "81 to 85",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 29,
+        "num_loads": 6,
+        "num_stores": 2,
+        "num_branches": 2,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 26,
+        "load_density": 0.206897,
+        "store_density": 0.0689655,
+        "branch_density": 0.0689655,
+        "call_density": 0.0689655,
+        "phi_density": 0.0344828,
+        "int_op_density": 0.0344828,
+        "float_op_density": 0.0689655,
+        "icmp_density": 0.0344828,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 2.834793877,
+        "4": 2.2488421525,
+        "8": 1.9543019085
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 11307504752,
+        "4": 8928368373,
+        "8": 7748343232
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 2.834793877,
+            "min": 2.834421627,
+            "max": 2.835154487,
+            "stdev": 0.00021177432772489607,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 11307504752,
+            "min": 11306072952,
+            "max": 11308130324,
+            "stdev": 757711.1742739446,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 2.2488421525,
+            "min": 2.246801802,
+            "max": 2.250206367,
+            "stdev": 0.001003565521297582,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 8928368373,
+            "min": 8925670062,
+            "max": 8929673537,
+            "stdev": 1389627.5005046176,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 1.9543019085,
+            "min": 1.953025615,
+            "max": 1.956973086,
+            "stdev": 0.0011163318860078373,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 7748343232,
+            "min": 7745509171,
+            "max": 7750503962,
+            "stdev": 1495424.2534630618,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:80:5",
+        "loop_range": "80 to 85",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 39,
+        "num_loads": 6,
+        "num_stores": 2,
+        "num_branches": 7,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 34,
+        "load_density": 0.153846,
+        "store_density": 0.0512821,
+        "branch_density": 0.179487,
+        "call_density": 0.0512821,
+        "phi_density": 0.0512821,
+        "int_op_density": 0.0512821,
+        "float_op_density": 0.0512821,
+        "icmp_density": 0.0769231,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0379685275,
+        "4": 4.0346263695,
+        "8": 4.0350642820000004
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16095719362,
+        "4": 16095053520,
+        "8": 16096593738
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0379685275,
+            "min": 4.036568323,
+            "max": 4.039229236,
+            "stdev": 0.0007887670973627064,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16095719362,
+            "min": 16094643514,
+            "max": 16099755452,
+            "stdev": 1483015.6311016378,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.0346263695,
+            "min": 4.034078956,
+            "max": 4.035125916,
+            "stdev": 0.0003631716230528304,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16095053520,
+            "min": 16092960868,
+            "max": 16096508395,
+            "stdev": 1271492.7685643795,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.0350642820000004,
+            "min": 4.034443408,
+            "max": 4.036185206,
+            "stdev": 0.0004981583172973765,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16096593738,
+            "min": 16095096379,
+            "max": 16098246636,
+            "stdev": 1098656.775528069,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 9,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:79:3",
+        "loop_range": "79 to 85",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 12,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 49,
+        "num_loads": 6,
+        "num_stores": 2,
+        "num_branches": 12,
+        "num_calls": 2,
+        "num_phis": 3,
+        "num_int_ops": 3,
+        "num_float_ops": 2,
+        "num_icmps": 5,
+        "num_fcmps": 0,
+        "initial_loop_size": 42,
+        "load_density": 0.122449,
+        "store_density": 0.0408163,
+        "branch_density": 0.244898,
+        "call_density": 0.0408163,
+        "phi_density": 0.0612245,
+        "int_op_density": 0.0612245,
+        "float_op_density": 0.0408163,
+        "icmp_density": 0.102041,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.035665946,
+        "4": 4.035619280500001,
+        "8": 4.0353128695
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16087320318,
+        "4": 16092974230,
+        "8": 16093820354
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.035665946,
+            "min": 4.03492548,
+            "max": 4.036509889,
+            "stdev": 0.0005482378243836946,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087320318,
+            "min": 16085896952,
+            "max": 16090651595,
+            "stdev": 1374486.1400836355,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.035619280500001,
+            "min": 4.034643402,
+            "max": 4.037864958,
+            "stdev": 0.00097689923785666,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16092974230,
+            "min": 16091473635,
+            "max": 16099253501,
+            "stdev": 2279756.1333874776,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.0353128695,
+            "min": 4.032561078,
+            "max": 4.036082642,
+            "stdev": 0.0010914531002099018,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16093820354,
+            "min": 16083781588,
+            "max": 16095599597,
+            "stdev": 3508822.267574003,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 10,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:54:5",
+        "loop_range": "54 to 57",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 19,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 23,
+        "load_density": 0.157895,
+        "store_density": 0,
+        "branch_density": 0.210526,
+        "call_density": 0.105263,
+        "phi_density": 0.0526316,
+        "int_op_density": 0.210526,
+        "float_op_density": 0,
+        "icmp_density": 0.105263,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.0345487025,
+        "4": 4.034477028,
+        "8": 4.033811846
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16084162373,
+        "4": 16087352559,
+        "8": 16088381857
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.0345487025,
+            "min": 4.033697818,
+            "max": 4.037278131,
+            "stdev": 0.00097423394160236,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16084162373,
+            "min": 16082836058,
+            "max": 16098046446,
+            "stdev": 4587243.78367147,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.034477028,
+            "min": 4.033484689,
+            "max": 4.035300282,
+            "stdev": 0.0006505878811366236,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087352559,
+            "min": 16086016255,
+            "max": 16090293541,
+            "stdev": 1226944.56094655,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.033811846,
+            "min": 4.033064327,
+            "max": 4.034320037,
+            "stdev": 0.0003743231316924382,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16088381857,
+            "min": 16086418660,
+            "max": 16089716542,
+            "stdev": 1132508.1058923253,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 11,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/syr2k/syr2k.c:53:3",
+        "loop_range": "53 to 57",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 9,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 29,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 9,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 4,
+        "num_fcmps": 0,
+        "initial_loop_size": 31,
+        "load_density": 0.103448,
+        "store_density": 0,
+        "branch_density": 0.310345,
+        "call_density": 0.0689655,
+        "phi_density": 0.0689655,
+        "int_op_density": 0.172414,
+        "float_op_density": 0,
+        "icmp_density": 0.137931,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 4.0352313215,
+        "2": 4.035333966,
+        "4": 4.034899048,
+        "8": 4.03498893
+      },
+      "median_cycles": {
+        "1": 16087146064,
+        "2": 16088166807,
+        "4": 16087290867,
+        "8": 16094857094
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 4.035333966,
+            "min": 4.034666351,
+            "max": 4.035789567,
+            "stdev": 0.00040714255705360977,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16088166807,
+            "min": 16086638889,
+            "max": 16089609401,
+            "stdev": 1026841.2513443568,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 4.034899048,
+            "min": 4.034187852,
+            "max": 4.03591772,
+            "stdev": 0.0005859790053550165,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16087290867,
+            "min": 16083873824,
+            "max": 16089914139,
+            "stdev": 1999991.1612542719,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 4.03498893,
+            "min": 4.032980699,
+            "max": 4.041638937,
+            "stdev": 0.0029036256424379014,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 16094857094,
+            "min": 16086253439,
+            "max": 16121604352,
+            "stdev": 11847770.62470881,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 4.0352313215,
+    "baseline_cycles": 16087146064,
+    "all_times_seconds": [
+      4.035658452,
+      4.034138949,
+      4.035310295,
+      4.034128816,
+      4.03439237,
+      4.036999584,
+      4.03429469,
+      4.034816889,
+      4.035152348,
+      4.035337945,
+      4.035574178,
+      4.035360286
+    ],
+    "all_cycles": [
+      16091532746,
+      16087455777,
+      16086433833,
+      16087107501,
+      16087527138,
+      16093128497,
+      16083772264,
+      16086727861,
+      16087368722,
+      16086656437,
+      16087912966,
+      16087184628
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/syr2k_final_results.json"
+  }
+}

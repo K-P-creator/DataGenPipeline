@@ -1,0 +1,893 @@
+{
+  "loop_count": 8,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:32:7",
+        "loop_range": "32 to 33",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 10,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 1,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 9,
+        "load_density": 0,
+        "store_density": 0.1,
+        "branch_density": 0.2,
+        "call_density": 0,
+        "phi_density": 0.1,
+        "int_op_density": 0.1,
+        "float_op_density": 0.1,
+        "icmp_density": 0.1,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.13533595850000002,
+        "4": 0.142328886,
+        "8": 0.1354517145
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 535497404,
+        "4": 561128720,
+        "8": 535806251
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.13533595850000002,
+            "min": 0.132836613,
+            "max": 0.13556326,
+            "stdev": 0.0008025836793670821,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535497404,
+            "min": 534705950,
+            "max": 537561171,
+            "stdev": 793104.9616796281,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.142328886,
+            "min": 0.141864071,
+            "max": 0.143173539,
+            "stdev": 0.00047172564162054997,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 561128720,
+            "min": 560029635,
+            "max": 562923068,
+            "stdev": 987111.9855535923,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.1354517145,
+            "min": 0.135186455,
+            "max": 0.135985447,
+            "stdev": 0.0002477882290994345,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535806251,
+            "min": 534304875,
+            "max": 537806545,
+            "stdev": 943201.9477140442,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:29:3",
+        "loop_range": "29 to 34",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 24,
+        "num_loads": 0,
+        "num_stores": 2,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 21,
+        "load_density": 0,
+        "store_density": 0.0833333,
+        "branch_density": 0.291667,
+        "call_density": 0,
+        "phi_density": 0.0833333,
+        "int_op_density": 0.0833333,
+        "float_op_density": 0.0833333,
+        "icmp_density": 0.125,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.1420527805,
+        "4": 0.135536996,
+        "8": 0.1354194265
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 561607823,
+        "4": 536586716,
+        "8": 535901879
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.1420527805,
+            "min": 0.141447951,
+            "max": 0.142507732,
+            "stdev": 0.0003420584718667608,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 561607823,
+            "min": 559867285,
+            "max": 564094958,
+            "stdev": 1231425.057171478,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.135536996,
+            "min": 0.135293742,
+            "max": 0.135910765,
+            "stdev": 0.00023195371133063368,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536586716,
+            "min": 535128738,
+            "max": 538526796,
+            "stdev": 986863.6050308798,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.1354194265,
+            "min": 0.135187277,
+            "max": 0.135794351,
+            "stdev": 0.00017932076010062986,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535901879,
+            "min": 535281582,
+            "max": 537575924,
+            "stdev": 629824.6087318808,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:70:5",
+        "loop_range": "70 to 71",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 14,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 1,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 11,
+        "load_density": 0.142857,
+        "store_density": 0,
+        "branch_density": 0.142857,
+        "call_density": 0.0714286,
+        "phi_density": 0.142857,
+        "int_op_density": 0.0714286,
+        "float_op_density": 0,
+        "icmp_density": 0.0714286,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.135298928,
+        "4": 0.13549794450000002,
+        "8": 0.1420752215
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 535698120,
+        "4": 536487057,
+        "8": 561718792
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.135298928,
+            "min": 0.134931823,
+            "max": 0.135806476,
+            "stdev": 0.00033126773691483964,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535698120,
+            "min": 534477000,
+            "max": 538793454,
+            "stdev": 1290178.6702742162,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.13549794450000002,
+            "min": 0.135308972,
+            "max": 0.135732683,
+            "stdev": 0.00014113905910460617,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536487057,
+            "min": 535152491,
+            "max": 537709933,
+            "stdev": 841992.8546604248,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.1420752215,
+            "min": 0.140030332,
+            "max": 0.142777018,
+            "stdev": 0.0007676074805008943,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 561718792,
+            "min": 560118267,
+            "max": 566118249,
+            "stdev": 1640387.0030886987,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:76:2",
+        "loop_range": "76 to 77",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 14,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 1,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 11,
+        "load_density": 0.142857,
+        "store_density": 0,
+        "branch_density": 0.142857,
+        "call_density": 0.0714286,
+        "phi_density": 0.142857,
+        "int_op_density": 0.0714286,
+        "float_op_density": 0,
+        "icmp_density": 0.0714286,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.134354956,
+        "4": 0.1335260405,
+        "8": 0.13327755600000002
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 532336807,
+        "4": 529104630,
+        "8": 527633078
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.134354956,
+            "min": 0.133967792,
+            "max": 0.135217087,
+            "stdev": 0.00032302653793852057,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 532336807,
+            "min": 530614112,
+            "max": 533709385,
+            "stdev": 974776.7590961589,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.1335260405,
+            "min": 0.133346325,
+            "max": 0.134147533,
+            "stdev": 0.00025063729790197024,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 529104630,
+            "min": 528691802,
+            "max": 532234153,
+            "stdev": 1036247.8326666036,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.13327755600000002,
+            "min": 0.132537587,
+            "max": 0.133901086,
+            "stdev": 0.0003954053433551872,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 527633078,
+            "min": 525928517,
+            "max": 530380146,
+            "stdev": 1353261.0285565301,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:73:5",
+        "loop_range": "73 to 79",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 35,
+        "num_loads": 4,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 1,
+        "num_phis": 5,
+        "num_int_ops": 3,
+        "num_float_ops": 1,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 27,
+        "load_density": 0.114286,
+        "store_density": 0.0285714,
+        "branch_density": 0.2,
+        "call_density": 0.0285714,
+        "phi_density": 0.142857,
+        "int_op_density": 0.0857143,
+        "float_op_density": 0.0285714,
+        "icmp_density": 0.0857143,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.1353000645,
+        "4": 0.13709955299999999,
+        "8": 0.137010711
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 536207250,
+        "4": 543132867,
+        "8": 542527209
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.1353000645,
+            "min": 0.134642707,
+            "max": 0.135899033,
+            "stdev": 0.0003492409294424604,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536207250,
+            "min": 534593563,
+            "max": 537140346,
+            "stdev": 727049.9351037727,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.13709955299999999,
+            "min": 0.134381922,
+            "max": 0.13752168,
+            "stdev": 0.0009041475608349485,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 543132867,
+            "min": 542283309,
+            "max": 543993992,
+            "stdev": 640120.4228209374,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.137010711,
+            "min": 0.136676848,
+            "max": 0.137469569,
+            "stdev": 0.0002733352682061864,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 542527209,
+            "min": 541041567,
+            "max": 546052887,
+            "stdev": 1625196.2149226302,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:67:1",
+        "loop_range": "67 to 80",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 17,
+        "num_subloops": 2,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 75,
+        "num_loads": 7,
+        "num_stores": 2,
+        "num_branches": 17,
+        "num_calls": 3,
+        "num_phis": 11,
+        "num_int_ops": 7,
+        "num_float_ops": 2,
+        "num_icmps": 7,
+        "num_fcmps": 0,
+        "initial_loop_size": 58,
+        "load_density": 0.0933333,
+        "store_density": 0.0266667,
+        "branch_density": 0.226667,
+        "call_density": 0.04,
+        "phi_density": 0.146667,
+        "int_op_density": 0.0933333,
+        "float_op_density": 0.0266667,
+        "icmp_density": 0.0933333,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.1388815655,
+        "4": 0.136906474,
+        "8": 0.1361304825
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 548877207,
+        "4": 541745460,
+        "8": 539115583
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.1388815655,
+            "min": 0.138644558,
+            "max": 0.139179939,
+            "stdev": 0.00019346214745528711,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 548877207,
+            "min": 547525499,
+            "max": 550393429,
+            "stdev": 814764.9702542104,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.136906474,
+            "min": 0.136481008,
+            "max": 0.137315167,
+            "stdev": 0.00021792576712255973,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 541745460,
+            "min": 541416635,
+            "max": 543394312,
+            "stdev": 587315.5803540944,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.1361304825,
+            "min": 0.13576807,
+            "max": 0.136820338,
+            "stdev": 0.0003103268370921244,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 539115583,
+            "min": 537076485,
+            "max": 541303109,
+            "stdev": 1149073.272723744,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:48:5",
+        "loop_range": "48 to 51",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 19,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 4,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 23,
+        "load_density": 0.157895,
+        "store_density": 0,
+        "branch_density": 0.210526,
+        "call_density": 0.105263,
+        "phi_density": 0.0526316,
+        "int_op_density": 0.210526,
+        "float_op_density": 0,
+        "icmp_density": 0.105263,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.135458389,
+        "4": 0.1352427505,
+        "8": 0.1353546995
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 536151331,
+        "4": 535744993,
+        "8": 535322735
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.135458389,
+            "min": 0.135043678,
+            "max": 0.136666252,
+            "stdev": 0.0004529024152343027,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536151331,
+            "min": 534700552,
+            "max": 541817930,
+            "stdev": 1971258.1465560433,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.1352427505,
+            "min": 0.134845723,
+            "max": 0.13564687,
+            "stdev": 0.00022476261090228198,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535744993,
+            "min": 533378496,
+            "max": 538226603,
+            "stdev": 1206574.6522813342,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.1353546995,
+            "min": 0.134908427,
+            "max": 0.135509419,
+            "stdev": 0.0002269841092148197,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535322735,
+            "min": 534161543,
+            "max": 537283907,
+            "stdev": 835158.5350561094,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/kernels/cholesky/cholesky.c:47:3",
+        "loop_range": "47 to 51",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 9,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 29,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 9,
+        "num_calls": 2,
+        "num_phis": 2,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 4,
+        "num_fcmps": 0,
+        "initial_loop_size": 31,
+        "load_density": 0.103448,
+        "store_density": 0,
+        "branch_density": 0.310345,
+        "call_density": 0.0689655,
+        "phi_density": 0.0689655,
+        "int_op_density": 0.172414,
+        "float_op_density": 0,
+        "icmp_density": 0.137931,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0
+      },
+      "median_times_seconds": {
+        "1": 0.1353446435,
+        "2": 0.13523873549999998,
+        "4": 0.1354832465,
+        "8": 0.135407866
+      },
+      "median_cycles": {
+        "1": 535748682,
+        "2": 535605377,
+        "4": 536144397,
+        "8": 536277485
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.13523873549999998,
+            "min": 0.13495782,
+            "max": 0.135803941,
+            "stdev": 0.0002477501176983919,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 535605377,
+            "min": 534142985,
+            "max": 537272102,
+            "stdev": 1085092.5517868868,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.1354832465,
+            "min": 0.135181483,
+            "max": 0.136114767,
+            "stdev": 0.00028650742728864183,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536144397,
+            "min": 535506264,
+            "max": 537849819,
+            "stdev": 781218.3500796759,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.135407866,
+            "min": 0.13474997,
+            "max": 0.135698545,
+            "stdev": 0.0002818571471524996,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 536277485,
+            "min": 534957554,
+            "max": 538042138,
+            "stdev": 985117.2348815986,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 0.1353446435,
+    "baseline_cycles": 535748682,
+    "all_times_seconds": [
+      0.135063442,
+      0.135456327,
+      0.135454534,
+      0.135845605,
+      0.135374213,
+      0.134913202,
+      0.135306747,
+      0.134975418,
+      0.135614082,
+      0.135153722,
+      0.135792756,
+      0.135315074
+    ],
+    "all_cycles": [
+      537576505,
+      535850841,
+      536323162,
+      536184723,
+      535544620,
+      535447595,
+      535320062,
+      534552985,
+      535952744,
+      534942249,
+      536282830,
+      537484762
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/cholesky_final_results.json"
+  }
+}
