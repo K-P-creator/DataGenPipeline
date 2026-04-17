@@ -1,6 +1,6 @@
 {
   "benchmarks": [
-     {
+	{
   	"name": "atax",
   	"source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
   	"work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
@@ -15,5 +15,441 @@
   	"output_final_ir": "final.ll",
   	"binary_name": "atax.out",
   	"run_args": []
-} ]
+	},
+    {
+      "name": "2mm",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/2mm/2mm.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/2mm"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "2mm.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "2mm.out",
+      "run_args": []
+    },
+    {
+      "name": "3mm",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/3mm/3mm.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/3mm"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "3mm.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "3mm.out",
+      "run_args": []
+    },
+    {
+      "name": "atax",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/atax/atax.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/atax"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "atax.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "atax.out",
+      "run_args": []
+    },
+    {
+      "name": "bicg",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/bicg/bicg.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/bicg"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "bicg.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "bicg.out",
+      "run_args": []
+    },
+    {
+      "name": "doitgen",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/doitgen/doitgen.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/doitgen"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "doitgen.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "doitgen.out",
+      "run_args": []
+    },
+    {
+      "name": "mvt",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/mvt/mvt.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/mvt"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "mvt.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "mvt.out",
+      "run_args": []
+    },
+    {
+      "name": "gemm",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/gemm/gemm.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/gemm"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "gemm.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "gemm.out",
+      "run_args": []
+    },
+    {
+      "name": "gemver",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/gemver/gemver.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/gemver"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "gemver.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "gemver.out",
+      "run_args": []
+    },
+    {
+      "name": "gesummv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/gesummv/gesummv.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/gesummv"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "gesummv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "gesummv.out",
+      "run_args": []
+    },
+    {
+      "name": "symm",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/symm/symm.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/symm"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "symm.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "symm.out",
+      "run_args": []
+    },
+    {
+      "name": "syr2k",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/syr2k/syr2k.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/syr2k"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "syr2k.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "syr2k.out",
+      "run_args": []
+    },
+    {
+      "name": "syrk",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/syrk/syrk.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/syrk"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "syrk.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "syrk.out",
+      "run_args": []
+    },
+    {
+      "name": "trmm",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/trmm/trmm.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/trmm"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "trmm.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "trmm.out",
+      "run_args": []
+    },
+    {
+      "name": "cholesky",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/cholesky/cholesky.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/cholesky"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "cholesky.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "cholesky.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "durbin",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/solvers/durbin/durbin.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/solvers/durbin"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "durbin.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "durbin.out",
+      "run_args": []
+    },
+    {
+      "name": "gramschmidt",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/solvers/gramschmidt/gramschmidt.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/solvers/gramschmidt"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "gramschmidt.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "gramschmidt.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "lu",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/solvers/lu/lu.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/solvers/lu"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "lu.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "lu.out",
+      "run_args": []
+    },
+    {
+      "name": "ludcmp",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/solvers/ludcmp/ludcmp.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/solvers/ludcmp"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "ludcmp.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "ludcmp.out",
+      "run_args": []
+    },
+    {
+      "name": "trisolv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "linear-algebra/kernels/trisolv/trisolv.c",
+      "include_dirs": [
+        "utilities",
+        "linear-algebra/kernels/trisolv"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "trisolv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "trisolv.out",
+      "run_args": []
+    },
+    {
+      "name": "correlation",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "datamining/correlation/correlation.c",
+      "include_dirs": [
+        "utilities",
+        "datamining/correlation"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "correlation.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "correlation.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "covariance",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "datamining/covariance/covariance.c",
+      "include_dirs": [
+        "utilities",
+        "datamining/covariance"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "covariance.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "covariance.out",
+      "run_args": []
+    },
+    {
+      "name": "floyd-warshall",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "medley/floyd-warshall/floyd-warshall.c",
+      "include_dirs": [
+        "utilities",
+        "medley/floyd-warshall"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "floyd-warshall.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "floyd-warshall.out",
+      "run_args": []
+    },
+    {
+      "name": "adi",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "stencils/adi/adi.c",
+      "include_dirs": [
+        "utilities",
+        "stencils/adi"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "adi.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "adi.out",
+      "run_args": []
+    },
+    {
+      "name": "fdtd-2d",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "stencils/fdtd-2d/fdtd-2d.c",
+      "include_dirs": [
+        "utilities",
+        "stencils/fdtd-2d"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "fdtd-2d.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "fdtd-2d.out",
+      "run_args": []
+    },
+    {
+      "name": "jacobi-1d",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "stencils/jacobi-1d-imper/jacobi-1d-imper.c",
+      "include_dirs": [
+        "utilities",
+        "stencils/jacobi-1d-imper"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "jacobi-1d.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "jacobi-1d.out",
+      "run_args": []
+    },
+    {
+      "name": "jacobi-2d",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "stencils/jacobi-2d-imper/jacobi-2d-imper.c",
+      "include_dirs": [
+        "utilities",
+        "stencils/jacobi-2d-imper"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "jacobi-2d.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "jacobi-2d.out",
+      "run_args": []
+    },
+    {
+      "name": "seidel-2d",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "stencils/seidel-2d/seidel-2d.c",
+      "include_dirs": [
+        "utilities",
+        "stencils/seidel-2d"
+      ],
+      "files_to_link": ["utilities/polybench.c"],
+      "output_ir": "seidel-2d.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "seidel-2d.out",
+      "run_args": []
+    }
+  ]
 }
