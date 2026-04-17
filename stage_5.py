@@ -1,18 +1,3 @@
-#   ### Stage 5
-#   Runs loops `(warmup_runs + timed_runs) * len(unroll_factor)` number of times,
-#   and records the timer statistics per unroll factor per loop.
-#
-#   Loop through each unroll factor (except 1) and each loop, and generate an IR file
-#   with opt using flags --my-unroll-factor and --my-hot-loop-index. Then compile, run,
-#   and capture timer output, parse, and save timing statistics to the JSON from stage 3,
-#   making sure to ignore the warmup runs.
-#
-#   The final JSON will be saved to a permanent directory (not the temp directory) with name
-#   <benchmark_name>_final_results.json
-#
-#   Final directory is included in global configs as "perm_path"
-#   This will be the timing data for each loop at each unroll factor.
-
 from pathlib import Path
 from statistics import median
 
@@ -24,7 +9,6 @@ def run_stage5_run_unroll_and_time(
 ) -> str:
     import json
     import subprocess
-    import shutil
 
     stage3_json_path = Path(data_mode_opt_pass_filename)
     llvm_ir_path = Path(llvm_IR_filename)
@@ -85,7 +69,7 @@ def run_stage5_run_unroll_and_time(
     # -------------------------------------------------------------------------
     # Helpers
     # -------------------------------------------------------------------------
-    def run_cmd(cmd, cwd: Path, fail_msg: str):
+    def run_subprocess_cmd(cmd: list[str], cwd: Path, fail_msg: str):
         result = subprocess.run(
             cmd,
             cwd=str(cwd),
@@ -102,15 +86,36 @@ def run_stage5_run_unroll_and_time(
             )
         return result
 
-    def parse_timer_ns(stdout: str) -> int:
-        timer_val = None
-        for line in stdout.splitlines():
-            line = line.strip()
-            if line.startswith("TIMER_NS:"):
-                timer_val = int(line.split(":", 1)[1].strip())
-        if timer_val is None:
-            raise RuntimeError(f"Stage 5 failed: TIMER_NS output not found.\nSTDOUT:\n{stdout}")
-        return timer_val
+    def parse_perf_output(stderr: str) -> tuple[float, int]:
+        elapsed_seconds = None
+        cycles = None
+
+        for raw_line in stderr.splitlines():
+            line = raw_line.strip()
+
+            if "cycles" in line:
+                parts = line.split()
+                if len(parts) >= 2 and parts[1] == "cycles":
+                    cycles = int(parts[0].replace(",", ""))
+
+            if line.endswith("seconds time elapsed"):
+                parts = line.split()
+                if len(parts) >= 4:
+                    elapsed_seconds = float(parts[0])
+
+        if elapsed_seconds is None:
+            raise RuntimeError(
+                "Stage 5 failed: could not parse 'seconds time elapsed' from perf output.\n"
+                f"STDERR:\n{stderr}"
+            )
+
+        if cycles is None:
+            raise RuntimeError(
+                "Stage 5 failed: could not parse 'cycles' from perf output.\n"
+                f"STDERR:\n{stderr}"
+            )
+
+        return elapsed_seconds, cycles
 
     # -------------------------------------------------------------------------
     # Loop through each unroll factor (except 1) and each loop
@@ -140,7 +145,11 @@ def run_stage5_run_unroll_and_time(
                 str(factor_ir_path),
             ])
 
-            run_cmd(opt_cmd, work_dir, f"Stage 5 failed during opt for loop {loop_index}, factor {factor}.")
+            run_subprocess_cmd(
+                opt_cmd,
+                work_dir,
+                f"Stage 5 failed during opt for loop {loop_index}, factor {factor}.",
+            )
 
             # -------------------------------------------------------------
             # Compile IR to object with llc
@@ -153,7 +162,11 @@ def run_stage5_run_unroll_and_time(
                 str(object_path),
             ]
 
-            run_cmd(llc_cmd, work_dir, f"Stage 5 failed during llc for loop {loop_index}, factor {factor}.")
+            run_subprocess_cmd(
+                llc_cmd,
+                work_dir,
+                f"Stage 5 failed during llc for loop {loop_index}, factor {factor}.",
+            )
 
             # -------------------------------------------------------------
             # Link executable with clang and files_to_link
@@ -165,17 +178,35 @@ def run_stage5_run_unroll_and_time(
 
             clang_cmd.extend(["-o", str(exe_path)])
 
-            run_cmd(clang_cmd, work_dir, f"Stage 5 failed during link for loop {loop_index}, factor {factor}.")
+            run_subprocess_cmd(
+                clang_cmd,
+                work_dir,
+                f"Stage 5 failed during link for loop {loop_index}, factor {factor}.",
+            )
 
             # -------------------------------------------------------------
-            # Run executable and capture timing
+            # Run executable with taskset + perf and capture elapsed time/cycles
             # -------------------------------------------------------------
             total_runs = warmup_runs + timed_runs
-            all_times_ns = []
+            all_times_seconds = []
+            all_cycles = []
 
             for run_idx in range(total_runs):
+                run_cmd = [
+                    "taskset",
+                    "-c",
+                    "3",
+                    "perf",
+                    "stat",
+                    "--no-big-num",
+                    "-e",
+                    "cycles",
+                    str(exe_path),
+                    *run_args,
+                ]
+
                 run_result = subprocess.run(
-                    [str(exe_path), *run_args],
+                    run_cmd,
                     cwd=str(work_dir),
                     capture_output=True,
                     text=True,
@@ -186,26 +217,38 @@ def run_stage5_run_unroll_and_time(
                     raise RuntimeError(
                         f"Stage 5 failed while executing benchmark for loop {loop_index}, "
                         f"factor {factor}, run {run_idx}.\n"
+                        f"Command: {' '.join(run_cmd)}\n"
                         f"STDOUT:\n{run_result.stdout}\n"
                         f"STDERR:\n{run_result.stderr}"
                     )
 
-                all_times_ns.append(parse_timer_ns(run_result.stdout))
+                elapsed_seconds, cycles = parse_perf_output(run_result.stderr)
+                all_times_seconds.append(elapsed_seconds)
+                all_cycles.append(cycles)
 
-            timed_only_ns = all_times_ns[warmup_runs:]
-            median_runtime_ns = int(median(timed_only_ns))
+            timed_only_seconds = all_times_seconds[warmup_runs:]
+            timed_only_cycles = all_cycles[warmup_runs:]
+
+            median_runtime_seconds = float(median(timed_only_seconds))
+            median_cycles = int(median(timed_only_cycles))
 
             # -------------------------------------------------------------
             # Save timing stats into stage 3 JSON structure
             # -------------------------------------------------------------
-            loop_record.setdefault("median_times_ns", {})
-            loop_record["median_times_ns"][str(factor)] = median_runtime_ns
+            loop_record.setdefault("median_times_seconds", {})
+            loop_record.setdefault("median_cycles", {})
 
-            loop_record.setdefault("timing_stats_ns", {})
-            loop_record["timing_stats_ns"][str(factor)] = {
-                "all_times_ns": all_times_ns,
-                "timed_only_ns": timed_only_ns,
-                "median_time_ns": median_runtime_ns,
+            loop_record["median_times_seconds"][str(factor)] = median_runtime_seconds
+            loop_record["median_cycles"][str(factor)] = median_cycles
+
+            loop_record.setdefault("timing_stats", {})
+            loop_record["timing_stats"][str(factor)] = {
+                "all_times_seconds": all_times_seconds,
+                "timed_only_seconds": timed_only_seconds,
+                "median_time_seconds": median_runtime_seconds,
+                "all_cycles": all_cycles,
+                "timed_only_cycles": timed_only_cycles,
+                "median_cycles": median_cycles,
             }
 
     # -------------------------------------------------------------------------
@@ -244,4 +287,3 @@ if __name__ == "__main__":
         llvm_ir_filename,
         benchmark_json_index,
     )
-    

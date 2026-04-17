@@ -1,26 +1,3 @@
-#   ### Stage 4
-#   Runs the timed pass with unroll factor set to 1. This will run 
-#   `warmup_runs + timed_runs` number of times, and saves each time, 
-#   including the median time. This median time will serve as a baseline 
-#   for all the loops.
-
-# Create the executable for stage 4
-#   Example of what this stage will do (using atax benchmark as an example):
-#   ```
-#       temp$ ../../llvm-LUFG/build/bin/opt -strip-debug atax.ll -S -o atax-stripped.ll --my-unroll-factor=0 --my-hot-loop-index=0
-#       temp$ ../../llvm-LUFG/build/bin/llc atax-stripped.ll -filetype=obj -o atax.o
-#       temp$ clang -no-pie atax.o ../polybench-c-3.2/utilities/polybench.c -o atax.out
-#       temp$ ./atax.out
-#       TIMER_NS: 12345678
-#   ```
-
-# Generate the object file with llc
-
-# Generate the executable and link with any neccesary files with clang ("files_to_link" in the benchmark JSON)
-
-# Run and capture timer output, parse, and save median time to the JSON from stage 3, making sure to ignore the warmup runs.
-# This will be the baseline runtime ("median_times_ns"["1"]) for the loops in this benchmark.
-
 from pathlib import Path
 from statistics import median
 
@@ -29,7 +6,7 @@ def run_stage4_run_timed_pass(
     data_mode_opt_pass_filename: str,
     llvm_IR_filename: str,
     benchmark_json_index: int,
-) -> int:
+) -> float:
     import json
     import subprocess
 
@@ -128,13 +105,59 @@ def run_stage4_run_timed_pass(
         )
 
     # -------------------------------------------------------------------------
-    # Run executable and collect timing
+    # Helpers for parsing perf output
+    # -------------------------------------------------------------------------
+    def parse_perf_output(stderr_text: str) -> tuple[float, int]:
+        elapsed_seconds = None
+        cycles = None
+
+        for raw_line in stderr_text.splitlines():
+            line = raw_line.strip()
+
+            if "cycles" in line:
+                parts = line.split()
+                if len(parts) >= 2 and parts[1] == "cycles":
+                    cycle_str = parts[0].replace(",", "")
+                    cycles = int(cycle_str)
+
+            if line.endswith("seconds time elapsed"):
+                parts = line.split()
+                if len(parts) >= 4:
+                    elapsed_seconds = float(parts[0])
+
+        if elapsed_seconds is None:
+            raise RuntimeError(
+                "Could not parse 'seconds time elapsed' from perf output.\n"
+                f"STDERR:\n{stderr_text}"
+            )
+
+        if cycles is None:
+            raise RuntimeError(
+                "Could not parse 'cycles' from perf output.\n"
+                f"STDERR:\n{stderr_text}"
+            )
+
+        return elapsed_seconds, cycles
+
+    # -------------------------------------------------------------------------
+    # Run executable with perf and collect timing/cycles
     # -------------------------------------------------------------------------
     total_runs = warmup_runs + timed_runs
-    all_times_ns = []
+    all_times_seconds = []
+    all_cycles = []
 
     for i in range(total_runs):
-        run_cmd = [str(exe_path), *run_args]
+        run_cmd = [
+            "taskset",
+            "-c",
+            "3",
+            "perf",
+            "stat",
+            "-e",
+            "cycles",
+            str(exe_path),
+            *run_args,
+        ]
 
         result = subprocess.run(
             run_cmd,
@@ -151,18 +174,16 @@ def run_stage4_run_timed_pass(
                 f"STDERR:\n{result.stderr}"
             )
 
-        timer_val = None
-        for line in result.stdout.splitlines():
-            if line.startswith("TIMER_NS:"):
-                timer_val = int(line.split(":")[1].strip())
+        elapsed_seconds, cycles = parse_perf_output(result.stderr)
 
-        if timer_val is None:
-            raise RuntimeError(f"No TIMER_NS output found on run {i}")
+        all_times_seconds.append(elapsed_seconds)
+        all_cycles.append(cycles)
 
-        all_times_ns.append(timer_val)
+    timed_only_seconds = all_times_seconds[warmup_runs:]
+    timed_only_cycles = all_cycles[warmup_runs:]
 
-    timed_only = all_times_ns[warmup_runs:]
-    baseline_runtime = int(median(timed_only))
+    baseline_runtime_seconds = float(median(timed_only_seconds))
+    baseline_cycles = int(median(timed_only_cycles))
 
     # -------------------------------------------------------------------------
     # Update Stage 3 JSON
@@ -171,23 +192,30 @@ def run_stage4_run_timed_pass(
         stage3_data = json.load(f)
 
     for loop in stage3_data.get("loops", []):
-        loop.setdefault("median_times_ns", {})
-        loop["median_times_ns"]["1"] = baseline_runtime
+        loop.setdefault("median_times_seconds", {})
+        loop.setdefault("median_cycles", {})
+        loop["median_times_seconds"]["1"] = baseline_runtime_seconds
+        loop["median_cycles"]["1"] = baseline_cycles
 
     stage3_data["stage_4"] = {
-        "baseline_runtime_ns": baseline_runtime,
-        "all_times_ns": all_times_ns,
+        "baseline_runtime_seconds": baseline_runtime_seconds,
+        "baseline_cycles": baseline_cycles,
+        "all_times_seconds": all_times_seconds,
+        "all_cycles": all_cycles,
     }
 
     with open(stage3_json_path, "w", encoding="utf-8") as f:
         json.dump(stage3_data, f, indent=2)
 
-    print(f"Stage 4 complete. Baseline runtime: {baseline_runtime} ns")
+    print(
+        f"Stage 4 complete. Baseline runtime: {baseline_runtime_seconds} s, "
+        f"baseline cycles: {baseline_cycles}"
+    )
 
     if __name__ == "__main__":
         print(f"Stage 4 JSON output: {json.dumps(stage3_data, indent=2)}")
 
-    return baseline_runtime
+    return baseline_runtime_seconds
 
 
 if __name__ == "__main__":

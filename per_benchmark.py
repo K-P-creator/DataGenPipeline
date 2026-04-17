@@ -13,7 +13,7 @@
 #   Generates a clang command and runs the compilation process to covert from C 
 #   code to llvm IR.
 #   
-#   ### Stage 2
+#   ### Stage 2 - DEPRECATED - I will use perf instead now
 #   Interpolates a timer into the llvm bytecode to surround the main function. 
 #   Timers will output to cout.
 #   
@@ -50,9 +50,10 @@ def run_per_benchmark(benchmark_json_index: int) -> Path:
     llvm_IR_filename = stage_1.run_stage1_generate_ir(benchmark_json_index)
     print("") # \n
 
+    #   DEPRECATED  
     # Stage 2: Interpolate timer into LLVM bytecode
-    stage_2.run_stage2_interpolate_timer(llvm_IR_filename)
-    print("") # \n
+    #   stage_2.run_stage2_interpolate_timer(llvm_IR_filename)
+    #   print("") # \n
 
     # Stage 3: Run opt pass in data collection mode to determine loop features
     data_mode_opt_pass_filename = stage_3.run_stage3_collect_loop_features(llvm_IR_filename)

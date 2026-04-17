@@ -1,6 +1,6 @@
 {
-  "warmup_runs": 1,
-  "timed_runs": 10,
+  "warmup_runs": 2,
+  "timed_runs": 20,
   "unroll_factors": [1, 2, 4, 8],
   "target_triple": "x86_64-linux-gnu",
   "clang_path": "/home/k-p-creator/CS489_Semester_Proj/llvm-LUFG/build/bin/clang",
