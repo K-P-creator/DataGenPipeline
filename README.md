@@ -60,6 +60,6 @@ Runs loops `(warmup_runs + timed_runs) * len(unroll_factor)` number of times, an
 
 ##  Configs
 
-Right now the configs contain mostly flags to be used when running stages. They also contain some options to be used when collecting data. The default warmup runs has been changed to 2, with the runs per loop updated to 20. So we run each test 22 times, throw out the first two runs, then take the median of the remaining 20. 
+Right now the configs contain mostly flags to be used when running stages. They also contain some options to be used when collecting data. The default warmup runs has been changed to 2, with the runs per loop updated to 10. So we run each test 12 times, throw out the first two runs, then take the median of the remaining 10. 
 
 I have also baked in to the script an extra perfomance considerations. I am pinning to CPU core 3.
