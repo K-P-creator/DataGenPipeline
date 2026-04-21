@@ -12,7 +12,7 @@ from pathlib import Path
 import json
 
 DATA_DIR = Path("data")
-OUTPUT_PATH = Path("labeled_data/dataset.json")
+OUTPUT_PATH = Path("labeled_data/dataset.jsonl")
 
 def gen_labeled_data():
     #   Create a new datset file
@@ -68,6 +68,7 @@ def gen_labeled_data():
             del loop["features"]["is_loop_simplify_form"]
             del loop["features"]["is_rotated"]
             del loop["features"]["has_dedicated_exits"]
+            del loop["features"]["tripmultiple"]
             
             #   Concat loop to dataset
             with open(OUTPUT_PATH, 'a', encoding="utf-8") as file:
