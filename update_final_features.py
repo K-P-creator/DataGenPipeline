@@ -56,11 +56,12 @@ def update_final_features():
                 if feature not in old_features:
                     changed += 1
                     old_features[feature] = new_features[feature]
-                    print (f"added {feature} to dataset")
+                    print (indent + f"added {feature} to dataset")
                     
             with open(file, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
        
-    print(f"Added {changed} new features.")
+    print(indent + f"Added {changed} new features.")
 
-update_final_features()
+if __name__ == "__main__":
+    update_final_features()
