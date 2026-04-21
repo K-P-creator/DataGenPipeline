@@ -64,6 +64,10 @@ def gen_labeled_data():
             del loop["features"]["loop_location"]
             del loop["features"]["loop_range"]
             del loop["features"]["tripcount"]
+            del loop["features"]["is_annotated_parallel"]
+            del loop["features"]["is_loop_simplify_form"]
+            del loop["features"]["is_rotated"]
+            del loop["features"]["has_dedicated_exits"]
             
             #   Concat loop to dataset
             with open(OUTPUT_PATH, 'a', encoding="utf-8") as file:
