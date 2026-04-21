@@ -64,6 +64,22 @@ Runs loops `(warmup_runs + timed_runs) * len(unroll_factor)` number of times, an
 
 ---
 
+## Tools
+
+### Data Analysis
+
+A simple script to count positive examples in the data dir, and to check for duplicate loops.
+
+### Update Final Features
+
+Updates the loop features in data dir based off of new features generated from the llvm output. I used this to add new features to existing benchmarks after updating the llvm output. 
+
+### Generate Labeled Data
+
+Used to concatonate all loops into a final data set and generate labels for them. It also strips off all benchmarking data (ie timers and cycle counts). 
+
+---
+
 ##  Configs
 
 Right now the configs contain mostly flags to be used when running stages. They also contain some options to be used when collecting data. The default warmup runs has been changed to 2, with the runs per loop updated to 10. So we run each test 12 times, throw out the first two runs, then take the median of the remaining 10. 
