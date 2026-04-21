@@ -23,6 +23,7 @@
         "total_instructions": 9,
         "num_loads": 0,
         "num_stores": 1,
+        "num_getelementptrs": 1,
         "num_branches": 2,
         "num_calls": 0,
         "num_phis": 1,
@@ -33,6 +34,7 @@
         "initial_loop_size": 7,
         "load_density": 0,
         "store_density": 0.111111,
+        "getelementptr_density": 0.111111,
         "branch_density": 0.222222,
         "call_density": 0,
         "phi_density": 0.111111,
@@ -42,66 +44,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "POOGSBRIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.1313178165,
-        "4": 0.1268008355,
-        "8": 0.127771734
+        "1": 0.132700077,
+        "2": 0.1376430395,
+        "4": 0.1327747625,
+        "8": 0.13205425199999998
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 519024700,
-        "4": 501516951,
-        "8": 504626926
+        "1": 454239806,
+        "2": 470511499,
+        "4": 454809272,
+        "8": 451818492
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1313178165,
-            "min": 0.130328696,
-            "max": 0.133979719,
-            "stdev": 0.0011771684639890053,
+            "median": 0.1376430395,
+            "min": 0.137129546,
+            "max": 0.14676857,
+            "stdev": 0.0036753223587954863,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 519024700,
-            "min": 514471708,
-            "max": 530734784,
-            "stdev": 5130704.815603923,
+            "median": 470511499,
+            "min": 468447504,
+            "max": 497967512,
+            "stdev": 11613954.506783249,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1268008355,
-            "min": 0.1261059,
-            "max": 0.130496627,
-            "stdev": 0.0015078667508400443,
+            "median": 0.1327747625,
+            "min": 0.132238632,
+            "max": 0.134371645,
+            "stdev": 0.0006743790991534278,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 501516951,
-            "min": 498965076,
-            "max": 517852710,
-            "stdev": 6508852.200487683,
+            "median": 454809272,
+            "min": 452217965,
+            "max": 462595219,
+            "stdev": 3101890.6331228665,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.127771734,
-            "min": 0.126071432,
-            "max": 0.129112844,
-            "stdev": 0.0008417063773649096,
+            "median": 0.13205425199999998,
+            "min": 0.131880052,
+            "max": 0.13396176,
+            "stdev": 0.0006779622198618482,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 504626926,
-            "min": 496831123,
-            "max": 509844345,
-            "stdev": 3661651.3190614483,
+            "median": 451818492,
+            "min": 450503153,
+            "max": 459874354,
+            "stdev": 2889390.0377391246,
             "num_timed_runs": 10
           }
         }
@@ -129,6 +132,7 @@
         "total_instructions": 37,
         "num_loads": 0,
         "num_stores": 3,
+        "num_getelementptrs": 6,
         "num_branches": 2,
         "num_calls": 0,
         "num_phis": 1,
@@ -139,6 +143,7 @@
         "initial_loop_size": 30,
         "load_density": 0,
         "store_density": 0.0810811,
+        "getelementptr_density": 0.162162,
         "branch_density": 0.0540541,
         "call_density": 0,
         "phi_density": 0.027027,
@@ -148,66 +153,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "POOROOAOAGGSOOROOAOAGGSOOROOAOAGGSBIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.13200023,
-        "4": 0.130313034,
-        "8": 0.1270381815
+        "1": 0.132700077,
+        "2": 0.14662694050000002,
+        "4": 0.137089222,
+        "8": 0.131379077
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 521511707,
-        "4": 513367113,
-        "8": 501944409
+        "1": 454239806,
+        "2": 499297032,
+        "4": 469075914,
+        "8": 449187503
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.13200023,
-            "min": 0.131011635,
-            "max": 0.134050511,
-            "stdev": 0.0010292004263294321,
+            "median": 0.14662694050000002,
+            "min": 0.136827301,
+            "max": 0.149861938,
+            "stdev": 0.004297900257436756,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 521511707,
-            "min": 517318029,
-            "max": 531578123,
-            "stdev": 4695617.470814733,
+            "median": 499297032,
+            "min": 467822932,
+            "max": 507934496,
+            "stdev": 13740930.456385588,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.130313034,
-            "min": 0.129683025,
-            "max": 0.136621952,
-            "stdev": 0.0022350519431993785,
+            "median": 0.137089222,
+            "min": 0.136829437,
+            "max": 0.140141173,
+            "stdev": 0.0010069312022166733,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 513367113,
-            "min": 511004248,
-            "max": 541736701,
-            "stdev": 9895632.93985214,
+            "median": 469075914,
+            "min": 468077718,
+            "max": 482294155,
+            "stdev": 4337844.241891357,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1270381815,
-            "min": 0.126042398,
-            "max": 0.132061213,
-            "stdev": 0.0018803398883408915,
+            "median": 0.131379077,
+            "min": 0.130927574,
+            "max": 0.136156722,
+            "stdev": 0.0015350217541767418,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 501944409,
-            "min": 498058103,
-            "max": 524001652,
-            "stdev": 8212285.526980889,
+            "median": 449187503,
+            "min": 447854629,
+            "max": 469982484,
+            "stdev": 6697790.007423402,
             "num_timed_runs": 10
           }
         }
@@ -235,6 +241,7 @@
         "total_instructions": 47,
         "num_loads": 0,
         "num_stores": 3,
+        "num_getelementptrs": 6,
         "num_branches": 7,
         "num_calls": 0,
         "num_phis": 2,
@@ -245,6 +252,7 @@
         "initial_loop_size": 38,
         "load_density": 0,
         "store_density": 0.0638298,
+        "getelementptr_density": 0.12766,
         "branch_density": 0.148936,
         "call_density": 0,
         "phi_density": 0.0425532,
@@ -254,66 +262,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PIBBRIBPOOROOAOAGGSOOROOAOAGGSOOROOAOAGGSBIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.1279242125,
-        "4": 0.127692731,
-        "8": 0.1278683815
+        "1": 0.132700077,
+        "2": 0.133125263,
+        "4": 0.132686154,
+        "8": 0.13272476649999998
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 506229744,
-        "4": 504951254,
-        "8": 505352432
+        "1": 454239806,
+        "2": 456680218,
+        "4": 453865290,
+        "8": 454086909
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1279242125,
-            "min": 0.125623041,
-            "max": 0.131237588,
-            "stdev": 0.001766403466607959,
+            "median": 0.133125263,
+            "min": 0.130408154,
+            "max": 0.139015801,
+            "stdev": 0.0026617357066552037,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 506229744,
-            "min": 496772964,
-            "max": 520127695,
-            "stdev": 7563464.919450741,
+            "median": 456680218,
+            "min": 452433344,
+            "max": 474493475,
+            "stdev": 7449974.73981439,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.127692731,
-            "min": 0.126408046,
-            "max": 0.130659192,
-            "stdev": 0.0014854644347188201,
+            "median": 0.132686154,
+            "min": 0.130473928,
+            "max": 0.133775484,
+            "stdev": 0.000850669383779421,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 504951254,
-            "min": 499586504,
-            "max": 516911802,
-            "stdev": 6308751.141535349,
+            "median": 453865290,
+            "min": 452172197,
+            "max": 457203446,
+            "stdev": 1705325.7142572957,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1278683815,
-            "min": 0.126443299,
-            "max": 0.131153474,
-            "stdev": 0.0013959561163284161,
+            "median": 0.13272476649999998,
+            "min": 0.131746724,
+            "max": 0.136324686,
+            "stdev": 0.001320321246157648,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 505352432,
-            "min": 499664512,
-            "max": 519951161,
-            "stdev": 6150429.781558902,
+            "median": 454086909,
+            "min": 451496778,
+            "max": 469051865,
+            "stdev": 5211990.108335859,
             "num_timed_runs": 10
           }
         }
@@ -341,6 +350,7 @@
         "total_instructions": 10,
         "num_loads": 1,
         "num_stores": 1,
+        "num_getelementptrs": 3,
         "num_branches": 2,
         "num_calls": 0,
         "num_phis": 1,
@@ -351,6 +361,7 @@
         "initial_loop_size": 7,
         "load_density": 0.1,
         "store_density": 0.1,
+        "getelementptr_density": 0.3,
         "branch_density": 0.2,
         "call_density": 0,
         "phi_density": 0.1,
@@ -360,66 +371,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PGLGGSBRIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.12912146800000002,
-        "4": 0.131124985,
-        "8": 0.12821156849999998
+        "1": 0.132700077,
+        "2": 0.1349103985,
+        "4": 0.13774673199999998,
+        "8": 0.1323393225
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 510512005,
-        "4": 519306703,
-        "8": 507743874
+        "1": 454239806,
+        "2": 461568912,
+        "4": 470486833,
+        "8": 452945691
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.12912146800000002,
-            "min": 0.128585416,
-            "max": 0.131732155,
-            "stdev": 0.0009307086216956489,
+            "median": 0.1349103985,
+            "min": 0.134261942,
+            "max": 0.135978789,
+            "stdev": 0.0005193465217128974,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510512005,
-            "min": 508031545,
-            "max": 521324308,
-            "stdev": 4079185.4911651774,
+            "median": 461568912,
+            "min": 459553978,
+            "max": 465658114,
+            "stdev": 1931556.5830184992,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.131124985,
-            "min": 0.130339234,
-            "max": 0.13578229,
-            "stdev": 0.0016367520930712814,
+            "median": 0.13774673199999998,
+            "min": 0.136560667,
+            "max": 0.138541146,
+            "stdev": 0.0006826059980784117,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 519306703,
-            "min": 514559154,
-            "max": 537577668,
-            "stdev": 6804023.661751381,
+            "median": 470486833,
+            "min": 466177366,
+            "max": 475321447,
+            "stdev": 3155990.9139518836,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.12821156849999998,
-            "min": 0.126019185,
-            "max": 0.134179638,
-            "stdev": 0.0027479481135823944,
+            "median": 0.1323393225,
+            "min": 0.130497292,
+            "max": 0.134067691,
+            "stdev": 0.0010094892946954045,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 507743874,
-            "min": 501301759,
-            "max": 532000836,
-            "stdev": 10982900.99422396,
+            "median": 452945691,
+            "min": 451764355,
+            "max": 459819236,
+            "stdev": 2818436.301567386,
             "num_timed_runs": 10
           }
         }
@@ -447,6 +459,7 @@
         "total_instructions": 20,
         "num_loads": 3,
         "num_stores": 1,
+        "num_getelementptrs": 8,
         "num_branches": 2,
         "num_calls": 1,
         "num_phis": 1,
@@ -457,6 +470,7 @@
         "initial_loop_size": 17,
         "load_density": 0.15,
         "store_density": 0.05,
+        "getelementptr_density": 0.4,
         "branch_density": 0.1,
         "call_density": 0.05,
         "phi_density": 0.05,
@@ -466,66 +480,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PGGLGGLRGGLACGGSBRIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.129125742,
-        "4": 0.1292213625,
-        "8": 0.1300424155
+        "1": 0.132700077,
+        "2": 0.13489157899999998,
+        "4": 0.13494786549999999,
+        "8": 0.1353960985
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 510115674,
-        "4": 510870355,
-        "8": 513618268
+        "1": 454239806,
+        "2": 462182436,
+        "4": 461588373,
+        "8": 463401966
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.129125742,
-            "min": 0.126637881,
-            "max": 0.133905142,
-            "stdev": 0.0018523685516796053,
+            "median": 0.13489157899999998,
+            "min": 0.134534893,
+            "max": 0.135960436,
+            "stdev": 0.0004641721808168551,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510115674,
-            "min": 505874001,
-            "max": 530071033,
-            "stdev": 6690794.293987608,
+            "median": 462182436,
+            "min": 461022648,
+            "max": 463987603,
+            "stdev": 990894.498530472,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1292213625,
-            "min": 0.128152964,
-            "max": 0.136280043,
-            "stdev": 0.0023970746857720697,
+            "median": 0.13494786549999999,
+            "min": 0.134434977,
+            "max": 0.135968882,
+            "stdev": 0.0005181766216069707,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510870355,
-            "min": 505784586,
-            "max": 540586350,
-            "stdev": 10190448.921755936,
+            "median": 461588373,
+            "min": 458745818,
+            "max": 465945529,
+            "stdev": 2199371.5295306244,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1300424155,
-            "min": 0.127930252,
-            "max": 0.134011043,
-            "stdev": 0.0015189101821781463,
+            "median": 0.1353960985,
+            "min": 0.133870484,
+            "max": 0.138811723,
+            "stdev": 0.001521069089799266,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 513618268,
-            "min": 504994258,
-            "max": 531077128,
-            "stdev": 6601337.478925249,
+            "median": 463401966,
+            "min": 458314301,
+            "max": 477874316,
+            "stdev": 6853893.689839128,
             "num_timed_runs": 10
           }
         }
@@ -553,6 +568,7 @@
         "total_instructions": 30,
         "num_loads": 3,
         "num_stores": 1,
+        "num_getelementptrs": 8,
         "num_branches": 7,
         "num_calls": 1,
         "num_phis": 2,
@@ -563,6 +579,7 @@
         "initial_loop_size": 25,
         "load_density": 0.1,
         "store_density": 0.0333333,
+        "getelementptr_density": 0.266667,
         "branch_density": 0.233333,
         "call_density": 0.0333333,
         "phi_density": 0.0666667,
@@ -572,66 +589,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PIBBRIBPGGLGGLRGGLACGGSBRIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.1299551045,
-        "4": 0.1281007055,
-        "8": 0.1306963705
+        "1": 0.132700077,
+        "2": 0.136838301,
+        "4": 0.133712468,
+        "8": 0.13577267199999998
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 513569261,
-        "4": 506405802,
-        "8": 516156707
+        "1": 454239806,
+        "2": 468215474,
+        "4": 456840574,
+        "8": 463617703
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1299551045,
-            "min": 0.126489814,
-            "max": 0.132874413,
-            "stdev": 0.0017533094056118915,
+            "median": 0.136838301,
+            "min": 0.136286405,
+            "max": 0.154366906,
+            "stdev": 0.007342538514141236,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 513569261,
-            "min": 508529720,
-            "max": 526453429,
-            "stdev": 5979616.514281877,
+            "median": 468215474,
+            "min": 465361197,
+            "max": 530967009,
+            "stdev": 26181064.73081134,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1281007055,
-            "min": 0.127041032,
-            "max": 0.131178395,
-            "stdev": 0.0012626394685980628,
+            "median": 0.133712468,
+            "min": 0.132779987,
+            "max": 0.136223288,
+            "stdev": 0.0011728206850622229,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 506405802,
-            "min": 501860289,
-            "max": 520164750,
-            "stdev": 5574914.181003608,
+            "median": 456840574,
+            "min": 453366399,
+            "max": 469422517,
+            "stdev": 5202524.653039889,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1306963705,
-            "min": 0.12971876,
-            "max": 0.136830551,
-            "stdev": 0.0021801868174036133,
+            "median": 0.13577267199999998,
+            "min": 0.135385174,
+            "max": 0.136557914,
+            "stdev": 0.0003777811160710368,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 516156707,
-            "min": 512714597,
-            "max": 542554717,
-            "stdev": 9279486.643072953,
+            "median": 463617703,
+            "min": 462048842,
+            "max": 467028622,
+            "stdev": 1707216.1882703796,
             "num_timed_runs": 10
           }
         }
@@ -659,6 +677,7 @@
         "total_instructions": 20,
         "num_loads": 3,
         "num_stores": 1,
+        "num_getelementptrs": 8,
         "num_branches": 2,
         "num_calls": 1,
         "num_phis": 1,
@@ -669,6 +688,7 @@
         "initial_loop_size": 17,
         "load_density": 0.15,
         "store_density": 0.05,
+        "getelementptr_density": 0.4,
         "branch_density": 0.1,
         "call_density": 0.05,
         "phi_density": 0.05,
@@ -678,66 +698,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PGGLGGLGRGLACGGSBRIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.127560995,
-        "4": 0.1272523335,
-        "8": 0.127471154
+        "1": 0.132700077,
+        "2": 0.132995469,
+        "4": 0.1328286185,
+        "8": 0.132172433
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 504178424,
-        "4": 502789528,
-        "8": 503660520
+        "1": 454239806,
+        "2": 455706136,
+        "4": 453953415,
+        "8": 453213149
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.127560995,
-            "min": 0.126358299,
-            "max": 0.132306371,
-            "stdev": 0.001688885426244517,
+            "median": 0.132995469,
+            "min": 0.132190156,
+            "max": 0.145007926,
+            "stdev": 0.00434793862716667,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 504178424,
-            "min": 499766564,
-            "max": 525054830,
-            "stdev": 7212143.175177731,
+            "median": 455706136,
+            "min": 452397710,
+            "max": 497243964,
+            "stdev": 14828563.58709927,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.1272523335,
-            "min": 0.125558258,
-            "max": 0.131484999,
-            "stdev": 0.0018464755230981804,
+            "median": 0.1328286185,
+            "min": 0.131928356,
+            "max": 0.135818453,
+            "stdev": 0.0013097475004831066,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 502789528,
-            "min": 495824649,
-            "max": 521249771,
-            "stdev": 7960743.015516764,
+            "median": 453953415,
+            "min": 451084991,
+            "max": 465552567,
+            "stdev": 4886972.491475156,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.127471154,
-            "min": 0.126888564,
-            "max": 0.131348211,
-            "stdev": 0.0013474157262479403,
+            "median": 0.132172433,
+            "min": 0.130890729,
+            "max": 0.133693825,
+            "stdev": 0.0007324042843373644,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 503660520,
-            "min": 501465956,
-            "max": 520254160,
-            "stdev": 5750249.867500183,
+            "median": 453213149,
+            "min": 449840554,
+            "max": 458917702,
+            "stdev": 2561729.4317540075,
             "num_timed_runs": 10
           }
         }
@@ -765,6 +786,7 @@
         "total_instructions": 30,
         "num_loads": 3,
         "num_stores": 1,
+        "num_getelementptrs": 8,
         "num_branches": 7,
         "num_calls": 1,
         "num_phis": 2,
@@ -775,6 +797,7 @@
         "initial_loop_size": 25,
         "load_density": 0.1,
         "store_density": 0.0333333,
+        "getelementptr_density": 0.266667,
         "branch_density": 0.233333,
         "call_density": 0.0333333,
         "phi_density": 0.0666667,
@@ -784,66 +807,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PIBBRIBPGGLGGLGRGLACGGSBRIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.1307942855,
-        "4": 0.129492812,
-        "8": 0.12944529
+        "1": 0.132700077,
+        "2": 0.138355687,
+        "4": 0.1351475055,
+        "8": 0.13505394599999998
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 517401607,
-        "4": 511712831,
-        "8": 510980789
+        "1": 454239806,
+        "2": 473117470,
+        "4": 461494306,
+        "8": 461962222
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1307942855,
-            "min": 0.128980046,
-            "max": 0.133145621,
-            "stdev": 0.001277576218835771,
+            "median": 0.138355687,
+            "min": 0.136194185,
+            "max": 0.145765622,
+            "stdev": 0.0029573588146989964,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 517401607,
-            "min": 509831993,
-            "max": 528162276,
-            "stdev": 5826575.515662818,
+            "median": 473117470,
+            "min": 466499443,
+            "max": 500736987,
+            "stdev": 10622098.295310207,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.129492812,
-            "min": 0.128154457,
-            "max": 0.133710906,
-            "stdev": 0.0019672221527317684,
+            "median": 0.1351475055,
+            "min": 0.133507437,
+            "max": 0.13601465,
+            "stdev": 0.0006658093211214917,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 511712831,
-            "min": 505612577,
-            "max": 530674868,
-            "stdev": 8890512.285665844,
+            "median": 461494306,
+            "min": 459207718,
+            "max": 467105916,
+            "stdev": 2375465.749213285,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.12944529,
-            "min": 0.128154674,
-            "max": 0.131145863,
-            "stdev": 0.0009488552797035754,
+            "median": 0.13505394599999998,
+            "min": 0.134495073,
+            "max": 0.136197062,
+            "stdev": 0.0005228199030103868,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510980789,
-            "min": 505066677,
-            "max": 518842858,
-            "stdev": 4479471.5909694275,
+            "median": 461962222,
+            "min": 460658688,
+            "max": 466583915,
+            "stdev": 1949173.692694491,
             "num_timed_runs": 10
           }
         }
@@ -871,6 +895,7 @@
         "total_instructions": 28,
         "num_loads": 5,
         "num_stores": 1,
+        "num_getelementptrs": 12,
         "num_branches": 2,
         "num_calls": 1,
         "num_phis": 1,
@@ -881,6 +906,7 @@
         "initial_loop_size": 23,
         "load_density": 0.178571,
         "store_density": 0.0357143,
+        "getelementptr_density": 0.428571,
         "branch_density": 0.0714286,
         "call_density": 0.0357143,
         "phi_density": 0.0357143,
@@ -890,66 +916,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PGGLGRGLGGLARGGLAGGLACGGSBIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.1277555045,
-        "4": 0.128447696,
-        "8": 0.12942781250000002
+        "1": 0.132700077,
+        "2": 0.1331362035,
+        "4": 0.13466640800000002,
+        "8": 0.135366195
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 505923174,
-        "4": 508095436,
-        "8": 511181645
+        "1": 454239806,
+        "2": 455892394,
+        "4": 460427251,
+        "8": 464907308
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.1277555045,
-            "min": 0.125750191,
-            "max": 0.130634162,
-            "stdev": 0.0015613124886112797,
+            "median": 0.1331362035,
+            "min": 0.131987108,
+            "max": 0.133555337,
+            "stdev": 0.00046616912175400656,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 505923174,
-            "min": 497531791,
-            "max": 517870478,
-            "stdev": 6580377.9007657645,
+            "median": 455892394,
+            "min": 451635246,
+            "max": 460160107,
+            "stdev": 2236763.885295821,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.128447696,
-            "min": 0.125819758,
-            "max": 0.13148437,
-            "stdev": 0.001704637847920249,
+            "median": 0.13466640800000002,
+            "min": 0.134023973,
+            "max": 0.141399249,
+            "stdev": 0.002173547365927211,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 508095436,
-            "min": 506718981,
-            "max": 520310431,
-            "stdev": 5635521.833025156,
+            "median": 460427251,
+            "min": 458882227,
+            "max": 482958426,
+            "stdev": 7207093.519216942,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.12942781250000002,
-            "min": 0.128551788,
-            "max": 0.131425096,
-            "stdev": 0.0009095642723170014,
+            "median": 0.135366195,
+            "min": 0.133105017,
+            "max": 0.13678436,
+            "stdev": 0.0009870016306403352,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 511181645,
-            "min": 507647829,
-            "max": 520310315,
-            "stdev": 4067377.2061645766,
+            "median": 464907308,
+            "min": 463274391,
+            "max": 470194434,
+            "stdev": 2235358.6543404046,
             "num_timed_runs": 10
           }
         }
@@ -977,6 +1004,7 @@
         "total_instructions": 39,
         "num_loads": 5,
         "num_stores": 1,
+        "num_getelementptrs": 12,
         "num_branches": 7,
         "num_calls": 1,
         "num_phis": 2,
@@ -987,6 +1015,7 @@
         "initial_loop_size": 32,
         "load_density": 0.128205,
         "store_density": 0.025641,
+        "getelementptr_density": 0.307692,
         "branch_density": 0.179487,
         "call_density": 0.025641,
         "phi_density": 0.0512821,
@@ -996,66 +1025,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PRIBBRIBPGGLGRGLGGLARGGLAGGLACGGSBIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.127157937,
-        "4": 0.13173251949999998,
-        "8": 0.1294797405
+        "1": 0.132700077,
+        "2": 0.13276135449999998,
+        "4": 0.137569932,
+        "8": 0.13542144
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 502721715,
-        "4": 520577907,
-        "8": 512090381
+        "1": 454239806,
+        "2": 454347874,
+        "4": 470257595,
+        "8": 463881601
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.127157937,
-            "min": 0.126362809,
-            "max": 0.131355433,
-            "stdev": 0.0017285771341376598,
+            "median": 0.13276135449999998,
+            "min": 0.132069282,
+            "max": 0.135263317,
+            "stdev": 0.0010181326968534158,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 502721715,
-            "min": 499092148,
-            "max": 520640095,
-            "stdev": 7375653.226226229,
+            "median": 454347874,
+            "min": 451551015,
+            "max": 464567764,
+            "stdev": 4295447.632794546,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.13173251949999998,
-            "min": 0.131112244,
-            "max": 0.133683917,
-            "stdev": 0.0008330722459070835,
+            "median": 0.137569932,
+            "min": 0.137148019,
+            "max": 0.138024576,
+            "stdev": 0.00026949641328120395,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 520577907,
-            "min": 516911960,
-            "max": 529206404,
-            "stdev": 3629804.664197994,
+            "median": 470257595,
+            "min": 468412648,
+            "max": 472477317,
+            "stdev": 1058175.2942485528,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1294797405,
-            "min": 0.127429288,
-            "max": 0.131641571,
-            "stdev": 0.0013192303615954632,
+            "median": 0.13542144,
+            "min": 0.132998569,
+            "max": 0.137237707,
+            "stdev": 0.0010816701174779207,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 512090381,
-            "min": 503038814,
-            "max": 520948798,
-            "stdev": 5720863.867036303,
+            "median": 463881601,
+            "min": 462142197,
+            "max": 470281617,
+            "stdev": 2455164.2093425035,
             "num_timed_runs": 10
           }
         }
@@ -1083,6 +1113,7 @@
         "total_instructions": 134,
         "num_loads": 12,
         "num_stores": 4,
+        "num_getelementptrs": 30,
         "num_branches": 37,
         "num_calls": 3,
         "num_phis": 8,
@@ -1093,6 +1124,7 @@
         "initial_loop_size": 110,
         "load_density": 0.0895522,
         "store_density": 0.0298507,
+        "getelementptr_density": 0.223881,
         "branch_density": 0.276119,
         "call_density": 0.0223881,
         "phi_density": 0.0597015,
@@ -1102,66 +1134,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PIBIBIBRIBBRIBPRIBBRIBPGGLGRGLGGLARGGLAGGLACGGSBIBPIBBRIBPGGLGGLGRGLACGGSBRIBPIBBRIBPGGLGGLRGGLACGGSBRIBPGLGSBRIBOBBOBBOBBOBBOBBOBBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.12968246700000002,
-        "4": 0.12927297199999999,
-        "8": 0.1300129285
+        "1": 0.132700077,
+        "2": 0.135114295,
+        "4": 0.134778694,
+        "8": 0.13521039099999999
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 512344829,
-        "4": 510856221,
-        "8": 513703076
+        "1": 454239806,
+        "2": 462165426,
+        "4": 460163581,
+        "8": 462119768
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.12968246700000002,
-            "min": 0.128364736,
-            "max": 0.131985122,
-            "stdev": 0.0010338303218780584,
+            "median": 0.135114295,
+            "min": 0.134173713,
+            "max": 0.136209596,
+            "stdev": 0.0006546881237434406,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 512344829,
-            "min": 506849069,
-            "max": 523105646,
-            "stdev": 4846439.41456464,
+            "median": 462165426,
+            "min": 457949881,
+            "max": 466983030,
+            "stdev": 2806898.737941259,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.12927297199999999,
-            "min": 0.128374241,
-            "max": 0.134501829,
-            "stdev": 0.0022721675726817343,
+            "median": 0.134778694,
+            "min": 0.132210768,
+            "max": 0.135960452,
+            "stdev": 0.0009720727717869221,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510856221,
-            "min": 507070252,
-            "max": 534086409,
-            "stdev": 10133084.576807542,
+            "median": 460163581,
+            "min": 458626029,
+            "max": 465459412,
+            "stdev": 2076460.7556194158,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1300129285,
-            "min": 0.128602875,
-            "max": 0.133024891,
-            "stdev": 0.0015946025851780261,
+            "median": 0.13521039099999999,
+            "min": 0.130423931,
+            "max": 0.135598817,
+            "stdev": 0.001535961220384018,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 513703076,
-            "min": 507288809,
-            "max": 526994256,
-            "stdev": 7190820.353393903,
+            "median": 462119768,
+            "min": 454399133,
+            "max": 464458194,
+            "stdev": 2865753.544603273,
             "num_timed_runs": 10
           }
         }
@@ -1189,6 +1222,7 @@
         "total_instructions": 29,
         "num_loads": 7,
         "num_stores": 0,
+        "num_getelementptrs": 6,
         "num_branches": 4,
         "num_calls": 4,
         "num_phis": 1,
@@ -1199,6 +1233,7 @@
         "initial_loop_size": 35,
         "load_density": 0.241379,
         "store_density": 0,
+        "getelementptr_density": 0.206897,
         "branch_density": 0.137931,
         "call_density": 0.137931,
         "phi_density": 0.0344828,
@@ -1208,66 +1243,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PLGGLCLGGLCLGGLCRRORIBLCBBRIB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.127011649,
-        "4": 0.12709893900000002,
-        "8": 0.129126741
+        "1": 0.132700077,
+        "2": 0.1326550475,
+        "4": 0.132128054,
+        "8": 0.132435329
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 502047605,
-        "4": 502040873,
-        "8": 510547967
+        "1": 454239806,
+        "2": 455000193,
+        "4": 452382502,
+        "8": 455671092
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.127011649,
-            "min": 0.126449893,
-            "max": 0.128109037,
-            "stdev": 0.0006000408935002215,
+            "median": 0.1326550475,
+            "min": 0.131876513,
+            "max": 0.133676174,
+            "stdev": 0.0006074115182276365,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 502047605,
-            "min": 500149715,
-            "max": 507357773,
-            "stdev": 2524696.460145481,
+            "median": 455000193,
+            "min": 450805724,
+            "max": 457941857,
+            "stdev": 2299011.5510134376,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.12709893900000002,
-            "min": 0.126328753,
-            "max": 0.129729256,
-            "stdev": 0.0013240625926994754,
+            "median": 0.132128054,
+            "min": 0.131658256,
+            "max": 0.133386885,
+            "stdev": 0.0005954227102508416,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 502040873,
-            "min": 499619698,
-            "max": 513945034,
-            "stdev": 5704083.474235493,
+            "median": 452382502,
+            "min": 450610353,
+            "max": 458883431,
+            "stdev": 2374336.265341079,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.129126741,
-            "min": 0.127145227,
-            "max": 0.133662065,
-            "stdev": 0.0019025215993769818,
+            "median": 0.132435329,
+            "min": 0.131841359,
+            "max": 0.134161974,
+            "stdev": 0.0007702567273758906,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 510547967,
-            "min": 501672410,
-            "max": 530688544,
-            "stdev": 8453518.033408841,
+            "median": 455671092,
+            "min": 452451283,
+            "max": 462255580,
+            "stdev": 2976273.3265333604,
             "num_timed_runs": 10
           }
         }
@@ -1295,6 +1331,7 @@
         "total_instructions": 39,
         "num_loads": 7,
         "num_stores": 0,
+        "num_getelementptrs": 6,
         "num_branches": 9,
         "num_calls": 4,
         "num_phis": 2,
@@ -1305,6 +1342,7 @@
         "initial_loop_size": 43,
         "load_density": 0.179487,
         "store_density": 0,
+        "getelementptr_density": 0.153846,
         "branch_density": 0.230769,
         "call_density": 0.102564,
         "phi_density": 0.0512821,
@@ -1314,66 +1352,67 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "loopinstructionordering": "PIBBRIBPLGGLCLGGLCLGGLCRRORIBLCBBRIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.127328411,
-        "2": 0.127515102,
-        "4": 0.12747219799999998,
-        "8": 0.1295788475
+        "1": 0.132700077,
+        "2": 0.1328093265,
+        "4": 0.1318914725,
+        "8": 0.132309089
       },
       "median_cycles": {
-        "1": 503780864,
-        "2": 504950267,
-        "4": 504350472,
-        "8": 512759565
+        "1": 454239806,
+        "2": 453996097,
+        "4": 451915574,
+        "8": 455520856
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.127515102,
-            "min": 0.126617207,
-            "max": 0.131738471,
-            "stdev": 0.0015325061892811586,
+            "median": 0.1328093265,
+            "min": 0.13193813,
+            "max": 0.134706129,
+            "stdev": 0.0008324220975479084,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 504950267,
-            "min": 500967124,
-            "max": 522790841,
-            "stdev": 6409843.710191602,
+            "median": 453996097,
+            "min": 451041932,
+            "max": 463428895,
+            "stdev": 3715367.9571478907,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.12747219799999998,
-            "min": 0.125498009,
-            "max": 0.129038083,
-            "stdev": 0.0011129306596386534,
+            "median": 0.1318914725,
+            "min": 0.131468813,
+            "max": 0.132927528,
+            "stdev": 0.0005125729547797643,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 504350472,
-            "min": 495823655,
-            "max": 511579095,
-            "stdev": 4790066.59806739,
+            "median": 451915574,
+            "min": 449788825,
+            "max": 454883915,
+            "stdev": 1854602.620000977,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.1295788475,
-            "min": 0.127641998,
-            "max": 0.145543483,
-            "stdev": 0.006918893363022865,
+            "median": 0.132309089,
+            "min": 0.131841931,
+            "max": 0.13314263,
+            "stdev": 0.00045745218930502284,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 512759565,
-            "min": 504712106,
-            "max": 577955768,
-            "stdev": 28450243.424792837,
+            "median": 455520856,
+            "min": 452320062,
+            "max": 457589800,
+            "stdev": 1870006.5043708656,
             "num_timed_runs": 10
           }
         }
@@ -1381,35 +1420,35 @@
     }
   ],
   "stage_4": {
-    "baseline_runtime_seconds": 0.127328411,
-    "baseline_cycles": 503780864,
+    "baseline_runtime_seconds": 0.132700077,
+    "baseline_cycles": 454239806,
     "all_times_seconds": [
-      0.126675429,
-      0.127529497,
-      0.126914156,
-      0.127387942,
-      0.127118758,
-      0.131523071,
-      0.129417159,
-      0.129893601,
-      0.12726888,
-      0.128008884,
-      0.126863942,
-      0.127170255
+      0.131372882,
+      0.130971072,
+      0.140972852,
+      0.134845909,
+      0.142104617,
+      0.131932948,
+      0.133247454,
+      0.132671689,
+      0.132728465,
+      0.132232799,
+      0.132342634,
+      0.132470142
     ],
     "all_cycles": [
-      503834986,
-      503719375,
-      501220674,
-      503286255,
-      502179267,
-      522035201,
-      512733285,
-      515212860,
-      504275474,
-      506004569,
-      501722673,
-      503009680
+      457774602,
+      445206421,
+      478159620,
+      461384287,
+      485020377,
+      451027624,
+      454311640,
+      455837332,
+      454167972,
+      451222411,
+      451828097,
+      452091153
     ]
   },
   "stage_5": {

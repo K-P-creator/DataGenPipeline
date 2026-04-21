@@ -59,6 +59,10 @@ def run_per_benchmark(benchmark_json_index: int) -> Path:
     data_mode_opt_pass_filename, output_ir_filename, loop_count = stage_3.run_stage3_collect_loop_features(llvm_IR_filename)
     print("") # \n
 
+    if loop_count == 0:
+        print("Zero loops... skipping benchmark!")
+        return loop_count
+        
     ## Stage 4: Run timed pass with unroll factor 1 to get baseline runtime
     baseline_runtime = stage_4.run_stage4_run_timed_pass(data_mode_opt_pass_filename, output_ir_filename, benchmark_json_index)
     print("") # \n

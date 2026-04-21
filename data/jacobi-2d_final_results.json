@@ -42,7 +42,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.148148,
+        "loopinstructionordering": "POOROOCOAGGSOOROOCOAGGSBRIB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -148,7 +151,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.108108,
+        "loopinstructionordering": "PIBBRIBPOOROOCOAGGSOOROOCOAGGSBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -254,7 +260,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 12,
+        "getelementptr_density": 0.387097,
+        "loopinstructionordering": "PGGLGRGLAGRGLARGGLARGGLAAGGSBIB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -360,7 +369,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 12,
+        "getelementptr_density": 0.285714,
+        "loopinstructionordering": "PRIBBRIBPGGLGRGLAGRGLARGGLARGGLAAGGSBIBOBB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -466,7 +478,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.363636,
+        "loopinstructionordering": "PGGLGGSBRIB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -572,7 +587,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.181818,
+        "loopinstructionordering": "PRIBBRIBPGGLGGSBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -678,7 +696,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 16,
+        "getelementptr_density": 0.197531,
+        "loopinstructionordering": "PRIBRIBBRIBPRIBBRIBPGGLGGSBRIBPRIBBRIBPGGLGRGLAGRGLARGGLARGGLAAGGSBIBOBBOBBOBBOBB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -784,7 +805,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 2,
+        "getelementptr_density": 0.105263,
+        "loopinstructionordering": "PLGGLCRRORIBLCBBRIB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,
@@ -890,7 +914,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 2,
+        "getelementptr_density": 0.0689655,
+        "loopinstructionordering": "PIBBRIBPLGGLCRRORIBLCBBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.034725599999999995,

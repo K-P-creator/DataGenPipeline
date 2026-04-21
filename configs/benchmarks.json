@@ -1,21 +1,5 @@
 {
   "benchmarks": [
-	{
-  	"name": "atax",
-  	"source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
-  	"work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
-  	"source_file": "linear-algebra/kernels/atax/atax.c",
-  	"include_dirs": [
-    		"utilities",
-    		"linear-algebra/kernels/atax"
-  	],
-	"files_to_link" : ["utilities/polybench.c"],
-  	"output_ir": "atax.ll",
-  	"output_opt_ir": "out.ll",
-  	"output_final_ir": "final.ll",
-  	"binary_name": "atax.out",
-  	"run_args": []
-	},
     {
       "name": "2mm",
       "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/polybench-c-3.2",
@@ -450,6 +434,2874 @@
       "output_final_ir": "final.ll",
       "binary_name": "seidel-2d.out",
       "run_args": []
+    },{
+      "name": "tsvc_s000",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s000.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s000.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s000.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s111",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s111.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s111.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s111.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1111",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1111.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1111.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1111.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1112",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1112.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1112.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1112.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1113",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1113.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1113.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1113.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1115",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1115.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1115.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1115.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1119",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1119.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1119.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1119.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s112",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s112.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s112.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s112.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s113",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s113.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s113.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s113.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s114",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s114.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s114.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s114.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s115",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s115.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s115.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s115.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s116",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s116.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s116.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s116.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1161",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1161.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1161.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1161.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s118",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s118.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s118.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s118.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s119",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s119.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s119.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s119.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s121",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s121.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s121.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s121.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1213",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1213.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1213.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1213.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s122",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s122.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s122.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s122.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1221",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1221.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1221.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1221.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s123",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s123.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s123.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s123.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1232",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1232.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1232.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1232.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s124",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s124.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s124.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s124.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1244",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1244.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1244.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1244.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s125",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s125.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s125.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s125.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1251",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1251.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1251.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1251.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s126",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s126.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s126.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s126.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s127",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s127.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s127.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s127.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1279",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1279.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1279.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1279.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s128",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s128.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s128.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s128.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1281",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1281.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1281.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1281.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s131",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s131.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s131.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s131.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s13110",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s13110.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s13110.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s13110.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s132",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s132.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s132.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s132.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1351",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1351.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1351.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1351.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s141",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s141.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s141.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s141.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s1421",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s1421.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s1421.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s1421.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s151",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s151.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s151.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s151.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s152",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s152.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s152.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s152.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s161",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s161.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s161.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s161.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s162",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s162.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s162.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s162.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s171",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s171.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s171.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s171.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s172",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s172.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s172.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s172.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s173",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s173.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s173.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s173.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s174",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s174.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s174.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s174.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s175",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s175.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s175.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s175.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s176",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s176.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s176.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s176.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2101",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2101.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2101.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2101.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2102",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2102.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2102.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2102.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s211",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s211.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s211.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s211.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2111",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2111.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2111.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2111.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s212",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s212.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s212.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s212.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s221",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s221.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s221.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s221.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s222",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s222.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s222.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s222.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2233",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2233.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2233.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2233.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2244",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2244.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2244.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2244.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2251",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2251.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2251.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2251.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2275",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2275.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2275.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2275.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s231",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s231.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s231.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s231.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s232",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s232.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s232.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s232.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s233",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s233.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s233.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s233.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s235",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s235.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s235.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s235.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s241",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s241.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s241.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s241.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s242",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s242.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s242.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s242.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s243",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s243.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s243.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s243.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s244",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s244.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s244.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s244.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s251",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s251.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s251.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s251.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s252",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s252.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s252.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s252.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s253",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s253.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s253.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s253.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s254",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s254.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s254.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s254.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s255",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s255.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s255.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s255.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s256",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s256.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s256.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s256.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s257",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s257.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s257.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s257.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s258",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s258.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s258.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s258.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s261",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s261.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s261.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s261.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s271",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s271.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s271.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s271.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2710",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2710.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2710.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2710.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2711",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2711.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2711.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2711.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s2712",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s2712.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s2712.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s2712.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s272",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s272.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s272.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s272.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s273",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s273.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s273.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s273.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s274",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s274.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s274.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s274.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s275",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s275.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s275.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s275.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s276",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s276.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s276.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s276.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s277",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s277.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s277.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s277.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s278",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s278.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s278.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s278.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s279",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s279.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s279.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s279.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s281",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s281.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s281.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s281.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s291",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s291.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s291.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s291.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s292",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s292.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s292.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s292.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s293",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s293.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s293.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s293.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s311",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s311.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s311.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s311.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s3110",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s3110.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s3110.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s3110.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s3111",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s3111.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s3111.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s3111.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s31111",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s31111.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s31111.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s31111.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s3112",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s3112.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s3112.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s3112.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s3113",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s3113.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s3113.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s3113.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s312",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s312.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s312.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s312.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s313",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s313.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s313.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s313.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s314",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s314.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s314.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s314.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s315",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s315.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s315.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s315.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s316",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s316.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s316.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s316.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s317",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s317.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s317.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s317.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s318",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s318.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s318.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s318.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s319",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s319.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s319.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s319.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s321",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s321.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s321.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s321.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s322",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s322.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s322.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s322.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s323",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s323.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s323.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s323.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s3251",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s3251.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s3251.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s3251.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s331",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s331.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s331.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s331.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s332",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s332.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s332.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s332.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s341",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s341.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s341.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s341.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s342",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s342.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s342.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s342.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s343",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s343.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s343.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s343.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s351",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s351.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s351.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s351.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s352",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s352.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s352.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s352.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s353",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s353.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s353.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s353.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4112",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4112.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4112.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4112.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4113",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4113.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4113.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4113.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4114",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4114.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4114.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4114.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4115",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4115.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4115.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4115.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4116",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4116.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4116.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4116.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4117",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4117.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4117.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4117.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s4121",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s4121.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s4121.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s4121.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s421",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s421.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s421.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s421.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s422",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s422.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s422.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s422.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s423",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s423.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s423.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s423.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s424",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s424.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s424.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s424.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s431",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s431.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s431.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s431.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s441",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s441.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s441.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s441.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s442",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s442.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s442.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s442.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s443",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s443.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s443.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s443.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s451",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s451.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s451.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s451.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s452",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s452.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s452.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s452.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s453",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s453.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s453.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s453.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s471",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s471.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s471.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s471.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s481",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s481.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s481.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s481.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s482",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s482.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s482.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s482.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_s491",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_s491.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_s491.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_s491.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_va",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_va.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_va.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_va.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vag",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vag.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vag.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vag.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vas",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vas.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vas.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vas.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vbor",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vbor.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vbor.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vbor.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vdotr",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vdotr.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vdotr.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vdotr.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vif",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vif.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vif.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vif.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vpv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vpv.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vpv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vpv.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vpvpv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vpvpv.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vpvpv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vpvpv.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vpvts",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vpvts.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vpvts.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vpvts.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vpvtv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vpvtv.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vpvtv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vpvtv.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vsumr",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vsumr.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vsumr.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vsumr.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vtv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vtv.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vtv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vtv.out",
+      "run_args": [],
+      "link_flags": "-lm"
+    },
+    {
+      "name": "tsvc_vtvtv",
+      "source_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/TSVC_2/src",
+      "work_dir": "/home/k-p-creator/CS489_Semester_Proj/data_libs/temp",
+      "source_file": "split/tsvc_vtvtv.c",
+      "include_dirs": [
+        "."
+      ],
+      "files_to_link": [
+        "dummy.c",
+        "common.c"
+      ],
+      "output_ir": "tsvc_vtvtv.ll",
+      "output_opt_ir": "out.ll",
+      "output_final_ir": "final.ll",
+      "binary_name": "tsvc_vtvtv.out",
+      "run_args": [],
+      "link_flags": "-lm"
     }
   ]
 }

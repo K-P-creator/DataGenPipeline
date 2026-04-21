@@ -10,6 +10,10 @@ def run_stage1_generate_ir(benchmark_json_index: int) -> str:
     import json
     import subprocess
     from pathlib import Path
+    
+    indent = ""
+    if __name__ != "__main__":
+        indent = "\t"
 
     # Load benchmark info from the index
     with open("configs/benchmarks.json", "r", encoding="utf-8") as f:
@@ -68,7 +72,7 @@ def run_stage1_generate_ir(benchmark_json_index: int) -> str:
             f"STDERR:\n{result.stderr}"
         )
 
-    print(f"Stage 1 completed successfully.\nGenerated IR at: {output_ir}")
+    print(indent + f"Stage 1 completed successfully.\n" + indent + f"Generated IR at: {output_ir}")
     if __name__ == "__main__":
         print(f"\nGenerated clang command: {' '.join(cmd)}\n")
 

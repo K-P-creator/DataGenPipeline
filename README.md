@@ -10,6 +10,10 @@ and
 
 `sudo cpupower frequency-set -u <target-frequency>GHz`
 
+Then, allow kernel profiling with
+
+`sudo sysctl -w kernel.perf_event_paranoid=-1`
+
 Then, run the script with
 
 `python3 collect_all_data.py`
@@ -23,6 +27,8 @@ You can also monitor system temps with
 `watch -n 1 sensors`
 
 In order to catch any sort of thermal throttling. In this event, simply turn down the clockrate, and adjust fans to max. 
+
+I ran a clock rate of 3.0GHz, in order to prevent thermal throttle and maintain a stable 70C CPU temp.
 
 ---
 

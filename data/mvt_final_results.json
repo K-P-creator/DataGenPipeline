@@ -42,7 +42,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 2,
+        "getelementptr_density": 0.142857,
+        "loopinstructionordering": "POOOOAAGGSBRIB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -148,7 +151,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 6,
+        "getelementptr_density": 0.117647,
+        "loopinstructionordering": "POOOAGSOOAOAGSOOAOAGSOOAOAGSIBBRIBPOOOOAAGGSBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -254,7 +260,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.333333,
+        "loopinstructionordering": "PGLGGLGLCGSBRIB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -360,7 +369,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.2,
+        "loopinstructionordering": "PIBBRIBPGLGGLGLCGSBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -466,7 +478,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.333333,
+        "loopinstructionordering": "PGLGGLGLCGSBRIB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -572,7 +587,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.2,
+        "loopinstructionordering": "PIBBRIBPGLGGLGLCGSBRIBOBB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,
@@ -678,7 +696,10 @@
         "fcmp_density": 0,
         "tripcount": 0,
         "tripmultiple": 1,
-        "breakouttrip": 0
+        "breakouttrip": 0,
+        "num_getelementptrs": 2,
+        "getelementptr_density": 0.1,
+        "loopinstructionordering": "PLGLCLGLCORIBLCBBRIB"
       },
       "median_times_seconds": {
         "1": 0.17914083800000002,

@@ -1,0 +1,154 @@
+{
+  "loop_count": 1,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "tsvc.c:1141:13",
+        "loop_range": "1141 to 1143",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": false,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 15,
+        "num_loads": 2,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 1,
+        "num_float_ops": 1,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0.133333,
+        "store_density": 0.0666667,
+        "branch_density": 0.133333,
+        "call_density": 0,
+        "phi_density": 0.0666667,
+        "int_op_density": 0.0666667,
+        "float_op_density": 0.0666667,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 6,
+        "getelementptr_density": 0.4,
+        "loopinstructionordering": "PGGLGGLAGGSBRIB"
+      },
+      "median_times_seconds": {
+        "1": 7.710228602,
+        "2": 9.133656555,
+        "4": 9.758023839,
+        "8": 9.9305584225
+      },
+      "median_cycles": {
+        "1": 35592198321,
+        "2": 41203653987,
+        "4": 45371489669,
+        "8": 46422325648
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 9.133656555,
+            "min": 8.819527351,
+            "max": 9.601938466,
+            "stdev": 0.27713468710753236,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 41203653987,
+            "min": 39657866258,
+            "max": 44376513307,
+            "stdev": 1360846753.0789678,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 9.758023839,
+            "min": 9.149789132,
+            "max": 10.730170027,
+            "stdev": 0.48662819547646197,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 45371489669,
+            "min": 42022147301,
+            "max": 49732803616,
+            "stdev": 2322647161.216099,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 9.9305584225,
+            "min": 9.550672257,
+            "max": 10.612724992,
+            "stdev": 0.3171696960951401,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 46422325648,
+            "min": 44402701639,
+            "max": 49491333706,
+            "stdev": 1438447741.2305875,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 7.710228602,
+    "baseline_cycles": 35592198321,
+    "all_times_seconds": [
+      7.733160538,
+      7.669399666,
+      7.388801016,
+      8.398355427,
+      7.885349352,
+      7.676866681,
+      7.755368181,
+      7.674642317,
+      7.690170402,
+      7.335255829,
+      7.730286802,
+      8.393670697
+    ],
+    "all_cycles": [
+      35502590147,
+      35250260045,
+      34167721240,
+      39317626915,
+      36340693533,
+      35016624910,
+      35574211933,
+      35567557348,
+      35610184710,
+      34011292762,
+      35997585701,
+      36623997133
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/tsvc_s1232_final_results.json"
+  }
+}

@@ -1,0 +1,1353 @@
+{
+  "loop_count": 12,
+  "loops": [
+    {
+      "loop_index": 1,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:36:7",
+        "loop_range": "36 to 38",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 16,
+        "num_loads": 0,
+        "num_stores": 1,
+        "num_branches": 2,
+        "num_calls": 0,
+        "num_phis": 1,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 13,
+        "load_density": 0,
+        "store_density": 0.0625,
+        "branch_density": 0.125,
+        "call_density": 0,
+        "phi_density": 0.0625,
+        "int_op_density": 0.125,
+        "float_op_density": 0.125,
+        "icmp_density": 0.0625,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 2,
+        "getelementptr_density": 0.125,
+        "loopinstructionordering": "PROOROOAOAGGSBIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.2896936355,
+        "4": 0.2785773935,
+        "8": 0.2782177515
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1152051652,
+        "4": 1108354758,
+        "8": 1107466254
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2896936355,
+            "min": 0.28902528,
+            "max": 0.290919788,
+            "stdev": 0.0005382312395362082,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1152051652,
+            "min": 1149268451,
+            "max": 1156708184,
+            "stdev": 2177329.694092154,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2785773935,
+            "min": 0.277681463,
+            "max": 0.279008981,
+            "stdev": 0.00038219249723766413,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108354758,
+            "min": 1105083844,
+            "max": 1110177235,
+            "stdev": 1592941.2097050084,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2782177515,
+            "min": 0.277700528,
+            "max": 0.279323536,
+            "stdev": 0.000494140364578149,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1107466254,
+            "min": 1104637527,
+            "max": 1111158168,
+            "stdev": 1908751.0519996635,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 2,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:31:3",
+        "loop_range": "31 to 39",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 44,
+        "num_loads": 0,
+        "num_stores": 4,
+        "num_branches": 7,
+        "num_calls": 0,
+        "num_phis": 2,
+        "num_int_ops": 5,
+        "num_float_ops": 6,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 42,
+        "load_density": 0,
+        "store_density": 0.0909091,
+        "branch_density": 0.159091,
+        "call_density": 0,
+        "phi_density": 0.0454545,
+        "int_op_density": 0.113636,
+        "float_op_density": 0.136364,
+        "icmp_density": 0.0681818,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.113636,
+        "loopinstructionordering": "PROOGSOROAAGSOROAAGSIBBIBPROOROOAOAGGSBIBOBB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.2784070825,
+        "4": 0.28958610149999997,
+        "8": 0.278621421
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1108559966,
+        "4": 1152882365,
+        "8": 1108683189
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2784070825,
+            "min": 0.277616044,
+            "max": 0.278879881,
+            "stdev": 0.0004940213596519911,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108559966,
+            "min": 1105489683,
+            "max": 1110770393,
+            "stdev": 1941077.0498573438,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.28958610149999997,
+            "min": 0.28867009,
+            "max": 0.290138185,
+            "stdev": 0.0005304222822885847,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1152882365,
+            "min": 1149279419,
+            "max": 1155002908,
+            "stdev": 2035583.6090348717,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.278621421,
+            "min": 0.277574598,
+            "max": 0.279264953,
+            "stdev": 0.00047280149784097506,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108683189,
+            "min": 1104649040,
+            "max": 1111041749,
+            "stdev": 1813862.4665249845,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 3,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:79:4",
+        "loop_range": "79 to 80",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 14,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 1,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 11,
+        "load_density": 0.142857,
+        "store_density": 0,
+        "branch_density": 0.142857,
+        "call_density": 0.0714286,
+        "phi_density": 0.142857,
+        "int_op_density": 0.0714286,
+        "float_op_density": 0,
+        "icmp_density": 0.0714286,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.285714,
+        "loopinstructionordering": "PPGGLGGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.27576784,
+        "4": 0.275508065,
+        "8": 0.2808896245
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1097988552,
+        "4": 1096627393,
+        "8": 1117057177
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.27576784,
+            "min": 0.275126149,
+            "max": 0.276374068,
+            "stdev": 0.00040168756070491616,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1097988552,
+            "min": 1095338881,
+            "max": 1100259605,
+            "stdev": 1512533.4846509239,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.275508065,
+            "min": 0.274758577,
+            "max": 0.276269778,
+            "stdev": 0.0004886634607216454,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1096627393,
+            "min": 1093841380,
+            "max": 1098336522,
+            "stdev": 1702450.2606233594,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2808896245,
+            "min": 0.280340973,
+            "max": 0.283288667,
+            "stdev": 0.0009509620339751832,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1117057177,
+            "min": 1115943135,
+            "max": 1127822379,
+            "stdev": 3929159.788281001,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 4,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:76:7",
+        "loop_range": "76 to 82",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 35,
+        "num_loads": 4,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 1,
+        "num_phis": 5,
+        "num_int_ops": 2,
+        "num_float_ops": 1,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 27,
+        "load_density": 0.114286,
+        "store_density": 0.0285714,
+        "branch_density": 0.2,
+        "call_density": 0.0285714,
+        "phi_density": 0.142857,
+        "int_op_density": 0.0571429,
+        "float_op_density": 0.0285714,
+        "icmp_density": 0.0857143,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 10,
+        "getelementptr_density": 0.285714,
+        "loopinstructionordering": "PGGLIBPGGLAGGSBRIBPPGGLGGLOCBRIBBPB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.28683288799999995,
+        "4": 0.2802661665,
+        "8": 0.2802843075
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1141793545,
+        "4": 1115182241,
+        "8": 1115756113
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.28683288799999995,
+            "min": 0.286316572,
+            "max": 0.288252165,
+            "stdev": 0.0006074460382960962,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1141793545,
+            "min": 1139579587,
+            "max": 1147427342,
+            "stdev": 2496504.3258177913,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2802661665,
+            "min": 0.279177748,
+            "max": 0.280855984,
+            "stdev": 0.0005013004961178004,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1115182241,
+            "min": 1111295803,
+            "max": 1118002738,
+            "stdev": 1945175.4606933307,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2802843075,
+            "min": 0.279728649,
+            "max": 0.281195935,
+            "stdev": 0.0004199572628117341,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1115756113,
+            "min": 1112977643,
+            "max": 1119875958,
+            "stdev": 1889436.742961954,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 5,
+      "features": {
+        "loop_depth": 3,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:86:4",
+        "loop_range": "86 to 87",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": false,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 15,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 12,
+        "load_density": 0.133333,
+        "store_density": 0,
+        "branch_density": 0.133333,
+        "call_density": 0.0666667,
+        "phi_density": 0.133333,
+        "int_op_density": 0.133333,
+        "float_op_density": 0,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 4,
+        "getelementptr_density": 0.266667,
+        "loopinstructionordering": "PPRGGLGGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.2750896185,
+        "4": 0.2751817915,
+        "8": 0.2748856925
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1095178446,
+        "4": 1094914586,
+        "8": 1094002928
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2750896185,
+            "min": 0.274079861,
+            "max": 0.275676891,
+            "stdev": 0.0004979512234266515,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1095178446,
+            "min": 1091034412,
+            "max": 1097436754,
+            "stdev": 2049157.8365696725,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2751817915,
+            "min": 0.27465968,
+            "max": 0.276540497,
+            "stdev": 0.0005906864322810636,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1094914586,
+            "min": 1092811844,
+            "max": 1100686458,
+            "stdev": 2509666.7026844556,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.2748856925,
+            "min": 0.27458631,
+            "max": 0.275536495,
+            "stdev": 0.00035011161331731947,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1094002928,
+            "min": 1092394547,
+            "max": 1096273810,
+            "stdev": 1425868.7930121801,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 6,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:83:7",
+        "loop_range": "83 to 89",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 5,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 30,
+        "num_loads": 3,
+        "num_stores": 1,
+        "num_branches": 5,
+        "num_calls": 1,
+        "num_phis": 4,
+        "num_int_ops": 5,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 24,
+        "load_density": 0.1,
+        "store_density": 0.0333333,
+        "branch_density": 0.166667,
+        "call_density": 0.0333333,
+        "phi_density": 0.133333,
+        "int_op_density": 0.166667,
+        "float_op_density": 0,
+        "icmp_density": 0.0666667,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 8,
+        "getelementptr_density": 0.266667,
+        "loopinstructionordering": "PRGGLBPRGGSBRIBPPRGGLGGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.278780998,
+        "4": 0.278641994,
+        "8": 0.278973097
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1108917151,
+        "4": 1108960916,
+        "8": 1110141784
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.278780998,
+            "min": 0.278149267,
+            "max": 0.2793229,
+            "stdev": 0.0004215942729246286,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108917151,
+            "min": 1107613248,
+            "max": 1111560717,
+            "stdev": 1532393.885390582,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.278641994,
+            "min": 0.278245571,
+            "max": 0.280049446,
+            "stdev": 0.0005314636279218117,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108960916,
+            "min": 1106512878,
+            "max": 1114053119,
+            "stdev": 2098391.186212364,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.278973097,
+            "min": 0.278045695,
+            "max": 0.279687931,
+            "stdev": 0.0005925894211485853,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1110141784,
+            "min": 1106653570,
+            "max": 1113067715,
+            "stdev": 2426773.257498078,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 7,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:74:3",
+        "loop_range": "74 to 90",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 20,
+        "num_subloops": 2,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 78,
+        "num_loads": 7,
+        "num_stores": 2,
+        "num_branches": 20,
+        "num_calls": 2,
+        "num_phis": 11,
+        "num_int_ops": 9,
+        "num_float_ops": 1,
+        "num_icmps": 6,
+        "num_fcmps": 0,
+        "initial_loop_size": 62,
+        "load_density": 0.0897436,
+        "store_density": 0.025641,
+        "branch_density": 0.25641,
+        "call_density": 0.025641,
+        "phi_density": 0.141026,
+        "int_op_density": 0.115385,
+        "float_op_density": 0.0128205,
+        "icmp_density": 0.0769231,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 18,
+        "getelementptr_density": 0.230769,
+        "loopinstructionordering": "PPRBBBRIBPRGGLBPRGGSBRIBPPRGGLGGLOCBRIBPGGLIBPGGLAGGSBRIBPPGGLGGLOCBRIBBPBBBBB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.28455964349999996,
+        "4": 0.281744557,
+        "8": 0.28021517500000004
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1133384563,
+        "4": 1121026354,
+        "8": 1115306100
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.28455964349999996,
+            "min": 0.28275034,
+            "max": 0.285318946,
+            "stdev": 0.0007337644068614156,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1133384563,
+            "min": 1130100633,
+            "max": 1135783348,
+            "stdev": 1645706.73944059,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.281744557,
+            "min": 0.281427299,
+            "max": 0.282982605,
+            "stdev": 0.0004996234099548793,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1121026354,
+            "min": 1119812348,
+            "max": 1125086148,
+            "stdev": 1976162.0008201643,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.28021517500000004,
+            "min": 0.279411715,
+            "max": 0.280841668,
+            "stdev": 0.0004472466832391823,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1115306100,
+            "min": 1112773454,
+            "max": 1118263600,
+            "stdev": 1719809.2327581632,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 8,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:95:7",
+        "loop_range": "95 to 96",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": false,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 13,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 1,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 10,
+        "load_density": 0.153846,
+        "store_density": 0,
+        "branch_density": 0.153846,
+        "call_density": 0.0769231,
+        "phi_density": 0.153846,
+        "int_op_density": 0.0769231,
+        "float_op_density": 0,
+        "icmp_density": 0.0769231,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 3,
+        "getelementptr_density": 0.230769,
+        "loopinstructionordering": "PPGGLGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.278582368,
+        "4": 0.279110265,
+        "8": 0.278820348
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1108956152,
+        "4": 1110570420,
+        "8": 1109344931
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.278582368,
+            "min": 0.277984461,
+            "max": 0.279473357,
+            "stdev": 0.0005019896173073671,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108956152,
+            "min": 1106419788,
+            "max": 1112121355,
+            "stdev": 1958422.6454904666,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.279110265,
+            "min": 0.27856588,
+            "max": 0.280537704,
+            "stdev": 0.0005428114829601372,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1110570420,
+            "min": 1108688127,
+            "max": 1115490904,
+            "stdev": 1889400.7892473328,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.278820348,
+            "min": 0.278170366,
+            "max": 0.279893625,
+            "stdev": 0.0005569268358431996,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1109344931,
+            "min": 1107212180,
+            "max": 1114051338,
+            "stdev": 2287465.590889193,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 9,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:92:3",
+        "loop_range": "92 to 98",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 5,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 24,
+        "num_loads": 3,
+        "num_stores": 1,
+        "num_branches": 5,
+        "num_calls": 1,
+        "num_phis": 4,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 18,
+        "load_density": 0.125,
+        "store_density": 0.0416667,
+        "branch_density": 0.208333,
+        "call_density": 0.0416667,
+        "phi_density": 0.166667,
+        "int_op_density": 0.0833333,
+        "float_op_density": 0,
+        "icmp_density": 0.0833333,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 5,
+        "getelementptr_density": 0.208333,
+        "loopinstructionordering": "PGLBPGSBRIBPPGGLGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.27906261,
+        "4": 0.27884696200000003,
+        "8": 0.27910476549999996
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1110810275,
+        "4": 1109457769,
+        "8": 1111129697
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.27906261,
+            "min": 0.278461993,
+            "max": 0.279692951,
+            "stdev": 0.0004463344556205552,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1110810275,
+            "min": 1107880230,
+            "max": 1113427928,
+            "stdev": 1898934.5974355198,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.27884696200000003,
+            "min": 0.278378945,
+            "max": 0.279873743,
+            "stdev": 0.000652268809732286,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1109457769,
+            "min": 1107686938,
+            "max": 1113468844,
+            "stdev": 2350528.080647354,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.27910476549999996,
+            "min": 0.278521067,
+            "max": 0.279914184,
+            "stdev": 0.00046017049083511944,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1111129697,
+            "min": 1108726129,
+            "max": 1113909900,
+            "stdev": 1855673.164067246,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 10,
+      "features": {
+        "loop_depth": 2,
+        "has_parent_loop": true,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:103:7",
+        "loop_range": "103 to 104",
+        "canonical_iv": false,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 2,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 16,
+        "num_loads": 2,
+        "num_stores": 0,
+        "num_branches": 2,
+        "num_calls": 1,
+        "num_phis": 2,
+        "num_int_ops": 3,
+        "num_float_ops": 0,
+        "num_icmps": 1,
+        "num_fcmps": 0,
+        "initial_loop_size": 13,
+        "load_density": 0.125,
+        "store_density": 0,
+        "branch_density": 0.125,
+        "call_density": 0.0625,
+        "phi_density": 0.125,
+        "int_op_density": 0.1875,
+        "float_op_density": 0,
+        "icmp_density": 0.0625,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 3,
+        "getelementptr_density": 0.1875,
+        "loopinstructionordering": "PPRORGGLGLOCBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.2783819315,
+        "4": 0.278790882,
+        "8": 0.278105286
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1106871879,
+        "4": 1109246258,
+        "8": 1106591153
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.2783819315,
+            "min": 0.27796406,
+            "max": 0.279341529,
+            "stdev": 0.0004460267757440943,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1106871879,
+            "min": 1106312723,
+            "max": 1111943006,
+            "stdev": 1921695.4566760515,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.278790882,
+            "min": 0.278014563,
+            "max": 0.279144999,
+            "stdev": 0.0004218191556535048,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1109246258,
+            "min": 1106386547,
+            "max": 1110808668,
+            "stdev": 1412969.7406739388,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.278105286,
+            "min": 0.277394852,
+            "max": 0.278913237,
+            "stdev": 0.0005012821640160507,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1106591153,
+            "min": 1104473365,
+            "max": 1110529271,
+            "stdev": 2055872.1703457932,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 11,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:100:3",
+        "loop_range": "100 to 106",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 7,
+        "num_subloops": 1,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 2,
+        "total_instructions": 50,
+        "num_loads": 4,
+        "num_stores": 1,
+        "num_branches": 7,
+        "num_calls": 1,
+        "num_phis": 6,
+        "num_int_ops": 14,
+        "num_float_ops": 1,
+        "num_icmps": 3,
+        "num_fcmps": 0,
+        "initial_loop_size": 41,
+        "load_density": 0.08,
+        "store_density": 0.02,
+        "branch_density": 0.14,
+        "call_density": 0.02,
+        "phi_density": 0.12,
+        "int_op_density": 0.28,
+        "float_op_density": 0.02,
+        "icmp_density": 0.06,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 7,
+        "getelementptr_density": 0.14,
+        "loopinstructionordering": "PPRORGLRIBPRORGRORGLARORGSBRRIBPPRORGGLGLOCBRIBBPB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.278461666,
+        "4": 0.2782125165,
+        "8": 0.277750701
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1107733348,
+        "4": 1107454835,
+        "8": 1105692802
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.278461666,
+            "min": 0.278018263,
+            "max": 0.279862366,
+            "stdev": 0.0005415237867758858,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1107733348,
+            "min": 1105753278,
+            "max": 1113857868,
+            "stdev": 2285835.8052911386,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.2782125165,
+            "min": 0.277336864,
+            "max": 0.279225485,
+            "stdev": 0.0006288759825987535,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1107454835,
+            "min": 1104254244,
+            "max": 1111848207,
+            "stdev": 2490460.9853982097,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.277750701,
+            "min": 0.277319881,
+            "max": 0.278917505,
+            "stdev": 0.0005007150254683709,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1105692802,
+            "min": 1104229594,
+            "max": 1110444915,
+            "stdev": 2052428.5665522334,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    },
+    {
+      "loop_index": 12,
+      "features": {
+        "loop_depth": 1,
+        "has_parent_loop": false,
+        "loop_location": "linear-algebra/solvers/ludcmp/ludcmp.c:52:3",
+        "loop_range": "52 to 55",
+        "canonical_iv": true,
+        "se_iv_exists": true,
+        "is_guarded": true,
+        "is_rotated": true,
+        "is_loop_simplify_form": true,
+        "is_annotated_parallel": false,
+        "num_blocks": 4,
+        "num_subloops": 0,
+        "num_exit_blocks": 1,
+        "num_exiting_blocks": 1,
+        "has_dedicated_exits": true,
+        "num_header_phis": 1,
+        "total_instructions": 16,
+        "num_loads": 3,
+        "num_stores": 0,
+        "num_branches": 4,
+        "num_calls": 2,
+        "num_phis": 1,
+        "num_int_ops": 2,
+        "num_float_ops": 0,
+        "num_icmps": 2,
+        "num_fcmps": 0,
+        "initial_loop_size": 20,
+        "load_density": 0.1875,
+        "store_density": 0,
+        "branch_density": 0.25,
+        "call_density": 0.125,
+        "phi_density": 0.0625,
+        "int_op_density": 0.125,
+        "float_op_density": 0,
+        "icmp_density": 0.125,
+        "fcmp_density": 0,
+        "tripcount": 0,
+        "tripmultiple": 1,
+        "breakouttrip": 0,
+        "num_getelementptrs": 1,
+        "getelementptr_density": 0.0625,
+        "loopinstructionordering": "PLGLCORIBLCBBRIB"
+      },
+      "median_times_seconds": {
+        "1": 0.2781632205,
+        "2": 0.278279777,
+        "4": 0.27828328999999996,
+        "8": 0.27849795099999997
+      },
+      "median_cycles": {
+        "1": 1107213827,
+        "2": 1107146477,
+        "4": 1108427910,
+        "8": 1107834580
+      },
+      "timing_stats": {
+        "2": {
+          "time_seconds": {
+            "median": 0.278279777,
+            "min": 0.277969775,
+            "max": 0.279090523,
+            "stdev": 0.00034300257033640936,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1107146477,
+            "min": 1104917832,
+            "max": 1110503009,
+            "stdev": 1744228.0833390772,
+            "num_timed_runs": 10
+          }
+        },
+        "4": {
+          "time_seconds": {
+            "median": 0.27828328999999996,
+            "min": 0.276919984,
+            "max": 0.279045742,
+            "stdev": 0.0006533531819101864,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1108427910,
+            "min": 1105183682,
+            "max": 1110837716,
+            "stdev": 1919867.6390159354,
+            "num_timed_runs": 10
+          }
+        },
+        "8": {
+          "time_seconds": {
+            "median": 0.27849795099999997,
+            "min": 0.277684516,
+            "max": 0.27951076,
+            "stdev": 0.0005591204216000561,
+            "num_timed_runs": 10
+          },
+          "cycles": {
+            "median": 1107834580,
+            "min": 1104413996,
+            "max": 1112867944,
+            "stdev": 2400974.075267233,
+            "num_timed_runs": 10
+          }
+        }
+      }
+    }
+  ],
+  "stage_4": {
+    "baseline_runtime_seconds": 0.2781632205,
+    "baseline_cycles": 1107213827,
+    "all_times_seconds": [
+      0.278048361,
+      0.277741186,
+      0.278207902,
+      0.278698837,
+      0.277945066,
+      0.277862782,
+      0.27838369,
+      0.279412522,
+      0.278118539,
+      0.27834088,
+      0.278078731,
+      0.277873477
+    ],
+    "all_cycles": [
+      1106748010,
+      1105301645,
+      1107245851,
+      1108724607,
+      1106202097,
+      1106442613,
+      1107880246,
+      1112338861,
+      1107181804,
+      1108142997,
+      1106681612,
+      1105318805
+    ]
+  },
+  "stage_5": {
+    "completed_unroll_factors": [
+      2,
+      4,
+      8
+    ],
+    "final_output_path": "data/ludcmp_final_results.json"
+  }
+}

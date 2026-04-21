@@ -6,7 +6,7 @@
       "features": {
         "loop_depth": 2,
         "has_parent_loop": true,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:29:5",
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:29:5",
         "loop_range": "29 to 30",
         "canonical_iv": true,
         "se_iv_exists": true,
@@ -24,20 +24,20 @@
         "num_loads": 0,
         "num_stores": 1,
         "num_branches": 2,
-        "num_calls": 1,
+        "num_calls": 0,
         "num_phis": 1,
         "num_int_ops": 2,
-        "num_float_ops": 1,
+        "num_float_ops": 2,
         "num_icmps": 1,
         "num_fcmps": 0,
-        "initial_loop_size": 14,
+        "initial_loop_size": 13,
         "load_density": 0,
         "store_density": 0.0625,
         "branch_density": 0.125,
-        "call_density": 0.0625,
+        "call_density": 0,
         "phi_density": 0.0625,
         "int_op_density": 0.125,
-        "float_op_density": 0.0625,
+        "float_op_density": 0.125,
         "icmp_density": 0.0625,
         "fcmp_density": 0,
         "tripcount": 0,
@@ -45,66 +45,66 @@
         "breakouttrip": 0,
         "num_getelementptrs": 2,
         "getelementptr_density": 0.125,
-        "loopinstructionordering": "POOROOCOAGGSBRIB"
+        "loopinstructionordering": "PROOROOAOAGGSBIB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.20767584449999998,
-        "4": 0.207667504,
-        "8": 0.2075314585
+        "1": 0.616515136,
+        "2": 0.8385735425,
+        "4": 0.6147914125,
+        "8": 0.619705385
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 825779849,
-        "4": 826663941,
-        "8": 825667812
+        "1": 2457227045,
+        "2": 3342804007,
+        "4": 2450529684,
+        "8": 2469794451
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.20767584449999998,
-            "min": 0.207460767,
-            "max": 0.207994015,
-            "stdev": 0.00016464720701552,
+            "median": 0.8385735425,
+            "min": 0.83617796,
+            "max": 0.839057086,
+            "stdev": 0.0009107933221041669,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825779849,
-            "min": 825400962,
-            "max": 826500514,
-            "stdev": 378512.8493559587,
+            "median": 3342804007,
+            "min": 3333212941,
+            "max": 3344612598,
+            "stdev": 3651481.603723862,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.207667504,
-            "min": 0.207412281,
-            "max": 0.20790854,
-            "stdev": 0.00014881963984714203,
+            "median": 0.6147914125,
+            "min": 0.612422058,
+            "max": 0.618862469,
+            "stdev": 0.0021442797481734544,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826663941,
-            "min": 825391272,
-            "max": 827413141,
-            "stdev": 637103.6788420269,
+            "median": 2450529684,
+            "min": 2441688782,
+            "max": 2467048066,
+            "stdev": 8446924.635207795,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.2075314585,
-            "min": 0.207344559,
-            "max": 0.207738726,
-            "stdev": 0.00011851699814907059,
+            "median": 0.619705385,
+            "min": 0.618053213,
+            "max": 0.621207712,
+            "stdev": 0.0009858128375517512,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825667812,
-            "min": 825219031,
-            "max": 825996340,
-            "stdev": 267048.09520511056,
+            "median": 2469794451,
+            "min": 2463418609,
+            "max": 2475825419,
+            "stdev": 3959257.6492413674,
             "num_timed_runs": 10
           }
         }
@@ -115,7 +115,7 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:28:3",
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:28:3",
         "loop_range": "28 to 30",
         "canonical_iv": true,
         "se_iv_exists": true,
@@ -133,20 +133,20 @@
         "num_loads": 0,
         "num_stores": 1,
         "num_branches": 7,
-        "num_calls": 1,
+        "num_calls": 0,
         "num_phis": 2,
         "num_int_ops": 3,
-        "num_float_ops": 1,
+        "num_float_ops": 2,
         "num_icmps": 3,
         "num_fcmps": 0,
-        "initial_loop_size": 22,
+        "initial_loop_size": 21,
         "load_density": 0,
         "store_density": 0.0384615,
         "branch_density": 0.269231,
-        "call_density": 0.0384615,
+        "call_density": 0,
         "phi_density": 0.0769231,
         "int_op_density": 0.115385,
-        "float_op_density": 0.0384615,
+        "float_op_density": 0.0769231,
         "icmp_density": 0.115385,
         "fcmp_density": 0,
         "tripcount": 0,
@@ -154,66 +154,66 @@
         "breakouttrip": 0,
         "num_getelementptrs": 2,
         "getelementptr_density": 0.0769231,
-        "loopinstructionordering": "PIBBRIBPOOROOCOAGGSBRIBOBB"
+        "loopinstructionordering": "PIBBRIBPROOROOAOAGGSBIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.20774524,
-        "4": 0.207594448,
-        "8": 0.2076211875
+        "1": 0.616515136,
+        "2": 0.837445481,
+        "4": 0.8374165135,
+        "8": 0.6133786025
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 825932338,
-        "4": 825664579,
-        "8": 826171057
+        "1": 2457227045,
+        "2": 3338192035,
+        "4": 3337998597,
+        "8": 2443560711
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.20774524,
-            "min": 0.207557008,
-            "max": 0.207885383,
-            "stdev": 0.0001261926311884638,
+            "median": 0.837445481,
+            "min": 0.836580838,
+            "max": 0.838583073,
+            "stdev": 0.0006083363228332301,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825932338,
-            "min": 825706099,
-            "max": 826101592,
-            "stdev": 142712.57313452722,
+            "median": 3338192035,
+            "min": 3335201249,
+            "max": 3343153213,
+            "stdev": 2460792.7860698695,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.207594448,
-            "min": 0.207439513,
-            "max": 0.207756216,
-            "stdev": 0.00010553105837456013,
+            "median": 0.8374165135,
+            "min": 0.83643701,
+            "max": 0.837776607,
+            "stdev": 0.00047997101937169315,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825664579,
-            "min": 825288417,
-            "max": 826007010,
-            "stdev": 230803.6308857717,
+            "median": 3337998597,
+            "min": 3334115051,
+            "max": 3339928925,
+            "stdev": 2049048.9646268177,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.2076211875,
-            "min": 0.207446931,
-            "max": 0.20794852,
-            "stdev": 0.00019470818025242747,
+            "median": 0.6133786025,
+            "min": 0.61169938,
+            "max": 0.615266968,
+            "stdev": 0.0010941017535958508,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826171057,
-            "min": 825476657,
-            "max": 827505514,
-            "stdev": 736227.6518100454,
+            "median": 2443560711,
+            "min": 2437197020,
+            "max": 2451724748,
+            "stdev": 4508125.930723438,
             "num_timed_runs": 10
           }
         }
@@ -224,105 +224,105 @@
       "features": {
         "loop_depth": 3,
         "has_parent_loop": true,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:64:7",
-        "loop_range": "64 to 67",
-        "canonical_iv": false,
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:64:2",
+        "loop_range": "64 to 66",
+        "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
         "is_rotated": true,
         "is_loop_simplify_form": true,
         "is_annotated_parallel": false,
-        "num_blocks": 2,
+        "num_blocks": 5,
         "num_subloops": 0,
         "num_exit_blocks": 1,
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 53,
-        "num_loads": 9,
+        "total_instructions": 33,
+        "num_loads": 6,
         "num_stores": 1,
-        "num_branches": 2,
+        "num_branches": 5,
         "num_calls": 0,
-        "num_phis": 1,
-        "num_int_ops": 10,
-        "num_float_ops": 9,
+        "num_phis": 2,
+        "num_int_ops": 1,
+        "num_float_ops": 2,
         "num_icmps": 1,
-        "num_fcmps": 0,
-        "initial_loop_size": 43,
-        "load_density": 0.169811,
-        "store_density": 0.0188679,
-        "branch_density": 0.0377358,
+        "num_fcmps": 1,
+        "initial_loop_size": 25,
+        "load_density": 0.181818,
+        "store_density": 0.030303,
+        "branch_density": 0.151515,
         "call_density": 0,
-        "phi_density": 0.0188679,
-        "int_op_density": 0.188679,
-        "float_op_density": 0.169811,
-        "icmp_density": 0.0188679,
-        "fcmp_density": 0,
+        "phi_density": 0.0606061,
+        "int_op_density": 0.030303,
+        "float_op_density": 0.0606061,
+        "icmp_density": 0.030303,
+        "fcmp_density": 0.030303,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0,
-        "num_getelementptrs": 20,
-        "getelementptr_density": 0.377358,
-        "loopinstructionordering": "PRGRGLRGGLARGRGLAGRGLAGGLAGGLARGRGLARGGLARGGLAAGGSBIB"
+        "num_getelementptrs": 14,
+        "getelementptr_density": 0.424242,
+        "loopinstructionordering": "PGGLGGLGGLAFBGGLGGLABGGLBPGGSBRIB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.185315255,
-        "4": 0.17387680300000002,
-        "8": 0.16835872699999999
+        "1": 0.616515136,
+        "2": 0.4855626175,
+        "4": 0.5029968469999999,
+        "8": 0.4782035145
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 737201158,
-        "4": 690956136,
-        "8": 669039708
+        "1": 2457227045,
+        "2": 1933660763,
+        "4": 2003033006,
+        "8": 1904208932
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.185315255,
-            "min": 0.185069385,
-            "max": 0.185819439,
-            "stdev": 0.00021685718386840126,
+            "median": 0.4855626175,
+            "min": 0.483774916,
+            "max": 0.488172,
+            "stdev": 0.00133331478863895,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 737201158,
-            "min": 736406753,
-            "max": 739103150,
-            "stdev": 840751.1150826782,
+            "median": 1933660763,
+            "min": 1926644150,
+            "max": 1943926603,
+            "stdev": 5167029.214543043,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.17387680300000002,
-            "min": 0.173605018,
-            "max": 0.174358228,
-            "stdev": 0.00018846196286433572,
+            "median": 0.5029968469999999,
+            "min": 0.498408546,
+            "max": 0.504293639,
+            "stdev": 0.0017305773096225167,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 690956136,
-            "min": 690489521,
-            "max": 691234331,
-            "stdev": 251251.79841470235,
+            "median": 2003033006,
+            "min": 1994104519,
+            "max": 2007684311,
+            "stdev": 4463880.79389888,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.16835872699999999,
-            "min": 0.168140724,
-            "max": 0.168536846,
-            "stdev": 0.00011794643584253047,
+            "median": 0.4782035145,
+            "min": 0.476380185,
+            "max": 0.481949148,
+            "stdev": 0.0018382905574201342,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 669039708,
-            "min": 667964397,
-            "max": 670119876,
-            "stdev": 575727.225145429,
+            "median": 1904208932,
+            "min": 1895556240,
+            "max": 1919084227,
+            "stdev": 7629372.871943813,
             "num_timed_runs": 10
           }
         }
@@ -333,105 +333,105 @@
       "features": {
         "loop_depth": 2,
         "has_parent_loop": true,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:63:5",
-        "loop_range": "63 to 67",
-        "canonical_iv": false,
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:63:7",
+        "loop_range": "63 to 66",
+        "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
         "is_rotated": true,
         "is_loop_simplify_form": true,
         "is_annotated_parallel": false,
-        "num_blocks": 7,
+        "num_blocks": 10,
         "num_subloops": 1,
         "num_exit_blocks": 1,
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 64,
-        "num_loads": 9,
+        "total_instructions": 43,
+        "num_loads": 6,
         "num_stores": 1,
-        "num_branches": 7,
+        "num_branches": 10,
         "num_calls": 0,
-        "num_phis": 2,
-        "num_int_ops": 12,
-        "num_float_ops": 9,
+        "num_phis": 3,
+        "num_int_ops": 2,
+        "num_float_ops": 2,
         "num_icmps": 3,
-        "num_fcmps": 0,
-        "initial_loop_size": 52,
-        "load_density": 0.140625,
-        "store_density": 0.015625,
-        "branch_density": 0.109375,
+        "num_fcmps": 1,
+        "initial_loop_size": 33,
+        "load_density": 0.139535,
+        "store_density": 0.0232558,
+        "branch_density": 0.232558,
         "call_density": 0,
-        "phi_density": 0.03125,
-        "int_op_density": 0.1875,
-        "float_op_density": 0.140625,
-        "icmp_density": 0.046875,
-        "fcmp_density": 0,
+        "phi_density": 0.0697674,
+        "int_op_density": 0.0465116,
+        "float_op_density": 0.0465116,
+        "icmp_density": 0.0697674,
+        "fcmp_density": 0.0232558,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0,
-        "num_getelementptrs": 20,
-        "getelementptr_density": 0.3125,
-        "loopinstructionordering": "PRIBBRIBPRGRGLRGGLARGRGLAGRGLAGGLAGGLARGRGLARGGLARGGLAAGGSBIBOBB"
+        "num_getelementptrs": 14,
+        "getelementptr_density": 0.325581,
+        "loopinstructionordering": "PIBBRIBPGGLGGLGGLAFBGGLGGLABGGLBPGGSBRIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.20777245849999998,
-        "4": 0.2077400715,
-        "8": 0.20752557
+        "1": 0.616515136,
+        "2": 0.5680242515,
+        "4": 0.5731313149999999,
+        "8": 0.57121485
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 826841880,
-        "4": 826451934,
-        "8": 825876506
+        "1": 2457227045,
+        "2": 2262963246,
+        "4": 2282411872,
+        "8": 2274583936
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.20777245849999998,
-            "min": 0.207664199,
-            "max": 0.207990241,
-            "stdev": 9.145845837008973e-05,
+            "median": 0.5680242515,
+            "min": 0.565412151,
+            "max": 0.56999704,
+            "stdev": 0.001528519622831254,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826841880,
-            "min": 826250239,
-            "max": 827604515,
-            "stdev": 377560.77099668485,
+            "median": 2262963246,
+            "min": 2252427146,
+            "max": 2271460818,
+            "stdev": 6211131.944279598,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.2077400715,
-            "min": 0.20737355,
-            "max": 0.207941313,
-            "stdev": 0.00016342535042438398,
+            "median": 0.5731313149999999,
+            "min": 0.571897705,
+            "max": 0.575498416,
+            "stdev": 0.001255275596779481,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826451934,
-            "min": 825222971,
-            "max": 827377333,
-            "stdev": 742950.702536731,
+            "median": 2282411872,
+            "min": 2276791109,
+            "max": 2292655753,
+            "stdev": 5296109.037805883,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.20752557,
-            "min": 0.207357335,
-            "max": 0.20777127,
-            "stdev": 0.0001334806537785755,
+            "median": 0.57121485,
+            "min": 0.568719307,
+            "max": 0.574142144,
+            "stdev": 0.0014278322611609563,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825876506,
-            "min": 825300650,
-            "max": 826684133,
-            "stdev": 438142.0230588479,
+            "median": 2274583936,
+            "min": 2264635523,
+            "max": 2287078001,
+            "stdev": 5903470.390856947,
             "num_timed_runs": 10
           }
         }
@@ -442,105 +442,105 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:62:3",
-        "loop_range": "62 to 67",
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:61:3",
+        "loop_range": "61 to 67",
         "canonical_iv": true,
         "se_iv_exists": true,
         "is_guarded": true,
         "is_rotated": true,
         "is_loop_simplify_form": true,
         "is_annotated_parallel": false,
-        "num_blocks": 12,
+        "num_blocks": 15,
         "num_subloops": 1,
         "num_exit_blocks": 1,
         "num_exiting_blocks": 1,
         "has_dedicated_exits": true,
         "num_header_phis": 1,
-        "total_instructions": 75,
-        "num_loads": 9,
+        "total_instructions": 53,
+        "num_loads": 6,
         "num_stores": 1,
-        "num_branches": 12,
+        "num_branches": 15,
         "num_calls": 0,
-        "num_phis": 3,
-        "num_int_ops": 14,
-        "num_float_ops": 9,
+        "num_phis": 4,
+        "num_int_ops": 3,
+        "num_float_ops": 2,
         "num_icmps": 5,
-        "num_fcmps": 0,
-        "initial_loop_size": 61,
-        "load_density": 0.12,
-        "store_density": 0.0133333,
-        "branch_density": 0.16,
+        "num_fcmps": 1,
+        "initial_loop_size": 41,
+        "load_density": 0.113208,
+        "store_density": 0.0188679,
+        "branch_density": 0.283019,
         "call_density": 0,
-        "phi_density": 0.04,
-        "int_op_density": 0.186667,
-        "float_op_density": 0.12,
-        "icmp_density": 0.0666667,
-        "fcmp_density": 0,
+        "phi_density": 0.0754717,
+        "int_op_density": 0.0566038,
+        "float_op_density": 0.0377358,
+        "icmp_density": 0.0943396,
+        "fcmp_density": 0.0188679,
         "tripcount": 0,
         "tripmultiple": 1,
         "breakouttrip": 0,
-        "num_getelementptrs": 20,
-        "getelementptr_density": 0.266667,
-        "loopinstructionordering": "PRIBBRIBPRIBBRIBPRGRGLRGGLARGRGLAGRGLAGGLAGGLARGRGLARGGLARGGLAAGGSBIBOBBOBB"
+        "num_getelementptrs": 14,
+        "getelementptr_density": 0.264151,
+        "loopinstructionordering": "PIBBRIBPIBBRIBPGGLGGLGGLAFBGGLGGLABGGLBPGGSBRIBOBBOBB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.2077034595,
-        "4": 0.20766659999999998,
-        "8": 0.207478372
+        "1": 0.616515136,
+        "2": 0.5681767065000001,
+        "4": 0.578748531,
+        "8": 0.574808167
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 826590400,
-        "4": 825829275,
-        "8": 825418035
+        "1": 2457227045,
+        "2": 2263726159,
+        "4": 2306139667,
+        "8": 2288657604
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.2077034595,
-            "min": 0.207634034,
-            "max": 0.20797363,
-            "stdev": 0.00010127857306135458,
+            "median": 0.5681767065000001,
+            "min": 0.565814781,
+            "max": 0.570553932,
+            "stdev": 0.0016499597535662763,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826590400,
-            "min": 825820877,
-            "max": 827466748,
-            "stdev": 480557.364208143,
+            "median": 2263726159,
+            "min": 2252798223,
+            "max": 2273049273,
+            "stdev": 6904239.338474455,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.20766659999999998,
-            "min": 0.207523502,
-            "max": 0.207753873,
-            "stdev": 6.357251876758892e-05,
+            "median": 0.578748531,
+            "min": 0.57584351,
+            "max": 0.580152041,
+            "stdev": 0.0014811331921719768,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825829275,
-            "min": 825566438,
-            "max": 826493960,
-            "stdev": 287600.694095612,
+            "median": 2306139667,
+            "min": 2294370853,
+            "max": 2311719196,
+            "stdev": 5872691.743309389,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.207478372,
-            "min": 0.207283808,
-            "max": 0.207771481,
-            "stdev": 0.00016632038105001329,
+            "median": 0.574808167,
+            "min": 0.571327547,
+            "max": 0.576431704,
+            "stdev": 0.0016333086391148186,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825418035,
-            "min": 824933545,
-            "max": 826897418,
-            "stdev": 666990.828707695,
+            "median": 2288657604,
+            "min": 2278537884,
+            "max": 2295181224,
+            "stdev": 5127892.164217554,
             "num_timed_runs": 10
           }
         }
@@ -551,7 +551,7 @@
       "features": {
         "loop_depth": 2,
         "has_parent_loop": true,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:44:5",
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:44:5",
         "loop_range": "44 to 47",
         "canonical_iv": true,
         "se_iv_exists": true,
@@ -593,63 +593,63 @@
         "loopinstructionordering": "PLGGLCRRORIBLCBBRIB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.20767903399999998,
-        "4": 0.20751936450000003,
-        "8": 0.20738905
+        "1": 0.616515136,
+        "2": 0.609019033,
+        "4": 0.612400118,
+        "8": 0.6098788495
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 826422295,
-        "4": 825368127,
-        "8": 825221002
+        "1": 2457227045,
+        "2": 2426974526,
+        "4": 2440197790,
+        "8": 2428964011
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.20767903399999998,
-            "min": 0.207567731,
-            "max": 0.207829651,
-            "stdev": 9.366300239546618e-05,
+            "median": 0.609019033,
+            "min": 0.606999325,
+            "max": 0.610340579,
+            "stdev": 0.0012169883848237193,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826422295,
-            "min": 825977449,
-            "max": 827167655,
-            "stdev": 439728.31841800024,
+            "median": 2426974526,
+            "min": 2418742978,
+            "max": 2431950212,
+            "stdev": 4845665.430701524,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.20751936450000003,
-            "min": 0.207372721,
-            "max": 0.207719219,
-            "stdev": 0.00012078150734781913,
+            "median": 0.612400118,
+            "min": 0.60822777,
+            "max": 0.614602991,
+            "stdev": 0.001867367684263844,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825368127,
-            "min": 825085870,
-            "max": 826078509,
-            "stdev": 314195.1782493204,
+            "median": 2440197790,
+            "min": 2422307748,
+            "max": 2449061769,
+            "stdev": 7799113.514597803,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.20738905,
-            "min": 0.207269011,
-            "max": 0.207539457,
-            "stdev": 9.195229707535061e-05,
+            "median": 0.6098788495,
+            "min": 0.608004603,
+            "max": 0.612227788,
+            "stdev": 0.0013323319661155241,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825221002,
-            "min": 824787616,
-            "max": 825808499,
-            "stdev": 341428.3001203425,
+            "median": 2428964011,
+            "min": 2421012942,
+            "max": 2439280648,
+            "stdev": 5632210.562823495,
             "num_timed_runs": 10
           }
         }
@@ -660,7 +660,7 @@
       "features": {
         "loop_depth": 1,
         "has_parent_loop": false,
-        "loop_location": "stencils/seidel-2d/seidel-2d.c:43:3",
+        "loop_location": "medley/floyd-warshall/floyd-warshall.c:43:3",
         "loop_range": "43 to 47",
         "canonical_iv": true,
         "se_iv_exists": true,
@@ -702,63 +702,63 @@
         "loopinstructionordering": "PIBBRIBPLGGLCRRORIBLCBBRIBOBB"
       },
       "median_times_seconds": {
-        "1": 0.2077026295,
-        "2": 0.2077345385,
-        "4": 0.2076560665,
-        "8": 0.20741857149999998
+        "1": 0.616515136,
+        "2": 0.6110844865,
+        "4": 0.6119367065,
+        "8": 0.610110185
       },
       "median_cycles": {
-        "1": 826281746,
-        "2": 826588503,
-        "4": 825924003,
-        "8": 825166914
+        "1": 2457227045,
+        "2": 2434657222,
+        "4": 2437149273,
+        "8": 2430768208
       },
       "timing_stats": {
         "2": {
           "time_seconds": {
-            "median": 0.2077345385,
-            "min": 0.207390149,
-            "max": 0.207983279,
-            "stdev": 0.00017857994891691117,
+            "median": 0.6110844865,
+            "min": 0.608237761,
+            "max": 0.61261407,
+            "stdev": 0.0013147339443990798,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 826588503,
-            "min": 825293861,
-            "max": 827227038,
-            "stdev": 675258.8621922048,
+            "median": 2434657222,
+            "min": 2423682704,
+            "max": 2440616158,
+            "stdev": 5271035.063482293,
             "num_timed_runs": 10
           }
         },
         "4": {
           "time_seconds": {
-            "median": 0.2076560665,
-            "min": 0.207411163,
-            "max": 0.207933261,
-            "stdev": 0.0001512391610810165,
+            "median": 0.6119367065,
+            "min": 0.609383532,
+            "max": 0.61606543,
+            "stdev": 0.0024506289082878254,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825924003,
-            "min": 825463179,
-            "max": 826227353,
-            "stdev": 256185.18288352794,
+            "median": 2437149273,
+            "min": 2427800837,
+            "max": 2454899669,
+            "stdev": 9897671.636611173,
             "num_timed_runs": 10
           }
         },
         "8": {
           "time_seconds": {
-            "median": 0.20741857149999998,
-            "min": 0.207240999,
-            "max": 0.207623925,
-            "stdev": 0.00011127300103323816,
+            "median": 0.610110185,
+            "min": 0.608550613,
+            "max": 0.61482102,
+            "stdev": 0.002310960787554185,
             "num_timed_runs": 10
           },
           "cycles": {
-            "median": 825166914,
-            "min": 824827326,
-            "max": 825657252,
-            "stdev": 247308.76046656963,
+            "median": 2430768208,
+            "min": 2424504915,
+            "max": 2449974213,
+            "stdev": 9306310.045425732,
             "num_timed_runs": 10
           }
         }
@@ -766,35 +766,35 @@
     }
   ],
   "stage_4": {
-    "baseline_runtime_seconds": 0.2077026295,
-    "baseline_cycles": 826281746,
+    "baseline_runtime_seconds": 0.616515136,
+    "baseline_cycles": 2457227045,
     "all_times_seconds": [
-      0.20455696,
-      0.207569039,
-      0.207609925,
-      0.207538111,
-      0.207738867,
-      0.207646555,
-      0.207616678,
-      0.207760388,
-      0.207666392,
-      0.207932089,
-      0.208063265,
-      0.207766409
+      0.616870073,
+      0.616736563,
+      0.619497153,
+      0.616296187,
+      0.617020635,
+      0.615887887,
+      0.615922302,
+      0.617253794,
+      0.614684577,
+      0.616604337,
+      0.616425935,
+      0.616896709
     ],
     "all_cycles": [
-      825084990,
-      825642086,
-      825581702,
-      825635397,
-      825806207,
-      825521492,
-      826201157,
-      826619401,
-      826362335,
-      826481365,
-      827936534,
-      826749008
+      2458436615,
+      2457873780,
+      2469223899,
+      2456656536,
+      2459103996,
+      2454649542,
+      2455097981,
+      2459280516,
+      2450150040,
+      2457403634,
+      2457185563,
+      2457268528
     ]
   },
   "stage_5": {
@@ -803,6 +803,6 @@
       4,
       8
     ],
-    "final_output_path": "data/seidel-2d_final_results.json"
+    "final_output_path": "data/floyd-warshall_final_results.json"
   }
 }

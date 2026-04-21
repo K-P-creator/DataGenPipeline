@@ -163,7 +163,9 @@ def run_stage3_collect_loop_features(llvm_ir_filename: str, ) -> str:
         f"Loop feature collection output IR: {output_ir_filename}\n" +
         indent +
         "Stage 3 dataset saved to JSON file: "
-            f"{output_json_filename}"
+            f"{output_json_filename}" +
+        indent +
+        f"Number of loops: {loop_count}"
     )
 
     if __name__ == "__main__":
